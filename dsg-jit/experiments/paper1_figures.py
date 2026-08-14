@@ -161,6 +161,63 @@ def load_all_runs(run_dirs: list[str]) -> list[dict]:
     return runs
 
 
+def load_sesync_run(path: str) -> dict:
+    """Load an exp42/exp43 result into the same shape as load_run.
+
+    Exp42/43 write a single aggregate.json rather than exp41's per-seed
+    seed_*.json files, and name the metrics dT/dR/dC instead of nesting them
+    under improvement_pct.  This normalizes both differences so every figure
+    function in this module accepts an exp42/43 run unchanged.
+
+    `path` may be either the run directory (containing aggregate.json) or the
+    aggregate.json / renamed-aggregate file itself.
+    """
+    p = Path(path)
+    agg_file = p / "aggregate.json" if p.is_dir() else p
+    if not agg_file.exists():
+        raise FileNotFoundError(f"No aggregate.json at {path}")
+
+    with open(agg_file) as f:
+        data = json.load(f)
+
+    config = data.get("config", {})
+    sequences = {}
+    for seq_id, seq_data in data.get("sequences", {}).items():
+        seeds = {}
+        n_poses = 0
+        for entry in seq_data.get("seeds", []):
+            n_poses = entry.get("n_poses", n_poses)
+            seed_entry = {
+                "trans": entry["dT"],
+                "rot": entry["dR"],
+                "combined": entry["dC"],
+            }
+            # exp42 names it poses_per_s; the figure helpers expect
+            # poses_per_sec.  Window time is not recorded, so per-pose
+            # latency is derived from throughput downstream.
+            if "poses_per_s" in entry:
+                seed_entry["throughput"] = {
+                    "poses_per_sec": entry["poses_per_s"],
+                    "elapsed_s": entry.get("elapsed_s"),
+                }
+            seeds[entry["seed"]] = seed_entry
+        sequences[seq_id] = {"n_poses": n_poses, "seeds": seeds}
+
+    return {
+        "config": config,
+        "sigma_trans": config.get("sigma_t"),
+        "sigma_rot": config.get("sigma_r"),
+        "sequences": sequences,
+    }
+
+
+def load_all_sesync_runs(paths: list[str]) -> list[dict]:
+    """Load and sort exp42/43 runs by sigma_trans."""
+    runs = [load_sesync_run(p) for p in paths]
+    runs.sort(key=lambda r: r["sigma_trans"])
+    return runs
+
+
 # ---------------------------------------------------------------------------
 # Data extraction helpers
 # ---------------------------------------------------------------------------
@@ -828,6 +885,171 @@ def plot_phase_ablation(run_a: dict, run_b: dict, output_path: str,
 
 
 # ---------------------------------------------------------------------------
+# Figure 13: Inner-solver comparison -- dense GN (exp41) vs SE-Sync (exp42)
+# ---------------------------------------------------------------------------
+
+def plot_solver_comparison(run_dense: dict, run_sesync: dict, output_path: str,
+                           label_dense: str = "Dense GN",
+                           label_sesync: str = "SE-Sync structured",
+                           figsize: tuple = (7.16, 2.6)):
+    """Accuracy and throughput comparison of the two inner solvers.
+
+    The two runs need not cover the same sequence set -- exp41 sweeps all 22
+    KITTI sequences while exp42 has so far been run on a 9-sequence subset.
+    Comparing published means across different subsets would be misleading, so
+    both sides are restricted to the sequences present in BOTH runs and the
+    count is returned for the caption.
+
+    Returns the list of sequences actually compared.
+    """
+    common = sorted(set(run_dense["sequences"].keys()) &
+                    set(run_sesync["sequences"].keys()))
+    if not common:
+        print("  Skipped solver comparison: no overlapping sequences")
+        return []
+
+    n_dense = len(run_dense["sequences"])
+    n_sesync = len(run_sesync["sequences"])
+    print(f"  Solver comparison on {len(common)} shared sequences "
+          f"(dense covers {n_dense}, SE-Sync covers {n_sesync})")
+
+    metrics = ["trans", "rot", "combined"]
+    labels = [r"$\Delta T$", r"$\Delta R$", r"$\Delta C$"]
+
+    def agg(run, metric):
+        per_seq = [np.mean(get_seq_values(run, s, metric)) for s in common]
+        return np.mean(per_seq), np.std(per_seq)
+
+    d_stats = [agg(run_dense, m) for m in metrics]
+    s_stats = [agg(run_sesync, m) for m in metrics]
+
+    fig, (ax1, ax2) = plt.subplots(
+        1, 2, figsize=figsize, gridspec_kw={"width_ratios": [1.6, 1]})
+
+    x = np.arange(len(metrics))
+    w = 0.36
+    ax1.bar(x - w / 2, [m for m, _ in d_stats], w,
+            yerr=[s for _, s in d_stats], capsize=3, label=label_dense,
+            color="#348ABD", alpha=0.85,
+            error_kw={"linewidth": 0.8, "ecolor": "#555"})
+    ax1.bar(x + w / 2, [m for m, _ in s_stats], w,
+            yerr=[s for _, s in s_stats], capsize=3, label=label_sesync,
+            color="#2CA02C", alpha=0.85,
+            error_kw={"linewidth": 0.8, "ecolor": "#555"})
+
+    for i, ((dm, ds), (sm, ss)) in enumerate(zip(d_stats, s_stats)):
+        diff = sm - dm
+        sign = "+" if diff >= 0 else ""
+        ax1.text(i, max(dm + ds, sm + ss) + 1.2, f"{sign}{diff:.1f}pp",
+                 ha="center", fontsize=6.5, fontweight="bold", color="#333")
+
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(labels, fontsize=9)
+    ax1.set_ylabel("Improvement (%)", fontsize=8)
+    ax1.set_title(f"Accuracy ({len(common)} shared sequences)", fontsize=9)
+    ax1.legend(fontsize=6.5, loc="upper center", ncol=2, framealpha=0.9,
+               bbox_to_anchor=(0.5, -0.14))
+    ax1.tick_params(labelsize=7)
+    ax1.grid(axis="y", alpha=0.3)
+    ax1.axhline(y=0, color="gray", linewidth=0.5)
+
+    def tput(run):
+        vals = []
+        for s in common:
+            v = _get_throughput_values(run, s, "poses_per_sec")
+            if len(v):
+                vals.append(np.mean(v))
+        return (np.mean(vals), np.std(vals)) if vals else (None, None)
+
+    d_tp, d_tp_s = tput(run_dense)
+    s_tp, s_tp_s = tput(run_sesync)
+
+    if d_tp is None or s_tp is None:
+        ax2.text(0.5, 0.5, "Throughput data\nunavailable", ha="center",
+                 va="center", fontsize=7, color="#888",
+                 transform=ax2.transAxes)
+        ax2.set_xticks([])
+        ax2.set_yticks([])
+    else:
+        ax2.bar([0, 1], [d_tp, s_tp], 0.55, yerr=[d_tp_s, s_tp_s], capsize=3,
+                color=["#348ABD", "#2CA02C"], alpha=0.85,
+                error_kw={"linewidth": 0.8, "ecolor": "#555"})
+        speedup = s_tp / d_tp if d_tp else float("nan")
+        ax2.text(0.5, max(d_tp, s_tp) * 1.02, rf"{speedup:.2f}$\times$",
+                 ha="center", fontsize=8, fontweight="bold", color="#333")
+        ax2.axhline(y=10, color="#E24A33", linestyle="--", linewidth=0.9,
+                    alpha=0.8)
+        ax2.text(1.45, 11, "10 Hz", fontsize=6, color="#E24A33", ha="right")
+        ax2.set_xticks([0, 1])
+        ax2.set_xticklabels(["Dense", "SE-Sync"], fontsize=7)
+        ax2.set_ylabel("Poses / sec", fontsize=8)
+        ax2.set_ylim(bottom=0)
+
+    ax2.set_title("Throughput", fontsize=9)
+    ax2.tick_params(labelsize=7)
+    ax2.grid(axis="y", alpha=0.3)
+
+    fig.tight_layout()
+    fig.savefig(output_path, dpi=300, bbox_inches="tight")
+    print(f"  Saved: {output_path}")
+    plt.close(fig)
+    return common
+
+
+def plot_solver_seed_variance(run_dense: dict, run_sesync: dict,
+                              output_path: str,
+                              figsize: tuple = (3.5, 2.6)):
+    """Per-seed spread of the two solvers -- documents SE-Sync's instability.
+
+    Exp42's headline mean is competitive, but a handful of seeds diverge
+    catastrophically.  A mean-and-std bar hides that; this plots every seed so
+    the tail is visible.
+    """
+    common = sorted(set(run_dense["sequences"].keys()) &
+                    set(run_sesync["sequences"].keys()))
+    if not common:
+        print("  Skipped solver seed variance: no overlapping sequences")
+        return
+
+    d_vals = np.concatenate([get_seq_values(run_dense, s, "combined")
+                             for s in common])
+    s_vals = np.concatenate([get_seq_values(run_sesync, s, "combined")
+                             for s in common])
+
+    fig, ax = plt.subplots(figsize=figsize)
+    rng_d = np.linspace(-0.14, 0.14, len(d_vals))
+    rng_s = np.linspace(-0.14, 0.14, len(s_vals))
+    ax.scatter(np.zeros(len(d_vals)) + rng_d, d_vals, s=5, alpha=0.5,
+               color="#348ABD", edgecolors="none", label="Dense GN")
+    ax.scatter(np.ones(len(s_vals)) + rng_s, s_vals, s=5, alpha=0.5,
+               color="#2CA02C", edgecolors="none", label="SE-Sync")
+
+    for i, vals in enumerate([d_vals, s_vals]):
+        ax.hlines(np.mean(vals), i - 0.25, i + 0.25, color="#333",
+                  linewidth=1.4, zorder=5)
+
+    n_div = int(np.sum(s_vals < 0))
+    if n_div:
+        ax.text(0.02, 0.03,
+                f"{n_div}/{len(s_vals)} SE-Sync seeds $<0$",
+                transform=ax.transAxes, fontsize=6, ha="left", color="#C0392B",
+                fontweight="bold")
+
+    ax.axhline(y=0, color="gray", linestyle="--", linewidth=0.7)
+    ax.set_xticks([0, 1])
+    ax.set_xticklabels(["Dense GN", "SE-Sync"], fontsize=8)
+    ax.set_ylabel(r"$\Delta C$ (%)", fontsize=8)
+    ax.set_title("Per-Seed Stability", fontsize=9)
+    ax.tick_params(labelsize=7)
+    ax.grid(axis="y", alpha=0.3)
+
+    fig.tight_layout()
+    fig.savefig(output_path, dpi=300, bbox_inches="tight")
+    print(f"  Saved: {output_path}")
+    plt.close(fig)
+
+
+# ---------------------------------------------------------------------------
 # Figure 12: Ablation -- auto vs manual weights (Claim 3)
 # ---------------------------------------------------------------------------
 
@@ -1271,6 +1493,9 @@ def main():
                         help="Two-phase (exp40) run dirs for phase ablation")
     parser.add_argument("--manual-weight-dirs", nargs="+", default=None,
                         help="Manual-weight run dirs for weight ablation")
+    parser.add_argument("--sesync-dirs", nargs="+", default=None,
+                        help="Exp42/43 run dirs (or aggregate.json paths) for "
+                             "the inner-solver comparison")
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -1394,6 +1619,27 @@ def main():
                 runs, manual_runs,
                 os.path.join(args.output_dir,
                              f"fig_weight_ablation_aggregate.{ext}"))
+
+    # Inner-solver comparison: dense GN (exp41) vs SE-Sync (exp42/43).
+    if args.sesync_dirs:
+        print("\nGenerating inner-solver comparison figures...")
+        sesync_runs = load_all_sesync_runs(args.sesync_dirs)
+        for ss_run in sesync_runs:
+            match = [r for r in runs
+                     if abs(r["sigma_trans"] - ss_run["sigma_trans"]) < 1e-6]
+            if not match:
+                print(f"  No exp41 run at sigma_t={ss_run['sigma_trans']}, "
+                      f"skipping")
+                continue
+            sigma_t = ss_run["sigma_trans"]
+            plot_solver_comparison(
+                match[0], ss_run,
+                os.path.join(args.output_dir,
+                             f"fig_solver_comparison_{sigma_t}.{ext}"))
+            plot_solver_seed_variance(
+                match[0], ss_run,
+                os.path.join(args.output_dir,
+                             f"fig_solver_seed_variance_{sigma_t}.{ext}"))
 
     # Hypothesis tests.
     print("\nRunning hypothesis tests...")
