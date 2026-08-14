@@ -644,9 +644,12 @@ def plot_per_sequence_bars(runs: list[dict], output_path: str,
              rf"$\bar{{\mu}}_w$={pw_mean:.1f}%", fontsize=6.5,
              color="#2CA02C", fontweight="bold")
 
+    # Seed count must come from the data -- it was previously hardcoded to 20,
+    # which silently mislabeled any run that used a different number.
+    n_seeds = max(len(run["sequences"][s]["seeds"]) for s in seq_ids)
     fig.suptitle(rf"Per-Sequence RMSE Improvement at $\sigma_t = {target_sigma}$"
                  rf", $\sigma_r = {run['sigma_rot']}$"
-                 f"  (mean $\\pm$ std over 20 seeds)",
+                 f"  (mean $\\pm$ std over {n_seeds} seeds)",
                  fontsize=9, y=0.98)
     fig.tight_layout(rect=[0, 0, 1, 0.96])
     fig.savefig(output_path, dpi=300, bbox_inches="tight")
