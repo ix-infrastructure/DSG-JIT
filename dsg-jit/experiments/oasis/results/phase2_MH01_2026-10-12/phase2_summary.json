@@ -1,0 +1,217 @@
+{
+ "verdict": "UNDETERMINED (outside pre-registered table) \u2014 denoising beats gain-only at L5, but L1-L2 equivalence to clean is NOT confirmed.",
+ "families": {
+  "C4_vs_C2": [
+   {
+    "level": 3,
+    "p": 0.130859375,
+    "p_holm": 0.130859375,
+    "median_diff": -0.0019500000000000003,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 4,
+    "p": 0.02734375,
+    "p_holm": 0.0546875,
+    "median_diff": -0.007012500000000001,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 5,
+    "p": 0.009765625,
+    "p_holm": 0.029296875,
+    "median_diff": -0.011152999999999996,
+    "valid_a": 10,
+    "valid_b": 9,
+    "n": 10
+   },
+   {
+    "level": 6,
+    "p": 0.001953125,
+    "p_holm": 0.0078125,
+    "median_diff": -0.8842466414991852,
+    "valid_a": 10,
+    "valid_b": 0,
+    "n": 10
+   }
+  ],
+  "C2_vs_C1": [
+   {
+    "level": 3,
+    "p": 0.130859375,
+    "p_holm": 0.26171875,
+    "median_diff": 0.002888999999999999,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 4,
+    "p": 0.6953125,
+    "p_holm": 0.6953125,
+    "median_diff": -0.001982000000000001,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 5,
+    "p": 0.00390625,
+    "p_holm": 0.015625,
+    "median_diff": -0.8893746414991852,
+    "valid_a": 9,
+    "valid_b": 0,
+    "n": 10
+   },
+   {
+    "level": 6,
+    "p": 0.015625,
+    "p_holm": 0.046875,
+    "median_diff": -0.012900597501357969,
+    "valid_a": 0,
+    "valid_b": 0,
+    "n": 10
+   }
+  ],
+  "C2_vs_C0": [
+   {
+    "level": 3,
+    "p": 0.76953125,
+    "p_holm": 1.0,
+    "median_diff": 0.00033050000000000093,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 4,
+    "p": 0.005859375,
+    "p_holm": 0.017578125,
+    "median_diff": 0.011543999999999999,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 5,
+    "p": 0.845703125,
+    "p_holm": 1.0,
+    "median_diff": 0.001452499999999999,
+    "valid_a": 9,
+    "valid_b": 9,
+    "n": 10
+   },
+   {
+    "level": 6,
+    "p": 0.001953125,
+    "p_holm": 0.0078125,
+    "median_diff": -0.5922053231939164,
+    "valid_a": 0,
+    "valid_b": 0,
+    "n": 10
+   }
+  ],
+  "C4_vs_C0": [
+   {
+    "level": 1,
+    "p": 0.845703125,
+    "p_holm": 1.0,
+    "median_diff": -0.00015799999999999842,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 2,
+    "p": 0.921875,
+    "p_holm": 1.0,
+    "median_diff": 0.0015984999999999992,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 3,
+    "p": 0.322265625,
+    "p_holm": 0.966796875,
+    "median_diff": -0.0011935000000000001,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 4,
+    "p": 0.193359375,
+    "p_holm": 0.7734375,
+    "median_diff": 0.0020429999999999997,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 5,
+    "p": 0.037109375,
+    "p_holm": 0.185546875,
+    "median_diff": -0.007819999999999997,
+    "valid_a": 10,
+    "valid_b": 9,
+    "n": 10
+   },
+   {
+    "level": 6,
+    "p": 0.001953125,
+    "p_holm": 0.01171875,
+    "median_diff": -1.4719919291146115,
+    "valid_a": 10,
+    "valid_b": 0,
+    "n": 10
+   }
+  ],
+  "C1_vs_C0": [
+   {
+    "level": 3,
+    "p": 0.6953125,
+    "p_holm": 0.6953125,
+    "median_diff": -0.0002929999999999981,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 4,
+    "p": 0.001953125,
+    "p_holm": 0.0078125,
+    "median_diff": 0.0116705,
+    "valid_a": 10,
+    "valid_b": 10,
+    "n": 10
+   },
+   {
+    "level": 5,
+    "p": 0.00390625,
+    "p_holm": 0.0078125,
+    "median_diff": 0.8925846414991851,
+    "valid_a": 0,
+    "valid_b": 9,
+    "n": 10
+   },
+   {
+    "level": 6,
+    "p": 0.001953125,
+    "p_holm": 0.0078125,
+    "median_diff": -0.5784899511135253,
+    "valid_a": 0,
+    "valid_b": 0,
+    "n": 10
+   }
+  ]
+ },
+ "floor_mm": [
+  39.75425,
+  5.1339745234949055
+ ]
+}
