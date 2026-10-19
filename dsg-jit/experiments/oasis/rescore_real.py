@@ -14,9 +14,11 @@ comparable. This script therefore reports, per run:
   ate_common_m   ATE (SE(3), scale fixed) on a window common to ALL runs of
                  the sequence: [latest start + 0.5 s, end]
   rpe_dark_m /   mean translational drift over 1 s windows inside that common
-  rpe_bright_m   window, split by the worst equivalent darkness level of the
-                 window's frames (phase0_real_dark per-frame CSV): dark = any
-                 frame >= --dark-level. Drift is the error of the 1 s
+  rpe_bright_m   window, split by the worst value of a per-frame degradation
+                 measure over the window's frames: "dark" (degraded) = any
+                 frame >= --dark-level. Default measure is the equivalent
+                 darkness level (phase0_real_dark); --value-col blur_rate_px_s
+                 splits by IMU-predicted blur rate (phase0_blur) instead. Drift is the error of the 1 s
                  displacement after the global alignment, so it measures local
                  tracking quality where the darkness actually is.
 
@@ -29,12 +31,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from eval_ate import load_tum, load_euroc_gt, associate, umeyama  # noqa: E402
 
 
-def frame_levels(path):
-    """Worst-camera equivalent level per timestamp."""
+def frame_levels(path, col="eq_level"):
+    """Worst-camera value of a per-frame degradation measure, per timestamp."""
     import csv
     lv = {}
     for r in csv.DictReader(open(path)):
-        t, v = int(r["ts"]), float(r["eq_level"])
+        t, v = int(r["ts"]), float(r[col])
         if np.isfinite(v):
             lv[t] = max(lv.get(t, -1.0), v)
     ts = np.array(sorted(lv), dtype=np.int64)
@@ -47,13 +49,16 @@ def main():
     ap.add_argument("--levels", required=True, help="phase0_real_dark per-frame CSV for this sequence")
     ap.add_argument("--images", required=True, help="cam0/data dir (first image time)")
     ap.add_argument("--results", default="/data/tkocher/oasis_results")
-    ap.add_argument("--dark-level", type=float, default=3.0)
+    ap.add_argument("--dark-level", type=float, default=3.0,
+                    help="threshold on --value-col that marks a window degraded")
+    ap.add_argument("--value-col", default="eq_level",
+                    help="per-frame CSV column: eq_level (phase0_real_dark) or blur_rate_px_s (phase0_blur)")
     ap.add_argument("--rpe-dt", type=float, default=1.0)
     a = ap.parse_args()
 
     t0 = min(int(os.path.basename(f)[:-4]) for f in glob.glob(os.path.join(a.images, "*.png")))
     ts_g, xyz_g = load_euroc_gt(a.gt); o = np.argsort(ts_g); ts_g, xyz_g = ts_g[o], xyz_g[o]
-    lts, lvl = frame_levels(a.levels)
+    lts, lvl = frame_levels(a.levels, a.value_col)
 
     runs = []
     for d in sorted(glob.glob(os.path.join(a.results, f"{a.tag}_L*"))):
@@ -83,6 +88,12 @@ def main():
         dark = np.array([lvl[(lts >= te[x]) & (lts <= te[y])].max(initial=0) >= a.dark_level for x, y in zip(i, j)])
         out["rpe_dark_m"] = float(err[dark].mean()) if dark.any() else None
         out["rpe_bright_m"] = float(err[~dark].mean()) if (~dark).any() else None
+        # Motion-normalised drift: the same error per metre travelled. Fast
+        # (blurred) windows also cover more ground, so absolute drift alone
+        # confounds blur with motion.
+        relerr = err / np.maximum(np.linalg.norm(pg[j] - pg[i], axis=1), 0.05)
+        out["rpe_dark_rel"] = float(relerr[dark].mean()) if dark.any() else None
+        out["rpe_bright_rel"] = float(relerr[~dark].mean()) if (~dark).any() else None
         out["n_dark_windows"] = int(dark.sum())
         print(json.dumps(out))
 

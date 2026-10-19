@@ -1,0 +1,21 @@
+# errchar.py on lambda, 2026-10-13. Trajectory error e(t) after SE(3) alignment, 20 Hz grid.
+# "added" = e_pert(t) - mean clean e(t). ac1 = lag-1 (0.05 s) autocorrelation (white noise ~0);
+# tau_s = lag where autocorrelation < 0.5; lf = share of power below 0.1 Hz (white ~0.01);
+# kurt = excess kurtosis; xseed = median correlation of e(t) across seeds of the same config
+# (toff: same-sign seeds only; rst/isf/imis/rbc seeds have DIFFERENT error directions by design).
+== MH03
+clean         {"ac1": 0.987, "tau_s": 2.0, "lf": 0.736, "kurt": 0.92, "rms_mm": 32.1} xseed 0.92
+toff L2 added {"ac1": 0.975, "tau_s": 2.0, "lf": 0.722, "kurt": 0.37, "rms_mm": 42.2} xseed(e) 0.86
+toff L3 added {"ac1": 0.98, "tau_s": 1.5, "lf": 0.601, "kurt": 0.23, "rms_mm": 53.3} xseed(e) 0.78
+rst L1 added {"ac1": 0.992, "tau_s": 3.15, "lf": 0.946, "kurt": -0.2, "rms_mm": 86.2} xseed(e) 0.29
+isf L3 added {"ac1": 0.99, "tau_s": 2.65, "lf": 0.899, "kurt": -0.24, "rms_mm": 78.35} xseed(e) -0.14
+imis L3 added {"ac1": 0.992, "tau_s": 2.3, "lf": 0.804, "kurt": 0.655, "rms_mm": 86.7} xseed(e) 0.04
+rbc L3 added {"ac1": 0.994, "tau_s": 2.6, "lf": 0.807, "kurt": -0.045, "rms_mm": 68.25} xseed(e) 0.13
+== MH01
+clean         {"ac1": 0.993, "tau_s": 10.5, "lf": 0.964, "kurt": -0.69, "rms_mm": 38.9} xseed 0.88
+toff L2 added {"ac1": 0.987, "tau_s": 6.1, "lf": 0.844, "kurt": 0.95, "rms_mm": 25.1} xseed(e) 0.88
+toff L3 added {"ac1": 0.984, "tau_s": 2.1, "lf": 0.661, "kurt": 0.59, "rms_mm": 31.8} xseed(e) 0.64
+rst L1 added {"ac1": 0.998, "tau_s": 14.05, "lf": 0.994, "kurt": -1.085, "rms_mm": 92.35} xseed(e) 0.15
+isf L3 added {"ac1": 0.995, "tau_s": 4.8, "lf": 0.969, "kurt": 1.5, "rms_mm": 55.25} xseed(e) 0.26
+imis L3 added {"ac1": 0.999, "tau_s": 8.75, "lf": 0.967, "kurt": 0.54, "rms_mm": 100.35} xseed(e) 0.04
+rbc L3 added {"ac1": 0.994, "tau_s": 7.0, "lf": 0.968, "kurt": 1.49, "rms_mm": 59.3} xseed(e) 0.4

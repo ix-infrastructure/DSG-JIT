@@ -80,7 +80,7 @@ def run_job(job, a):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--cells", nargs="+", required=True, help="LEVEL:ARM, e.g. 5:C0 5:C2")
+    ap.add_argument("--cells", nargs="*", default=[], help="LEVEL:ARM, e.g. 5:C0 5:C2 (none = clean runs only)")
     ap.add_argument("--seeds", type=int, nargs="+", required=True)
     ap.add_argument("--clean-runs", type=int, default=20)
     ap.add_argument("--tag", required=True)

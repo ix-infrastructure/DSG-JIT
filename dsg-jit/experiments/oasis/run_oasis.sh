@@ -25,6 +25,12 @@ case "$CONFIG" in
   /*) CFG_PATH="$CONFIG" ;;
   *)  CFG_PATH="/opt/ORB_SLAM3/Examples/Stereo-Inertial/${CONFIG}" ;;
 esac
+# A stem names a file shipped in the image; an absolute path (under /data) is
+# used as-is, for datasets that are not EuRoC (e.g. 4Seasons).
+case "$STAMPS" in
+  /*) STAMPS_PATH="$STAMPS" ;;
+  *)  STAMPS_PATH="/opt/ORB_SLAM3/Examples/Stereo-Inertial/EuRoC_TimeStamps/${STAMPS}.txt" ;;
+esac
 RESULTS_ROOT="${RESULTS_DIR:-/data/tkocher/oasis_results}"
 OUTDIR="${RESULTS_ROOT}/${RUN_ID}"
 mkdir -p "$OUTDIR"
@@ -38,7 +44,7 @@ docker run --rm \
       /opt/ORB_SLAM3/Vocabulary/ORBvoc.txt \
       "$CFG_PATH" \
       "$DATASET" \
-      "/opt/ORB_SLAM3/Examples/Stereo-Inertial/EuRoC_TimeStamps/${STAMPS}.txt" \
+      "$STAMPS_PATH" \
       "$RUN_ID" > "$OUTDIR/slam_stdout.log" 2>&1
 echo "--- outputs in ${OUTDIR} ---"
 ls -la "$OUTDIR"

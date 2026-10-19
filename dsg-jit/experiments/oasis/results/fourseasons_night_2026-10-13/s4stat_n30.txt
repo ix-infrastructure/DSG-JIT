@@ -1,0 +1,5 @@
+s4D_clean  good 10/10 ATE [6.3, 6.4, 6.6, 6.6, 7.0, 7.1, 7.2, 7.2, 8.0, 9.3] med 7.0 fails med 0 | vs night C0: Fisher p=0.001 composite p=0.000 fails p=0.0000 ATE(good only) p=0.000
+s4N_clean  good 12/30 ATE [24.8, 31.8, 35.7, 35.8, 40.6, 40.9, 45.5, 50.9, 52.1, 61.5, 62.6, 83.9] med 43.2 fails med 260
+s4N_C2s    good 20/30 ATE [14.7, 15.2, 18.5, 21.9, 22.4, 22.6, 23.0, 23.9, 24.8, 25.6, 27.7, 30.0, 31.8, 33.2, 35.6, 41.7, 51.6, 53.4, 66.0, 746.6] med 26.6 fails med 46 | vs night C0: Fisher p=0.069 composite p=0.004 fails p=0.0003 ATE(good only) p=0.013
+s4N_C5     good 2/10 ATE [26.7, 59.9] med 43.3 fails med 320 | vs night C0: Fisher p=0.446 composite p=0.313 fails p=0.4257 ATE(good only) p=0.791
+s4N_C1     good 0/10 ATE [] med nan fails med 307 | vs night C0: Fisher p=0.019 composite p=0.022 fails p=0.5019

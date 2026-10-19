@@ -27,6 +27,13 @@ pre-SLAM corrector would have to do:
                    was adequate there. Both variants run so the comparison
                    with the pre-registered arms is kept.
 
+  C5  CLAHE:       cv2.createCLAHE(clipLimit, 8x8 tiles) on the raw image, the
+                   same parameters for both cameras. Added for 4Seasons night,
+                   where frames are dark but nearly noise-free (sigma ~0.2 DN,
+                   ~10 grey levels in use): the loss is local contrast and bit
+                   depth, not noise, so a global gain or a denoiser has little
+                   to act on while ORB's FAST threshold (20) sees no corners.
+
 C0 (no correction) needs no generation: run SLAM on the source directly.
 Output layout matches lowlight_sequence.py so phase2_suite/run_oasis consume it.
 """
@@ -59,7 +66,11 @@ def correct_pair(job):
         g = min(g, a.gain_sat / max(np.percentile(v, 99.0), 1.0)) if v.size else 1.0
     g = float(np.clip(g, 1.0, a.gain_max))
     out, hs = [], []
-    for img in (L, R):
+    if a.arm == "C5":
+        cl = cv2.createCLAHE(clipLimit=a.clahe_clip, tileGridSize=(8, 8))
+        out = [cl.apply(L), cl.apply(R)]
+        g = float(np.mean(out[0]) / max(L.mean(), 1e-3))       # effective gain, for the manifest
+    for img in ((L, R) if a.arm != "C5" else ()):
         y = to_u8(img.astype(np.float64) * g)
         if a.arm.startswith("C4"):
             h = g * noise_stats(img)[0]
@@ -75,10 +86,11 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--src", required=True); p.add_argument("--dst", required=True)
     p.add_argument("--yaml", required=True, help="base ORB-SLAM3 YAML (copied unchanged)")
-    p.add_argument("--arm", required=True, choices=["C2", "C4", "C2s", "C4s"])
+    p.add_argument("--arm", required=True, choices=["C2", "C4", "C2s", "C4s", "C5"])
     p.add_argument("--m-ref", type=float, required=True, help="target mean DN (MH01 median frame mean)")
     p.add_argument("--gain-max", type=float, default=16.0)
     p.add_argument("--gain-sat", type=float, default=240.0, help="C2s/C4s: p99 of unclipped pixels may be raised to at most this DN")
+    p.add_argument("--clahe-clip", type=float, default=3.0, help="C5: CLAHE clip limit")
     p.add_argument("--workers", type=int, default=8); p.add_argument("--force", action="store_true")
     # accepted for interface compatibility with lowlight_sequence.py; unused (no randomness here)
     p.add_argument("--level", type=int, default=0); p.add_argument("--seed", type=int, default=0)
@@ -108,7 +120,7 @@ def main():
         res = list(ex.map(correct_pair, jobs, chunksize=32))
     shutil.copy2(a.yaml, os.path.join(a.dst, "config.yaml"))
     g = np.array([r[0] for r in res])
-    man = dict(source=os.path.abspath(a.src), arm=a.arm, m_ref=a.m_ref, gain_max=a.gain_max, frames=len(jobs),
+    man = dict(source=os.path.abspath(a.src), arm=a.arm, m_ref=a.m_ref, clahe_clip=a.clahe_clip if a.arm == "C5" else None, gain_max=a.gain_max, frames=len(jobs),
                gain_median=float(np.median(g)), gain_p90=float(np.percentile(g, 90)),
                frac_gained=float((g > 1.01).mean()),
                nlm_h_median=float(np.median([r[1] for r in res])) if a.arm.startswith("C4") else None)

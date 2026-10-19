@@ -1,0 +1,29 @@
+{
+ "night raw th2": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 496.5,
+  "temp_inl": 464.5,
+  "stereo_ratio": 0.41375,
+  "temp_ratio": 0.38708333333333333,
+  "temp_inl_p10": 311.8
+ },
+ "night raw th1": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 491.5,
+  "temp_inl": 459.5,
+  "stereo_ratio": 0.4095833333333333,
+  "temp_ratio": 0.3829166666666667,
+  "temp_inl_p10": 306.0
+ },
+ "day raw th2": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 556.0,
+  "temp_inl": 620.0,
+  "stereo_ratio": 0.4633333333333334,
+  "temp_ratio": 0.5166666666666666,
+  "temp_inl_p10": 384.2
+ }
+}

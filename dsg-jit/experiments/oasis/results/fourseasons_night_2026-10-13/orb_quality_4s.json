@@ -1,0 +1,56 @@
+{
+ "day raw th20": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 550.5,
+  "temp_inl": 593.0,
+  "stereo_ratio": 0.46453120597351366,
+  "temp_ratio": 0.49416666666666664,
+  "temp_inl_p10": 396.9
+ },
+ "night raw th20": {
+  "frames": 150,
+  "n_kp": 1020.5,
+  "stereo_ok": 390.5,
+  "temp_inl": 390.0,
+  "stereo_ratio": 0.43664556962025314,
+  "temp_ratio": 0.424552495697074,
+  "temp_inl_p10": 182.4
+ },
+ "night raw th5": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 494.0,
+  "temp_inl": 455.5,
+  "stereo_ratio": 0.425,
+  "temp_ratio": 0.39125,
+  "temp_inl_p10": 296.8
+ },
+ "night gain th20": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 509.5,
+  "temp_inl": 474.0,
+  "stereo_ratio": 0.4245833333333333,
+  "temp_ratio": 0.395,
+  "temp_inl_p10": 312.9
+ },
+ "night gain th5": {
+  "frames": 150,
+  "n_kp": 1200.0,
+  "stereo_ok": 507.0,
+  "temp_inl": 467.5,
+  "stereo_ratio": 0.4225,
+  "temp_ratio": 0.38958333333333334,
+  "temp_inl_p10": 322.8
+ },
+ "night clahe th20": {
+  "frames": 150,
+  "n_kp": 1195.0,
+  "stereo_ok": 493.5,
+  "temp_inl": 481.0,
+  "stereo_ratio": 0.4428231441861818,
+  "temp_ratio": 0.41583333333333333,
+  "temp_inl_p10": 310.9
+ }
+}
