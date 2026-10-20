@@ -1,0 +1,22 @@
+room  cond  n  good  ATE med mm (good)       maps badimu med   vs cal
+tv1   cal  10 10/10               10.9        [1]          1
+tv1   nos  10  0/10                nan     [3, 4]          1   Fisher p=0.000 composite p=0.0001
+tv1   raw  10  0/10                nan     [3, 4]          1   Fisher p=0.000 composite p=0.0001
+tv2   cal  10 10/10               15.1        [1]          1
+tv2   nos  10  0/10                nan [-1, 1, 2]          1   Fisher p=0.000 composite p=0.0001
+tv2   raw  10  0/10                nan     [1, 2]          0   Fisher p=0.000 composite p=0.0001
+tv3   cal  10 10/10               13.0        [1]          1
+tv3   nos  10  0/10                nan [-1, 1, 2, 3]          1   Fisher p=0.000 composite p=0.0001
+tv3   raw  10  0/10                nan  [1, 2, 3]          1   Fisher p=0.000 composite p=0.0001
+tv4   cal  10 10/10               29.0        [1]          0
+tv4   nos  10  0/10                nan     [2, 3]          0   Fisher p=0.000 composite p=0.0001
+tv4   raw  10  0/10                nan     [2, 3]          0   Fisher p=0.000 composite p=0.0001
+tv5   cal  10 10/10               11.4        [1]          0
+tv5   nos  10  0/10                nan     [3, 4]          1   Fisher p=0.000 composite p=0.0001
+tv5   raw  10  0/10                nan     [3, 4]          1   Fisher p=0.000 composite p=0.0001
+tv6   cal  10 10/10                9.3        [1]          0
+tv6   nos  10  0/10                nan     [1, 2]          0   Fisher p=0.000 composite p=0.0001
+tv6   raw  10  0/10                nan [-1, 1, 2]          0   Fisher p=0.000 composite p=0.0001
+ALL   cal   60 good 60/60  median ATE (good) 12.1 mm
+ALL   nos   60 good 0/60  median ATE (good) nan mm
+ALL   raw   60 good 0/60  median ATE (good) nan mm

@@ -231,6 +231,15 @@ Each card gives the physical model, the magnitudes and where they come from, the
   - **Time offset and IMU scale factor hurt at realistic tiers on the faster MH03.** On MH03, 5 ms adds about 5 mm and a 0.5% scale error adds about 11 mm. On MH01 the same tiers are not significant. The sign of the offset matters: at 30 ms, an IMU running early is worse than one running late (median 78 vs 47 mm on MH01, 93 vs 65 mm on MH03).
   - **Camera–IMU extrinsics and IMU misalignment are tolerated at realistic tiers** and only hurt once mishandled (≥ 0.5–0.8°) or at stress level. Translation is the most benign.
   - Apart from rst tier 3, every run stayed valid with no mid-run gaps: these errors make the estimate worse without breaking tracking, so a tracking-health monitor alone will not detect them.
+- **Real (uninjected) IMU miscalibration, TUM-VI** (`tumvi_imu_variants.py`, `tumvi_to_euroc.py`; 2026-10-19). The TUM-VI exports ship IMU data corrected with the published calibration (x_cal = M x_raw − b; Schubert et al. 2018 eqs. 1–2), so the uncorrected data are recovered exactly. Rooms 1–6 × 3 conditions × 10 seeds, fisheye rectified to pinhole (the OASIS fork segfaults on KannalaBrandt8):
+
+| IMU data | Good runs (1 map, ≥ 90% tracked, ATE < 10 m) | Median ATE (good) |
+|---|---|---|
+| Calibrated, as shipped | 60/60 | 12.1 mm (9.3–29.0 by room) |
+| Scale + misalignment uncorrected (M⁻¹x) | 0/60 | – |
+| Fully raw, incl. turn-on bias (M⁻¹(x + b)) | 0/60 | – |
+
+  Every room separately: Fisher p < 0.001, composite p = 0.0001. Failed runs split into 2–4 maps or, in one map, scale-diverge to 40–565 m ATE. Scale/misalignment alone is sufficient (largest term: gyro y scale 1.094). **Real consumer-IMU miscalibration is catastrophic, not silent**; the silent regime of the EuRoC sweep covers only small errors. Results: `results/tumvi_imu_2026-10-19/`.
 - **Implication for correction (Q7).** Re-estimation should target, in order: stereo extrinsic rotation (especially the yaw and pitch components), camera–IMU time offset, and IMU scale factors. Camera–IMU rotation, translation and misalignment are second priority. Caveats: the ATE here is over the full trajectory, the MH01 toff tier-3 runs start 25 s late so they cover less of the flight, and the isf/imis tiers remain provisional.
 
 ### 4.5 Sensor noise (stochastic). Status: LOW PRIORITY
