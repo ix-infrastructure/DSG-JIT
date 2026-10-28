@@ -15,6 +15,9 @@ Two kinds of error:
   * SENSOR errors -- the YAML is right, the IMU data violates it:
       toff camera-IMU time offset     (IMU timestamps shifted by +/-dt)
       isf  IMU scale-factor error     (each gyro and accel axis scaled by 1 +/- s)
+      isfs isf with sourced, separate gyro / accel tiers (gyro 1/3/9 %, accel
+           1/3/4 %: ADIS16448 1 % residual spec, BMI160 / MPU-6000 sensitivity
+           tolerances, TUM-VI's uncorrected 9.4 % gyro-y scale)
       imis IMU axis misalignment      (small skew: off-diagonal terms of size m rad)
 
 Each seed draws ONE error direction (axis / sign pattern) that is reused at
@@ -37,6 +40,7 @@ TIERS = {
     "rst":  ("deg", [0.2, 1.0, 2.5]),
     "isf":  ("pct", [0.5, 1.0, 2.0]),
     "imis": ("deg", [0.05, 0.5, 2.0]),
+    "isfs": ("pct", [(1.0, 1.0), (3.0, 3.0), (9.0, 4.0)]),   # (gyro, accel); last, so earlier arm ids are unchanged
 }
 PROVISIONAL = {"isf", "imis"}
 ARM_ID = {k: i for i, k in enumerate(TIERS)}
@@ -89,7 +93,8 @@ def main():
 
     unit_name, mags = TIERS[a.arm]
     mag = mags[a.level - 1]
-    rng = np.random.default_rng([a.seed, ARM_ID[a.arm]])      # direction depends on seed only, not level
+    # direction depends on seed only, not level; isfs reuses isf's signs so the two sweeps pair on direction
+    rng = np.random.default_rng([a.seed, ARM_ID["isf" if a.arm == "isfs" else a.arm]])
     cfg = open(a.yaml).read()
     imu = np.loadtxt(os.path.join(sm, "imu0", "data.csv"), delimiter=",", comments="#", dtype=np.float64)
     ts = np.loadtxt(os.path.join(sm, "imu0", "data.csv"), delimiter=",", comments="#", usecols=0, dtype=np.int64)
@@ -108,6 +113,9 @@ def main():
         ts = ts + sign * int(round(mag * 1e6)); detail["sign"] = sign
     elif a.arm == "isf":
         s = rng.choice([-1.0, 1.0], size=6) * mag / 100.0
+        imu[:, 1:7] *= 1.0 + s; detail["scale_errors"] = s.tolist()
+    elif a.arm == "isfs":
+        s = rng.choice([-1.0, 1.0], size=6) * np.repeat(mag, 3) / 100.0
         imu[:, 1:7] *= 1.0 + s; detail["scale_errors"] = s.tolist()
     elif a.arm == "imis":
         m = np.radians(mag)

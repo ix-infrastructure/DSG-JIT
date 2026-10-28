@@ -1,0 +1,32 @@
+{
+ "source": "/data/tkocher/datasets/4seasons/old_town_1_day",
+ "night_reference": "/data/tkocher/datasets/4seasons/old_town_4_night",
+ "model": "clip(round(k(x-b)+sigma n))",
+ "k": 0.1418015915924461,
+ "b": 18.58815762687218,
+ "sigma": 0.23327988745492068,
+ "seed": 0,
+ "frames": 28999,
+ "stats_day": {
+  "mean": 62.12757771875,
+  "median": 45.0,
+  "p95": 218.0,
+  "frac_lt10": 0.05295451041666667,
+  "levels_p1_p99": 250
+ },
+ "stats_real_night": {
+  "mean": 7.37761821875,
+  "median": 4.0,
+  "p95": 20.0,
+  "frac_lt10": 0.8265336145833333,
+  "levels_p1_p99": 81
+ },
+ "stats_synthetic": {
+  "mean": 6.339338010416666,
+  "median": 4.0,
+  "p95": 28.0,
+  "frac_lt10": 0.8070305729166667,
+  "levels_p1_p99": 35
+ },
+ "quantile_fit_rms_dn": 5.236078517573013
+}

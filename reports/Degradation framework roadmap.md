@@ -6,8 +6,8 @@ Drafted 2026-10-19. Companion to `Degradation correction framework.md` (design a
 
 | Degradation | Real evidence | Verdict | Correction |
 |---|---|---|---|
-| Calibration / timing (stereo rotation, time offset, IMU scale) | 380-run EuRoC sweep: hurts at realistic tiers, silently (tracking stays valid) | **Main target** | Post-SLAM batch re-estimation in DSG-JIT + residual monitor |
-| Uniform darkness (4Seasons night) | Night 12/30 good vs day 10/10; saturation-safe gain → 20/30, failures 260 → 46 (p = 0.0003) | **Viable, partly solved** | Gated gain (works); quantization loss remains (27 m vs 7 m day) |
+| Calibration / timing (stereo rotation, time offset, IMU scale) | 380-run EuRoC sweep: hurts at realistic tiers, silently (tracking stays valid); sourced IMU-scale tiers ×2–27 ATE, still silent (0.3); real TUM-VI IMU miscalibration breaks tracking, 0/60 vs 60/60 (0.2) | **Main target** | Post-SLAM batch re-estimation in DSG-JIT + residual monitor |
+| Uniform darkness (4Seasons night) | Night 12/30 good vs day 10/10; saturation-safe gain → 20/30, failures 260 → 46 (p = 0.0003); new route 0/15 → 15/15 (0.6); fails at one spot on `old_town_3` | **Viable, partly solved** | Gated gain (works); remaining loss (27 m vs 7 m day) is not quantization alone (0.5) |
 | Patchy darkness (EuRoC MH04/05) | Gain cuts dark-window drift 17–20% | Solved by the same gain | Same module |
 | Image denoising, motion blur, flicker, FPN, IMU white noise | No measurable SLAM cost at realistic levels | Dropped (report as negatives) | None |
 | Trajectory-level Gaussian noise | errchar/errnorm: correlated multi-timescale drift with jumps; AR(1) fails in 40/40 | Not a valid model | None |
@@ -23,7 +23,22 @@ Drafted 2026-10-19. Companion to `Degradation correction framework.md` (design a
 | 0.5 | Rebuild synthetic darkening (scale + black clip + 8-bit quantization, measured σ), calibrate to 4Seasons night statistics | Script + 30 runs | Synthetic night reproduces real failure rate (~60%) |
 | 0.6 | Second 4Seasons night recording (different route) for gain generalization | ~15 GB, 60 runs | Gain effect holds on a held-out sequence |
 
-**Gate:** 0.2 decides whether IMU-scale recovery is worth building (if raw TUM-VI is barely worse, drop isf from Phase 1).
+**Gate:** 0.2 decides whether IMU-scale recovery is worth building (if raw TUM-VI is barely worse, drop isf from Phase 1). **Passed:** raw TUM-VI breaks tracking (0/60 vs 60/60), so IMU scale stays in Phase 1.
+
+### Phase 0 outcome (closed 2026-10-28; data in `dsg-jit/experiments/oasis/results/phase0_closeout_2026-10-21/`, `tumvi_imu_2026-10-19/`)
+
+| # | Result |
+|---|---|
+| 0.1 | Committed |
+| 0.2 | Calibrated 60/60 good (12.1 mm); scale/misalignment uncorrected 0/60; fully raw 0/60 |
+| 0.3 | Sourced tiers 1/3/9% gyro: MH01 ×1.0/×2.1/×8.8, MH03 ×1.8/×4.0/×27 ATE; 60/60 runs still valid, i.e. silent |
+| 0.4 | "Bad imu" resets = ORB-SLAM3's "not enough motion" check on rebuilt maps (`LocalMapping.cc:138`), not an IMU fault. Visual-only: C0 0/10, gain 5/10 good (p = 0.03); 12/20 visual-only runs crashed |
+| 0.5 | Synthetic night (black floor + scale + quantization, quantile-calibrated) **does not** reproduce the real night: C0 0/15 (real 12/30), gain 15/15 at 7.4 m (real 20/30 at 27 m). Motion-blur variant (21 ms exposure) running as 0.5b |
+| 0.6 | `maximilianeum_2` night (new route): C0 0/15 → gain 15/15 (p = 1e-8). `old_town_3` night: C0 2/15, gain 0/15 (one deterministic break at frame ≈ 9,300); diagnosis running |
+
+**Consequences for later phases.**
+- Phase 1/2: IMU-scale errors can be silent (EuRoC) or catastrophic (TUM-VI) at the same magnitude, so the monitor must not rely on tracking health, and the estimator must handle large errors (≥ 9%) as well as small ones.
+- Phase 3: gain is confirmed on a held-out route. The synthetic model is not yet good enough to search for corrections beyond gain; fix it first (0.5b) or work on real night data only.
 
 ## Phase 1: Calibration re-estimation in DSG-JIT (core contribution, ≈ 4–6 weeks)
 

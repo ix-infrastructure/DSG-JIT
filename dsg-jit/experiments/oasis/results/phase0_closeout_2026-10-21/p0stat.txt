@@ -1,0 +1,28 @@
+0.4 visual-only stereo, real night, no correction
+    good 0/10  crashed 8  maps>1 2  fails/run 92  cov median 0.000
+0.4 visual-only stereo, real night, gain C2s
+    good 5/10  crashed 5  ATE(good) median 131.1 m [126.4-135.2]  maps>1 0  fails/run 0  cov median 0.500
+    vs s4V_L0_clean_*: 5/10 vs 0/10, Fisher p = 0.033
+real night stereo-inertial, no correction (n=30, earlier)
+    good 12/30  crashed 1  ATE(good) median 43.2 m [24.8-83.9]  maps>1 17  fails/run 377  cov median 0.627
+real night stereo-inertial, gain C2s (n=30, earlier)
+    good 20/30  crashed 2  ATE(good) median 26.7 m [14.7-746.6]  maps>1 6  fails/run 94  cov median 0.996
+    vs s4N_L0_clean_*: 20/30 vs 12/30, Fisher p = 0.069
+real day stereo-inertial (earlier)
+    good 10/10  crashed 0  ATE(good) median 7.0 m [6.3-9.3]  maps>1 0  fails/run 0  cov median 0.993
+0.5 synthetic night, no correction
+    good 0/15  crashed 2  maps>1 13  fails/run 436  cov median 0.959
+    vs s4N_L0_clean_*: 0/15 vs 12/30, Fisher p = 0.0038
+0.5 synthetic night, gain C2s
+    good 15/15  crashed 0  ATE(good) median 7.4 m [5.7-9.1]  maps>1 0  fails/run 0  cov median 0.993
+    vs s4N_L0_C2s_*: 15/15 vs 20/30, Fisher p = 0.019
+0.6 maximilianeum_2 night, no correction
+    good 0/15  crashed 0  maps>1 15  fails/run 729  cov median 0.426
+0.6 maximilianeum_2 night, gain C2s
+    good 15/15  crashed 0  maps>1 0  fails/run 0  cov median 0.992
+    vs s4m2N_L0_clean_*: 15/15 vs 0/15, Fisher p = 1.3e-08
+0.6 old_town_3 night, no correction
+    good 2/15  crashed 1  maps>1 12  fails/run 313  cov median 0.558
+0.6 old_town_3 night, gain C2s
+    good 0/15  crashed 0  maps>1 15  fails/run 201  cov median 0.598
+    vs s4o3N_L0_clean_*: 0/15 vs 2/15, Fisher p = 0.48

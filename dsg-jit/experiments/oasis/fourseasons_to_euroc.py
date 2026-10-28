@@ -82,15 +82,17 @@ def main():
     rate = 1e9 / np.median(np.diff(ts))
 
     # GT: result.txt is T_w_cam0 (raw cam0). IMU origin in cam0 = t of T_cam_imu.
+    # Test-split recordings ship no reference poses: then no GT is written.
     fr = np.array([int(l.split()[0]) for l in open(os.path.join(a.src, "times.txt"))])
-    gt = np.loadtxt(os.path.join(a.src, "result.txt"))
-    gts = fr[np.searchsorted(fr, np.round(gt[:, 0] * 1e9).astype(np.int64) - 1_000_000)]   # snap to frame ns
-    os.makedirs(os.path.join(m, "state_groundtruth_estimate0"), exist_ok=True)
-    with open(os.path.join(m, "state_groundtruth_estimate0", "data.csv"), "w") as f:
-        f.write("#timestamp, p_RS_R_x [m], p_RS_R_y [m], p_RS_R_z [m], q_RS_w [], q_RS_x [], q_RS_y [], q_RS_z []\n")
-        for t, r in zip(gts, gt):
-            R = quat_to_R(*r[4:8]); p = r[1:4] + R @ T_c0_i[:3, 3]
-            f.write(f"{t},{p[0]:.6f},{p[1]:.6f},{p[2]:.6f},{r[7]:.9f},{r[4]:.9f},{r[5]:.9f},{r[6]:.9f}\n")
+    gt = np.loadtxt(os.path.join(a.src, "result.txt")) if os.path.exists(os.path.join(a.src, "result.txt")) else np.zeros((0, 8))
+    if len(gt):
+        gts = fr[np.searchsorted(fr, np.round(gt[:, 0] * 1e9).astype(np.int64) - 1_000_000)]   # snap to frame ns
+        os.makedirs(os.path.join(m, "state_groundtruth_estimate0"), exist_ok=True)
+        with open(os.path.join(m, "state_groundtruth_estimate0", "data.csv"), "w") as f:
+            f.write("#timestamp, p_RS_R_x [m], p_RS_R_y [m], p_RS_R_z [m], q_RS_w [], q_RS_x [], q_RS_y [], q_RS_z []\n")
+            for t, r in zip(gts, gt):
+                R = quat_to_R(*r[4:8]); p = r[1:4] + R @ T_c0_i[:3, 3]
+                f.write(f"{t},{p[0]:.6f},{p[1]:.6f},{p[2]:.6f},{r[7]:.9f},{r[4]:.9f},{r[5]:.9f},{r[6]:.9f}\n")
     open(os.path.join(a.dst, "stamps.txt"), "w").write("\n".join(str(t) for t in fr) + "\n")
 
     cfg = open(a.base_yaml).read()

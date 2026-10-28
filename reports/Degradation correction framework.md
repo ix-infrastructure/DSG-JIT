@@ -130,9 +130,24 @@ Each card gives the physical model, the magnitudes and where they come from, the
 - **Correction (pre).**
   - Stereo-shared, saturation-safe gain: g = min(m_ref/m, 240/p99 of not-yet-clipped pixels), capped at 16.
   - A mean-based gain clips the lit regions, which are the only regions carrying features.
-- **Open.**
-  - Does denoising pay in *uniformly* very dark real scenes (L6)? EuRoC never reaches L6, and ETH3D `*_dark` is unusable (§6).
-  - Candidate: 4Seasons night sequences. Their sensor type (global shutter? IMU?) is unverified.
+- **Uniformly dark real data (4Seasons night, Q4).** Dark but nearly noise-free, so there is nothing for a denoiser to do; the saturation-safe gain is the only arm that helps (Q4).
+- **Gain on other night recordings** (Phase 0.6, 2026-10-21, `results/phase0_closeout_2026-10-21/`). The only other 4Seasons nights are test-split recordings without reference poses, so "good" = 1 map and ≥ 90% coverage, no ATE; 15 seeds per arm:
+
+| Night recording | No correction | Saturation-safe gain | Fisher p |
+|---|---|---|---|
+| `maximilianeum_2_test` (different route) | 0/15 (2–4 maps, 43% coverage, 729 failures/run) | **15/15** (99% coverage, 0 failures) | 1e-8 |
+| `old_town_3_test` (same route, 14 min earlier) | 2/15 | 0/15 | 0.48 |
+
+  On the new route the gain effect generalises completely. On `old_town_3` every gain run tracks almost the whole sequence but breaks once, at the same place (frame ≈ 9,300): the darkest stretch of the drive (mean 4 DN) followed by a stop under a streetlight. The map rebuilt during the stop never merges with the first one, and the larger map holds 59.8% of the frames in every seed. Two uncorrected runs passed that point in one map.
+- **Synthetic night calibrated to the real one** (Phase 0.5, `synth_night.py`). Day frames of the same route darkened as y = clip(round(k(x − b) + σn)), k = 0.142 and b = 18.6 DN fitted by matching pooled intensity quantiles to the night, σ = 0.23 DN measured. Pixel statistics match (mean 6.3 vs 7.4 DN, median 4 vs 4, 81% vs 83% below 10 DN); streetlight hot-spots are missing (p95 28 vs 20, 35 vs 81 grey levels in use). 15 seeds per arm:
+
+| | Real night | Synthetic night |
+|---|---|---|
+| No correction, good runs | 12/30 | **0/15** (13 split into 2 maps, 2 crashed; p = 0.004) |
+| Gain, good runs | 20/30, median ATE 26.7 m | **15/15, median 7.4 m** (p = 0.02); real day is 7.0 m |
+
+  **The target was missed in both directions:** without correction the synthetic night is harsher than the real one (no lit patches to track on), and gain undoes it completely, while on the real night gain leaves ATE at 4× the day level. Black floor plus quantization is therefore not the whole night loss. The night exposure is 21 ms against 0.12 ms by day, so motion blur is the leading candidate for the part gain cannot undo; an exposure-matched blur variant is being run (0.5b).
+- **Open.** What, besides blur, separates the real night from the synthetic one (hot-spots, flare)? Why does gain fail at one place on `old_town_3`?
 
 ### 4.2 Exposure flicker / left–right photometric mismatch. Status: SMALL in EuRoC; fold into 4.1
 
@@ -205,9 +220,10 @@ Each card gives the physical model, the magnitudes and where they come from, the
 | tbc (cm) | 1 | 3 | 6 |
 | rst (°) | 0.2 | 1.0 | 2.5 |
 | isf (%) | 0.5 | 1 | 2 |
+| isfs (%, gyro / accel) | 1 / 1 | 3 / 3 | 9 / 4 |
 | imis (°) | 0.05 | 0.5 | 2.0 |
 
-  The isf and imis tiers are **provisional**: the survey gives no scale-factor tiers, and its datasheet figures are unverified.
+  The original isf tiers were provisional and too mild at the top. **isfs replaces them with sourced tiers**: ADIS16448 1% residual scale spec, BMI160/MPU-6000 sensitivity tolerances, and TUM-VI's uncorrected 9.4% gyro-y scale. The imis tiers held up against the same sources (ADIS16448: 0.05° gyro axis-to-axis). isfs reuses isf's per-axis signs per seed, so its 1%/1% tier is the identical perturbation to isf tier 2.
 - **Why it matters.**
   - ORB-SLAM3 estimates none of these online.
   - The survey flags time offset as the parameter that hurts.
@@ -231,6 +247,16 @@ Each card gives the physical model, the magnitudes and where they come from, the
   - **Time offset and IMU scale factor hurt at realistic tiers on the faster MH03.** On MH03, 5 ms adds about 5 mm and a 0.5% scale error adds about 11 mm. On MH01 the same tiers are not significant. The sign of the offset matters: at 30 ms, an IMU running early is worse than one running late (median 78 vs 47 mm on MH01, 93 vs 65 mm on MH03).
   - **Camera–IMU extrinsics and IMU misalignment are tolerated at realistic tiers** and only hurt once mishandled (≥ 0.5–0.8°) or at stress level. Translation is the most benign.
   - Apart from rst tier 3, every run stayed valid with no mid-run gaps: these errors make the estimate worse without breaking tracking, so a tracking-health monitor alone will not detect them.
+- **Sourced IMU-scale tiers** (Phase 0.3, 60 runs, 2026-10-21, `results/phase0_closeout_2026-10-21/`):
+
+| isfs (gyro / accel) | MH01 median ATE | MH03 median ATE | Good runs |
+|---|---|---|---|
+| clean | 37.8 mm | 27.6 mm | – |
+| 1% / 1% | 39.3 mm (×1.0, p = 0.43) | 49.7 mm (×1.8\*) | 20/20 |
+| 3% / 3% | 79.5 mm (×2.1\*) | 111 mm (×4.0\*) | 20/20 |
+| 9% / 4% | 332 mm (×8.8\*) | 739 mm (×27\*, up to 2.3 m) | 20/20 |
+
+  (\* Mann–Whitney vs clean, p = 0.0002.) **Every run stays in one map with full coverage, even at 9% gyro scale.** The repeat of the identical 1% perturbation (isf tier 2: 44.9 mm, isfs tier 1: 39.3 mm on MH01) differs only by ORB-SLAM3's run-to-run noise (~5 mm).
 - **Real (uninjected) IMU miscalibration, TUM-VI** (`tumvi_imu_variants.py`, `tumvi_to_euroc.py`; 2026-10-19). The TUM-VI exports ship IMU data corrected with the published calibration (x_cal = M x_raw − b; Schubert et al. 2018 eqs. 1–2), so the uncorrected data are recovered exactly. Rooms 1–6 × 3 conditions × 10 seeds, fisheye rectified to pinhole (the OASIS fork segfaults on KannalaBrandt8):
 
 | IMU data | Good runs (1 map, ≥ 90% tracked, ATE < 10 m) | Median ATE (good) |
@@ -239,8 +265,8 @@ Each card gives the physical model, the magnitudes and where they come from, the
 | Scale + misalignment uncorrected (M⁻¹x) | 0/60 | – |
 | Fully raw, incl. turn-on bias (M⁻¹(x + b)) | 0/60 | – |
 
-  Every room separately: Fisher p < 0.001, composite p = 0.0001. Failed runs split into 2–4 maps or, in one map, scale-diverge to 40–565 m ATE. Scale/misalignment alone is sufficient (largest term: gyro y scale 1.094). **Real consumer-IMU miscalibration is catastrophic, not silent**; the silent regime of the EuRoC sweep covers only small errors. Results: `results/tumvi_imu_2026-10-19/`.
-- **Implication for correction (Q7).** Re-estimation should target, in order: stereo extrinsic rotation (especially the yaw and pitch components), camera–IMU time offset, and IMU scale factors. Camera–IMU rotation, translation and misalignment are second priority. Caveats: the ATE here is over the full trajectory, the MH01 toff tier-3 runs start 25 s late so they cover less of the flight, and the isf/imis tiers remain provisional.
+  Every room separately: Fisher p < 0.001, composite p = 0.0001. Failed runs split into 2–4 maps or, in one map, scale-diverge to 40–565 m ATE. Scale/misalignment alone is sufficient (largest term: gyro y scale 1.094). **Real consumer-IMU miscalibration is catastrophic here, not silent.** The same magnitude injected into EuRoC (isfs tier 3) stays silent, so whether a large IMU error breaks tracking or only inflates ATE depends on the platform and motion (TUM-VI handheld in small rooms vs EuRoC MAV), not just on the error size; a tracking-health monitor cannot be relied on in either case. Results: `results/tumvi_imu_2026-10-19/`.
+- **Implication for correction (Q7).** Re-estimation should target, in order: stereo extrinsic rotation (especially the yaw and pitch components), camera–IMU time offset, and IMU scale factors. Camera–IMU rotation, translation and misalignment are second priority. Caveats: the ATE here is over the full trajectory, and the MH01 toff tier-3 runs start 25 s late so they cover less of the flight.
 
 ### 4.5 Sensor noise (stochastic). Status: LOW PRIORITY
 
@@ -281,8 +307,8 @@ Each card gives the physical model, the magnitudes and where they come from, the
 | Q4 | Is there real *uniformly very dark* data with ground truth? | **Answered: yes, 4Seasons `old_town_4_train` night** (ETH3D `*_dark` is unusable: mean 0.4 DN, effectively black). Median frame mean 6.5 DN, exposure fixed at 21 ms all sequence long. The frames are **dark but nearly noise-free** (σ ≈ 0.2 DN; 65–80% of neighbouring pixels identical), so the loss is quantization and black clipping, not noise. Same route, same pipeline: **day 10/10 valid, median ATE 7.0 m, 0 tracking failures; night C0 12/30 valid, median ATE 43 m among valid runs, median 260 tracking failures**. **Night correction arms** ("good" = 1 map, ≥ 90% coverage, ATE < 1 km):
   - **C2s, saturation-safe gain** (median gain 4.9, 30 runs): 20/30 good, median ATE 27 m, median 46 tracking failures. **Significantly better than C0** at n = 30: composite p = 0.004, failures p = 0.0003, ATE among good runs p = 0.013; valid rate alone p = 0.07. One "good" C2s run has ATE 747 m (single map that diverged); counting it as failed leaves 19/30.
   - **C5, CLAHE** (10 runs): 2/10 good. No help.
-  - **C1, lowered FAST threshold** (10 runs): 0/10 good, significantly worse (Fisher p = 0.02). The quantization-contour explanation was **rejected** by `orb_quality.py`: low-threshold corners match across stereo and time about as well as gain-corrected ones. C1 and C5 runs instead show 1–2 "bad imu" map resets each (C0 0–1, C2s 0); cause open.
+  - **C1, lowered FAST threshold** (10 runs): 0/10 good, significantly worse (Fisher p = 0.02). The quantization-contour explanation was **rejected** by `orb_quality.py`: low-threshold corners match across stereo and time about as well as gain-corrected ones. C1 and C5 runs instead show 1–2 "bad imu" map resets each (C0 0.5, C2s 0.1 per run). **Cause found (Phase 0.4): not an IMU fault.** `LocalMapping.cc:138` resets a map with `mbBadImu` when, after IMU initialisation and before inertial BA2, a new map has moved < 2 cm over its last two keyframes within its first 10 s, i.e. a map rebuilt while the car is barely moving. Every reset is preceded by that check's "Not enough motion" message, and those messages track how often maps are rebuilt (per run: C0 17, C1 9, C5 11, C2s 0.7). Visual-only stereo on the same night input (no IMU at all): C0 0/10 good, C2s 5/10 good (p = 0.03), so the loss is visual and gain is the arm that fixes it; but the fork's visual-only path crashed (NaN in `SO3::exp`) in 12/20 runs, and its drift without the IMU is ~130 m vs 27 m with it.
   - The day level (7 m) is not reached by any arm. Results: `results/fourseasons_night_2026-10-13/` |
-| Q5 | Which calibration and timing errors hurt ORB-SLAM3 at realistic tiers? | **Answered:** stereo rotation (0.2° already +60 mm), time offset (5 ms, +5 mm on MH03) and IMU scale (0.5%, +11 mm on MH03) hurt at realistic tiers. Camera–IMU rotation and translation and IMU misalignment only hurt once mishandled. Tracking stays valid, so the damage is silent (4.4) |
+| Q5 | Which calibration and timing errors hurt ORB-SLAM3 at realistic tiers? | **Answered:** stereo rotation (0.2° already +60 mm), time offset (5 ms, +5 mm on MH03) and IMU scale (0.5%, +11 mm on MH03; sourced 3% tier ×2–4, 9% tier ×9–27) hurt at realistic tiers. Camera–IMU rotation and translation and IMU misalignment only hurt once mishandled. Tracking stays valid, so the damage is silent (4.4) |
 | Q6 | How much real motion blur is in EuRoC, and does it hurt? | **Answered:** common only in V1_03/V2_03 (13% of frames above 500 px/s), costing ≤ 16% of corners and **no measurable drift per metre** (V1_03 2.1% blurred vs 2.3% sharp; V2_03 3.7% vs 3.3%, p = 0.49). Severe only when dark (MH05), so it belongs with 4.1 |
 | Q7 | Can batch re-estimation recover the injected calibration errors without ground truth? | After Q5, only for the errors that matter |
