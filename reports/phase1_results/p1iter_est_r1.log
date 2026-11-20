@@ -1,0 +1,474 @@
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:24 xdMH01_L3_toff_s00: clean K 129 (24s)
+20:32:24 xdMH01_L3_isf_s00: clean K 126 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:26 xdMH01_L3_rbc_s00: clean K 125 (26s)
+20:32:26 xdMH01_L2_isf_s00: clean K 126 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:29 xdMH01_L3_tbc_s00: clean K 127 (29s)
+20:32:29 xdMH01_L2_rbc_s00: clean K 131 (29s)
+20:32:29 xdMH01_L2_isfs_s00: clean K 131 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:29 xdMH01_L2_toff_s00: clean K 122 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:30 xdMH01_L2_imis_s00: clean K 125 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:32 xdMH01_L3_isfs_s00: clean K 128 (32s)
+20:32:32 xdMH01_L2_tbc_s00: clean K 124 (33s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:36 xdMH01_L3_imis_s00: clean K 130 (36s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:48 xdMH03_L2_toff_s00: clean K 139 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:52 xdMH03_L2_rbc_s00: clean K 140 (25s)
+20:32:52 xdMH03_L3_rbc_s00: clean K 144 (25s)
+20:32:52 xdMH03_L3_toff_s00: clean K 143 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:57 xdMH03_L2_tbc_s00: clean K 141 (27s)
+20:32:57 xdMH03_L3_tbc_s00: clean K 139 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:32:59 xdMH03_L2_imis_s00: clean K 142 (25s)
+20:32:59 xdMH03_L2_isf_s00: clean K 141 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:00 xdMH03_L2_isfs_s00: clean K 141 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:02 xdMH03_L3_isfs_s00: clean K 141 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:04 xdMH03_L3_isf_s00: clean K 139 (34s)
+20:33:04 xdMH03_L3_imis_s00: clean K 140 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:17 xdMH01_L2_toff_s01: clean K 125 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:19 xdMH01_L3_toff_s01: clean K 132 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:20 xdMH01_L3_rbc_s01: clean K 132 (27s)
+20:33:21 xdMH01_L3_tbc_s01: clean K 123 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:21 xdMH01_L2_rbc_s01: clean K 127 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:23 xdMH01_L2_tbc_s01: clean K 124 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:29 xdMH01_L2_imis_s01: clean K 125 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:30 xdMH01_L3_isfs_s01: clean K 123 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:32 xdMH01_L2_isfs_s01: clean K 127 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:36 xdMH01_L3_isf_s01: clean K 123 (35s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:38 xdMH01_L3_imis_s01: clean K 126 (33s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:42 xdMH03_L2_toff_s01: clean K 136 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:43 xdMH01_L2_isf_s01: clean K 124 (43s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:45 xdMH03_L2_tbc_s01: clean K 137 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:48 xdMH03_L2_rbc_s01: clean K 136 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:49 xdMH03_L3_toff_s01: clean K 140 (29s)
+20:33:49 xdMH03_L3_rbc_s01: clean K 143 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:53 xdMH03_L2_isf_s01: clean K 142 (23s)
+20:33:54 xdMH03_L3_tbc_s01: clean K 142 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:56 xdMH03_L2_isfs_s01: clean K 138 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:33:58 xdMH03_L3_isf_s01: clean K 140 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:06 xdMH03_L2_imis_s01: clean K 140 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:07 xdMH01_L2_toff_s02: clean K 129 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:09 xdMH03_L3_imis_s01: clean K 136 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:10 xdMH01_L3_toff_s02: clean K 127 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:13 xdMH03_L3_isfs_s01: clean K 143 (37s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:15 xdMH01_L2_rbc_s02: clean K 127 (26s)
+20:34:15 xdMH01_L3_rbc_s02: clean K 125 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:16 xdMH01_L2_tbc_s02: clean K 124 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:18 xdMH01_L2_isf_s02: clean K 128 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:20 xdMH01_L3_tbc_s02: clean K 128 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:34 xdMH01_L3_isf_s02: clean K 124 (37s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:36 xdMH01_L2_isfs_s02: clean K 126 (37s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:36 xdMH03_L2_toff_s02: clean K 138 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:38 xdMH01_L2_imis_s02: clean K 125 (30s)
+20:34:38 xdMH01_L3_isfs_s02: clean K 131 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:40 xdMH03_L2_rbc_s02: clean K 140 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:43 xdMH03_L3_toff_s02: clean K 139 (28s)
+20:34:43 xdMH03_L3_tbc_s02: clean K 137 (23s)
+20:34:43 xdMH03_L3_rbc_s02: clean K 140 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:45 xdMH03_L2_isf_s02: clean K 138 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:34:48 xdMH03_L2_tbc_s02: clean K 137 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:01 xdMH01_L3_imis_s02: clean K 126 (51s)
+20:35:01 xdMH03_L3_isf_s02: clean K 143 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:04 xdMH03_L2_imis_s02: clean K 138 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:06 xdMH03_L3_isfs_s02: clean K 143 (29s)
+20:35:06 xdMH03_L3_imis_s02: clean K 139 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:08 xdMH01_L2_rbc_s03: clean K 124 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:09 xdMH01_L2_toff_s03: clean K 129 (28s)
+20:35:10 xdMH01_L3_toff_s03: clean K 128 (26s)
+20:35:10 xdMH01_L3_rbc_s03: clean K 128 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:11 xdMH03_L2_isfs_s02: clean K 143 (34s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:13 xdMH01_L2_tbc_s03: clean K 121 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:20 xdMH01_L3_tbc_s03: clean K 128 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:25 xdMH01_L3_isf_s03: clean K 122 (23s)
+20:35:25 xdMH01_L2_isf_s03: clean K 126 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:27 xdMH01_L2_isfs_s03: clean K 123 (22s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:33 xdMH01_L3_isfs_s03: clean K 127 (26s)
+20:35:33 xdMH01_L2_imis_s03: clean K 123 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:37 xdMH03_L3_rbc_s03: clean K 143 (25s)
+20:35:38 xdMH01_L3_imis_s03: clean K 127 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:40 xdMH03_L2_toff_s03: clean K 140 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:43 xdMH03_L2_rbc_s03: clean K 140 (32s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:45 xdMH03_L3_toff_s03: clean K 141 (34s)
+20:35:45 xdMH03_L3_tbc_s03: clean K 141 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:48 xdMH03_L2_tbc_s03: clean K 139 (34s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:50 xdMH03_L3_isf_s03: clean K 142 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:35:53 xdMH03_L2_isfs_s03: clean K 142 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:00 xdMH03_L2_isf_s03: clean K 137 (34s)
+20:36:01 xdMH03_L2_imis_s03: clean K 137 (26s)
+20:36:01 xdMH01_L2_toff_s04: clean K 127 (22s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:05 xdMH03_L3_imis_s03: clean K 136 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:08 xdMH01_L3_toff_s04: clean K 125 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:09 xdMH03_L3_isfs_s03: clean K 154 (35s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:15 xdMH01_L2_tbc_s04: clean K 125 (28s)
+20:36:15 xdMH01_L3_rbc_s04: clean K 124 (28s)
+20:36:15 xdMH01_L3_tbc_s04: clean K 126 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:17 xdMH01_L2_rbc_s04: clean K 126 (33s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:19 xdMH01_L3_isf_s04: clean K 126 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:22 xdMH01_L2_isf_s04: clean K 129 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:32 xdMH01_L2_isfs_s04: clean K 128 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:34 xdMH01_L2_imis_s04: clean K 126 (32s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:36 xdMH01_L3_isfs_s04: clean K 126 (34s)
+20:36:37 xdMH03_L2_toff_s04: clean K 142 (28s)
+20:36:37 xdMH03_L3_toff_s04: clean K 141 (27s)
+20:36:37 xdMH01_L3_imis_s04: clean K 126 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:40 xdMH03_L2_rbc_s04: clean K 141 (24s)
+20:36:40 xdMH03_L2_tbc_s04: clean K 141 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:45 xdMH03_L3_rbc_s04: clean K 140 (29s)
+20:36:46 xdMH03_L3_tbc_s04: clean K 142 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:49 xdMH03_L2_isf_s04: clean K 139 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:36:56 xdMH03_L3_isf_s04: clean K 140 (33s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:01 xdMH03_L2_isfs_s04: clean K 141 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:04 xdMH01_L2_rbc_s05: clean K 122 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:06 xdMH03_L3_isfs_s04: clean K 144 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:07 xdMH03_L2_imis_s04: clean K 142 (30s)
+20:37:08 xdMH01_L3_rbc_s05: clean K 127 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:10 xdMH01_L3_toff_s05: clean K 121 (32s)
+20:37:10 xdMH01_L2_toff_s05: clean K 127 (32s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:11 xdMH03_L3_imis_s04: clean K 135 (34s)
+20:37:12 xdMH01_L3_tbc_s05: clean K 123 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:15 xdMH01_L2_tbc_s05: clean K 120 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:22 xdMH01_L2_isf_s05: clean K 127 (32s)
+20:37:22 xdMH01_L3_isf_s05: clean K 126 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:28 xdMH01_L2_imis_s05: clean K 126 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:30 xdMH01_L3_isfs_s05: clean K 126 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:31 xdMH03_L2_toff_s05: clean K 147 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:35 xdMH03_L3_rbc_s05: clean K 140 (24s)
+20:37:35 xdMH01_L3_imis_s05: clean K 127 (28s)
+20:37:35 xdMH03_L3_toff_s05: clean K 140 (27s)
+20:37:36 xdMH03_L2_rbc_s05: clean K 142 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:39 xdMH03_L2_tbc_s05: clean K 141 (27s)
+20:37:39 xdMH03_L2_isf_s05: clean K 143 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:43 xdMH03_L3_tbc_s05: clean K 142 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:50 xdMH03_L3_isf_s05: clean K 142 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:56 xdMH03_L2_imis_s05: clean K 145 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:37:59 xdMH03_L3_imis_s05: clean K 137 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:02 xdMH03_L2_isfs_s05: clean K 141 (39s)
+20:38:02 xdMH01_L2_toff_s06: clean K 126 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:03 xdMH01_L3_rbc_s06: clean K 130 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:04 xdMH01_L3_tbc_s06: clean K 128 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:05 xdMH03_L3_isfs_s05: clean K 165 (36s)
+20:38:06 xdMH01_L3_toff_s06: clean K 124 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:06 xdMH01_L2_tbc_s06: clean K 128 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:08 xdMH01_L2_rbc_s06: clean K 125 (32s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:16 xdMH01_L3_isf_s06: clean K 129 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:19 xdMH01_L2_isf_s06: clean K 128 (35s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:22 xdMH01_L2_imis_s06: clean K 121 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:28 xdMH03_L3_toff_s06: clean K 137 (24s)
+20:38:28 xdMH01_L3_isfs_s06: clean K 135 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:31 xdMH03_L2_rbc_s06: clean K 135 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:33 xdMH03_L2_toff_s06: clean K 142 (29s)
+20:38:33 xdMH01_L3_imis_s06: clean K 123 (30s)
+20:38:33 xdMH03_L2_isf_s06: clean K 142 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:35 xdMH03_L3_tbc_s06: clean K 143 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:36 xdMH03_L3_rbc_s06: clean K 140 (29s)
+20:38:36 xdMH03_L2_tbc_s06: clean K 138 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:49 xdMH03_L2_isfs_s06: clean K 143 (29s)
+20:38:50 xdMH03_L3_isf_s06: clean K 146 (33s)
+20:38:50 xdMH03_L3_isfs_s06: clean K 144 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:52 xdMH03_L3_imis_s06: clean K 138 (23s)
+20:38:53 xdMH03_L2_imis_s06: clean K 143 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:57 xdMH01_L3_toff_s07: clean K 126 (23s)
+20:38:58 xdMH01_L2_toff_s07: clean K 124 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:38:59 xdMH01_L3_rbc_s07: clean K 123 (25s)
+20:38:59 xdMH01_L3_tbc_s07: clean K 125 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:02 xdMH01_L2_tbc_s07: clean K 128 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:03 xdMH01_L2_rbc_s07: clean K 122 (29s)
+20:39:03 xdMH01_L2_isf_s07: clean K 125 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:17 xdMH03_L2_toff_s07: clean K 142 (23s)
+20:39:17 xdMH01_L2_imis_s07: clean K 128 (26s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:19 xdMH01_L3_imis_s07: clean K 125 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:20 xdMH01_L3_isf_s07: clean K 124 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:22 xdMH01_L3_isfs_s07: clean K 128 (31s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:24 xdMH03_L2_tbc_s07: clean K 136 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:27 xdMH03_L2_rbc_s07: clean K 140 (29s)
+20:39:28 xdMH03_L2_isf_s07: clean K 138 (23s)
+20:39:28 xdMH03_L3_rbc_s07: clean K 142 (27s)
+20:39:28 xdMH03_L3_isf_s07: clean K 141 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:29 xdMH03_L3_toff_s07: clean K 151 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:32 xdMH03_L3_tbc_s07: clean K 138 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:44 xdMH03_L2_imis_s07: clean K 144 (25s)
+20:39:45 xdMH03_L3_imis_s07: clean K 139 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:46 xdMH03_L2_isfs_s07: clean K 139 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:47 xdMH01_L2_toff_s08: clean K 130 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:50 xdMH03_L3_isfs_s07: clean K 148 (32s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:52 xdMH01_L3_rbc_s08: clean K 124 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:54 xdMH01_L2_tbc_s08: clean K 125 (25s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:55 xdMH01_L3_toff_s08: clean K 141 (30s)
+20:39:56 xdMH01_L2_rbc_s08: clean K 124 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:39:59 xdMH01_L2_isf_s08: clean K 122 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:00 xdMH01_L3_isf_s08: clean K 124 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:04 xdMH01_L3_tbc_s08: clean K 124 (35s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:10 xdMH01_L2_imis_s08: clean K 125 (23s)
+20:40:11 xdMH01_L3_imis_s08: clean K 123 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:12 xdMH01_L2_isfs_s08: clean K 125 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:15 xdMH01_L3_isfs_s08: clean K 125 (29s)
+20:40:15 xdMH03_L2_toff_s08: clean K 140 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:18 xdMH03_L3_toff_s08: clean K 139 (25s)
+20:40:19 xdMH03_L2_rbc_s08: clean K 140 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:24 xdMH03_L3_tbc_s08: clean K 140 (24s)
+20:40:25 xdMH03_L2_isf_s08: clean K 137 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:25 xdMH03_L3_rbc_s08: clean K 140 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:29 xdMH03_L3_isf_s08: clean K 141 (24s)
+20:40:29 xdMH03_L2_tbc_s08: clean K 133 (32s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:34 xdMH03_L2_isfs_s08: clean K 141 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:37 xdMH01_L2_toff_s09: clean K 127 (21s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:40 xdMH03_L2_imis_s08: clean K 144 (27s)
+20:40:40 xdMH03_L3_isfs_s08: clean K 144 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:45 xdMH03_L3_imis_s08: clean K 141 (29s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:46 xdMH01_L3_toff_s09: clean K 123 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:48 xdMH01_L2_rbc_s09: clean K 126 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:50 xdMH01_L3_tbc_s09: clean K 130 (24s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:53 xdMH01_L3_rbc_s09: clean K 124 (28s)
+20:40:54 xdMH01_L2_tbc_s09: clean K 128 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:57 xdMH01_L2_isf_s09: clean K 124 (27s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:40:59 xdMH01_L2_isfs_s09: clean K 125 (24s)
+20:41:00 xdMH01_L3_isf_s09: clean K 128 (30s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:41:04 xdMH01_L2_imis_s09: clean K 124 (23s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:41:06 xdMH01_L3_isfs_s09: clean K 128 (28s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:41:10 xdMH03_L3_toff_s09: clean K 142 (22s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+20:41:13 xdMH03_L2_rbc_s09: clean K 141 (24s)
+20:41:13 xdMH01_L3_imis_s09: clean K 125 (32s)
+20:41:13 xdMH03_L2_toff_s09: clean K 140 (27s)
+20:41:17 xdMH03_L2_tbc_s09: clean K 138 (23s)
+20:41:21 xdMH03_L2_isf_s09: clean K 142 (23s)
+20:41:22 xdMH03_L3_tbc_s09: clean K 138 (28s)
+20:41:25 xdMH03_L3_isf_s09: clean K 143 (24s)
+20:41:29 xdMH03_L2_imis_s09: clean K 145 (21s)
+20:41:29 xdMH03_L3_rbc_s09: clean K 145 (38s)
+20:41:30 xdMH03_L3_imis_s09: clean K 139 (20s)
+20:41:34 xdMH03_L3_isfs_s09: clean K 147 (28s)
+20:41:48 xdMH03_L2_isfs_s09: clean K 139 (46s)

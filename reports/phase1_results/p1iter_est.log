@@ -1,0 +1,1277 @@
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:38:49 xMH01_L1_imis_s06: imis K 127  est-truth sg_x +4.02e-03 sg_y +8.72e-04 sg_z +2.12e-03 mg_01 -1.21e-04 mg_02 +2.74e-03 mg_10 -4.45e-04 mg_12 -3.10e-03 mg_20 +2.60e-03 mg_21 +2.21e-03 sa_x +5.23e-04 sa_y +1.70e-03 sa_z -4.84e-04 ma_01 +4.02e-03 ma_02 +5.11e-03 ma_10 -5.07e-03 ma_12 +1.62e-03 ma_20 +2.96e-03 ma_21 +1.42e-02 (63s)
+14:38:51 xMH01_L1_isf_s00: isf K 129  est-truth sg_x +3.50e-03 sg_y +2.85e-04 sg_z -1.27e-04 sa_x +8.95e-03 sa_y -1.03e-02 sa_z +4.82e-04 (64s)
+14:39:02 xMH01_L1_isfs_s06: isfs K 126  est-truth sg_x +4.03e-03 sg_y +2.60e-03 sg_z -3.62e-04 sa_x +2.47e-03 sa_y -8.08e-03 sa_z +7.72e-04 (75s)
+14:39:11 xMH01_L1_isf_s08: isf K 127  est-truth sg_x +2.30e-03 sg_y +9.68e-04 sg_z -7.58e-04 sa_x +7.00e-03 sa_y -8.98e-03 sa_z +2.38e-03 (84s)
+14:39:11 xMH01_L1_isfs_s02: isfs K 130  est-truth sg_x +1.54e-03 sg_y -1.65e-03 sg_z +3.22e-04 sa_x +4.50e-03 sa_y -6.94e-03 sa_z -4.09e-03 (85s)
+14:39:16 xMH01_L1_rbc_s00: rbc K 125  est-truth rbc_x +1.56e-03 rbc_y -8.51e-04 rbc_z -8.19e-04 (89s)
+14:39:24 xMH01_L1_imis_s02: imis K 130  est-truth sg_x +4.38e-03 sg_y +9.74e-04 sg_z +1.23e-03 mg_01 -1.97e-04 mg_02 +4.58e-03 mg_10 +5.93e-04 mg_12 -2.65e-03 mg_20 +2.42e-03 mg_21 +2.98e-03 sa_x -4.99e-03 sa_y -6.21e-03 sa_z -2.18e-04 ma_01 +1.28e-02 ma_02 +7.13e-03 ma_10 -4.07e-03 ma_12 +7.38e-04 ma_20 -1.72e-03 ma_21 +1.86e-02 (98s)
+14:39:38 xMH01_L1_isf_s04: isf K 127  est-truth sg_x +3.40e-03 sg_y +2.03e-04 sg_z -1.51e-03 sa_x +1.27e-02 sa_y -7.99e-03 sa_z +9.51e-04 (111s)
+14:39:52 xMH01_L1_imis_s07: imis K 125  est-truth sg_x +4.34e-03 sg_y +2.73e-03 sg_z +1.42e-03 mg_01 -7.63e-05 mg_02 +3.46e-03 mg_10 -1.58e-04 mg_12 -1.27e-03 mg_20 +2.82e-03 mg_21 +3.49e-03 sa_x +1.49e-03 sa_y -9.05e-03 sa_z -1.42e-03 ma_01 +2.26e-02 ma_02 +1.89e-03 ma_10 -1.20e-03 ma_12 -2.01e-03 ma_20 +3.24e-03 ma_21 +2.11e-02 (63s)
+14:39:59 xMH01_L1_isf_s01: isf K 122  est-truth sg_x +2.42e-03 sg_y -1.88e-03 sg_z -3.03e-04 sa_x +9.66e-03 sa_y -1.67e-02 sa_z -4.92e-03 (68s)
+14:40:02 xMH01_L1_isfs_s07: isfs K 125  est-truth sg_x +2.12e-03 sg_y +4.56e-04 sg_z -1.22e-03 sa_x +4.22e-03 sa_y -1.05e-02 sa_z -1.77e-03 (60s)
+14:40:25 xMH01_L1_isfs_s03: isfs K 128  est-truth sg_x +4.13e-03 sg_y +4.18e-04 sg_z -1.56e-03 sa_x +6.96e-03 sa_y -1.04e-02 sa_z -8.30e-05 (74s)
+14:40:25 xMH01_L1_isf_s09: isf K 125  est-truth sg_x +2.50e-03 sg_y -1.67e-04 sg_z -1.68e-03 sa_x +4.06e-03 sa_y -1.31e-02 sa_z -4.64e-04 (74s)
+14:40:44 xMH01_L1_rbc_s01: rbc K 128  est-truth rbc_x +4.95e-04 rbc_y -7.25e-04 rbc_z +1.77e-04 (88s)
+14:40:44 xMH01_L1_imis_s03: imis K 123  est-truth sg_x +5.26e-03 sg_y +3.39e-04 sg_z +1.56e-03 mg_01 -9.49e-04 mg_02 +4.54e-03 mg_10 +2.51e-05 mg_12 -2.17e-03 mg_20 +2.19e-03 mg_21 +2.11e-03 sa_x +5.73e-03 sa_y -6.90e-03 sa_z -1.89e-03 ma_01 +2.14e-02 ma_02 -1.46e-03 ma_10 -1.11e-03 ma_12 -1.19e-03 ma_20 +5.65e-03 ma_21 +1.34e-02 (80s)
+14:40:45 xMH01_L0_clean_r08: clean K 123 (179s)
+14:40:54 xMH01_L1_isf_s05: isf K 128  est-truth sg_x +2.34e-03 sg_y +4.58e-04 sg_z -1.63e-04 sa_x +8.28e-03 sa_y -1.01e-02 sa_z -1.99e-03 (76s)
+14:40:57 xMH01_L1_imis_s08: imis K 125  est-truth sg_x +4.00e-03 sg_y -3.64e-05 sg_z +1.95e-03 mg_01 +6.49e-04 mg_02 +2.33e-03 mg_10 -4.10e-04 mg_12 -6.79e-04 mg_20 +2.33e-03 mg_21 +3.67e-03 sa_x -5.70e-03 sa_y -7.78e-03 sa_z +3.13e-03 ma_01 +1.94e-02 ma_02 +5.17e-03 ma_10 -4.95e-03 ma_12 -9.51e-04 ma_20 -5.06e-03 ma_21 +1.51e-02 (65s)
+14:41:24 xMH01_L0_clean_r00: clean K 126 (217s)
+14:41:31 xMH01_L1_isfs_s08: isfs K 126  est-truth sg_x +1.57e-03 sg_y -5.53e-04 sg_z -1.40e-03 sa_x +1.16e-02 sa_y -4.22e-03 sa_z +1.16e-03 (89s)
+14:41:32 xMH01_L1_isf_s02: isf K 120  est-truth sg_x +1.82e-03 sg_y +8.04e-04 sg_z +4.38e-04 sa_x +1.08e-02 sa_y -1.47e-02 sa_z -8.25e-03 (93s)
+14:41:36 xMH01_L1_isfs_s04: isfs K 119  est-truth sg_x +4.50e-03 sg_y +2.35e-03 sg_z -2.30e-03 sa_x +1.85e-03 sa_y -1.83e-02 sa_z -1.11e-03 (71s)
+14:41:43 xMH01_L0_clean_r04: clean K 123 (237s)
+14:41:44 xMH01_L1_isfs_s00: isfs K 125  est-truth sg_x +4.11e-03 sg_y -2.06e-03 sg_z -1.03e-03 sa_x +9.09e-04 sa_y -1.51e-02 sa_z -2.93e-03 (79s)
+14:41:46 xMH01_L1_imis_s04: imis K 125  est-truth sg_x +4.46e-03 sg_y -2.68e-04 sg_z +1.80e-03 mg_01 +9.85e-04 mg_02 +3.99e-03 mg_10 +6.15e-04 mg_12 +5.50e-04 mg_20 +2.40e-03 mg_21 +1.80e-03 sa_x -1.17e-02 sa_y -1.59e-02 sa_z -4.36e-03 ma_01 +1.70e-02 ma_02 +1.18e-02 ma_10 -5.04e-03 ma_12 +2.33e-03 ma_20 +1.90e-03 ma_21 +2.24e-02 (62s)
+14:41:51 p1x_MH01_clean_r0: clean K 128 (244s)
+14:41:59 xMH01_L1_rbc_s02: rbc K 126  est-truth rbc_x +2.20e-03 rbc_y -9.60e-04 rbc_z +2.16e-04 (75s)
+14:42:07 xMH01_L1_isf_s06: isf K 125  est-truth sg_x +3.66e-03 sg_y -3.80e-04 sg_z -3.55e-05 sa_x +6.04e-03 sa_y -7.42e-03 sa_z -8.55e-04 (73s)
+14:42:43 xMH01_L1_isf_s03: isf K 123  est-truth sg_x +3.35e-03 sg_y +1.23e-03 sg_z -1.77e-03 sa_x +9.61e-03 sa_y -1.45e-02 sa_z +1.61e-03 (71s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:42:48 xMH01_L1_isfs_s09: isfs K 127  est-truth sg_x +1.63e-03 sg_y -7.40e-04 sg_z -2.17e-03 sa_x +3.85e-03 sa_y -3.91e-03 sa_z +2.16e-03 (77s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:42:53 xMH01_L1_isfs_s05: isfs K 127  est-truth sg_x +1.85e-03 sg_y -1.70e-03 sg_z +2.86e-04 sa_x +5.12e-03 sa_y -8.14e-03 sa_z -2.69e-04 (77s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:43:02 xMH01_L1_imis_s05: imis K 127  est-truth sg_x +3.93e-03 sg_y +8.71e-04 sg_z +3.52e-03 mg_01 -4.02e-04 mg_02 +2.34e-03 mg_10 -2.89e-04 mg_12 -2.04e-03 mg_20 +3.18e-03 mg_21 +2.44e-03 sa_x +8.54e-03 sa_y -1.27e-02 sa_z -8.24e-03 ma_01 +2.19e-02 ma_02 -9.81e-04 ma_10 -1.66e-03 ma_12 +1.11e-03 ma_20 +1.23e-02 ma_21 +2.21e-02 (76s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:43:08 xMH01_L1_isfs_s01: isfs K 129  est-truth sg_x +1.44e-03 sg_y +1.70e-03 sg_z -6.66e-04 sa_x +6.83e-03 sa_y -6.33e-03 sa_z -1.98e-04 (84s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:43:13 xMH01_L1_rbc_s03: rbc K 125  est-truth rbc_x +3.01e-03 rbc_y -9.13e-04 rbc_z -1.25e-03 (74s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:43:30 xMH01_L1_isf_s07: isf K 127  est-truth sg_x +2.07e-03 sg_y +1.55e-03 sg_z +4.45e-04 sa_x +1.23e-02 sa_y -1.24e-02 sa_z -8.99e-04 (83s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+14:44:01 xMH01_L1_rbc_s08: rbc K 123  est-truth rbc_x +1.84e-03 rbc_y -1.06e-03 rbc_z +2.95e-04 (72s)
+14:44:03 xMH01_L1_rbc_s04: rbc K 127  est-truth rbc_x +6.60e-04 rbc_y -1.48e-03 rbc_z -1.66e-04 (78s)
+14:44:16 xMH01_L1_rst_s02: rst K 126 (82s)
+14:44:22 xMH01_L1_tbc_s00: tbc K 127  est-truth tbc_x +1.55e-02 tbc_y +2.39e-04 tbc_z -6.42e-03 (73s)
+14:44:22 xMH01_L1_tbc_s04: tbc K 124  est-truth tbc_x +1.04e-02 tbc_y +6.18e-03 tbc_z -7.47e-03 (68s)
+14:44:35 xMH01_L0_clean_r09: clean K 123 (230s)
+14:44:42 xMH01_L1_tbc_s08: tbc K 125  est-truth tbc_x +5.44e-03 tbc_y +9.73e-04 tbc_z -2.60e-03 (71s)
+14:44:47 xMH01_L1_rst_s06: rst K 129 (103s)
+14:45:02 xMH01_L1_rbc_s09: rbc K 126  est-truth rbc_x +1.35e-03 rbc_y -5.54e-04 rbc_z +4.44e-05 (61s)
+14:45:15 xMH01_L1_imis_s09: imis K 119  est-truth sg_x +4.04e-03 sg_y +7.15e-06 sg_z +2.63e-03 mg_01 +1.04e-03 mg_02 +3.80e-03 mg_10 +9.71e-04 mg_12 -6.67e-04 mg_20 +2.90e-03 mg_21 +1.95e-03 sa_x +1.74e-03 sa_y -7.15e-03 sa_z +2.09e-03 ma_01 +1.86e-02 ma_02 +1.75e-03 ma_10 -3.79e-03 ma_12 -1.55e-03 ma_20 -6.64e-03 ma_21 +1.73e-02 (258s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:45:22 xMH01_L0_clean_r05: clean K 125 (219s)
+14:45:28 xMH01_L0_clean_r01: clean K 129 (244s)
+14:45:29 xMH01_L1_tbc_s01: tbc K 125  est-truth tbc_x +1.13e-02 tbc_y +1.00e-02 tbc_z +1.19e-03 (67s)
+14:45:39 xMH01_L1_imis_s00: imis K 124  est-truth sg_x +4.23e-03 sg_y -2.19e-03 sg_z +1.57e-03 mg_01 +2.29e-04 mg_02 +4.01e-03 mg_10 -2.75e-04 mg_12 -2.46e-03 mg_20 +2.78e-03 mg_21 +2.90e-03 sa_x -1.10e-02 sa_y -5.42e-03 sa_z +5.13e-03 ma_01 +2.16e-02 ma_02 +7.96e-03 ma_10 -7.74e-03 ma_12 +2.32e-03 ma_20 -1.56e-02 ma_21 +2.29e-02 (64s)
+14:45:47 xMH01_L1_rst_s03: rst K 131 (91s)
+14:45:48 p1x_MH01_clean_r1: clean K 126 (237s)
+14:45:48 xMH01_L1_rbc_s05: rbc K 130  est-truth rbc_x +2.30e-03 rbc_y -1.19e-03 rbc_z -7.36e-04 (105s)
+14:45:56 xMH01_L1_rst_s07: rst K 128 (69s)
+14:46:03 xMH01_L1_tbc_s09: tbc K 124  est-truth tbc_x +1.00e-03 tbc_y -5.41e-03 tbc_z -3.99e-03 (81s)
+14:46:05 xMH01_L1_tbc_s05: tbc K 128  est-truth tbc_x +6.28e-03 tbc_y -3.39e-05 tbc_z -2.37e-03 (103s)
+14:46:34 xMH01_L1_toff_s02: toff K 126  est-truth td -7.19e-04 (77s)
+14:46:37 xMH01_L1_tbc_s02: tbc K 126  est-truth tbc_x +7.96e-03 tbc_y +5.47e-04 tbc_z -1.10e-02 (69s)
+14:46:41 xMH01_L1_rst_s00: rst K 134 (99s)
+14:46:54 xMH01_L1_rst_s04: rst K 124 (67s)
+14:46:59 xMH01_L1_rst_s08: rst K 127 (62s)
+14:46:59 xMH01_L1_imis_s01: imis K 122  est-truth sg_x +4.45e-03 sg_y -3.79e-03 sg_z +2.72e-03 mg_01 +3.21e-04 mg_02 +2.92e-03 mg_10 -9.95e-06 mg_12 -1.42e-03 mg_20 +3.32e-03 mg_21 +2.60e-03 sa_x -1.89e-02 sa_y -3.46e-03 sa_z +1.01e-03 ma_01 +2.39e-02 ma_02 +1.22e-02 ma_10 -8.44e-03 ma_12 +1.51e-03 ma_20 -4.00e-03 ma_21 +1.86e-02 (80s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:47:02 xMH01_L1_rbc_s06: rbc K 127  est-truth rbc_x +1.81e-03 rbc_y -1.32e-03 rbc_z +1.48e-04 (73s)
+14:47:15 xMH01_L1_tbc_s06: tbc K 129  est-truth tbc_x +3.87e-03 tbc_y -5.56e-03 tbc_z -7.98e-03 (70s)
+14:47:18 xMH01_L1_toff_s00: toff K 126  est-truth td -1.04e-03 (75s)
+14:47:46 xMH01_L1_toff_s03: toff K 123  est-truth td +2.52e-04 (72s)
+14:47:47 xMH01_L1_tbc_s03: tbc K 125  est-truth tbc_x +1.26e-02 tbc_y +1.13e-02 tbc_z +2.64e-03 (70s)
+14:47:48 xMH01_L1_rst_s01: rst K 122 (67s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:48:05 xMH01_L1_rbc_s07: rbc K 118  est-truth rbc_x +5.21e-04 rbc_y -9.76e-04 rbc_z +9.54e-04 (63s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:48:10 xMH01_L1_rst_s05: rst K 123 (76s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:48:21 xMH01_L1_rst_s09: rst K 117 (82s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:48:22 xMH01_L1_tbc_s07: tbc K 123  est-truth tbc_x +1.10e-02 tbc_y -1.92e-03 tbc_z -5.03e-03 (67s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:48:26 xMH01_L1_toff_s06: toff K 121  est-truth td -9.38e-04 (86s)
+14:48:37 xMH01_L1_toff_s01: toff K 127  est-truth td +4.87e-04 (80s)
+14:48:38 xMH01_L0_clean_r06: clean K 121 (196s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:48:48 xMH01_L1_toff_s04: toff K 128  est-truth td -1.92e-03 (62s)
+14:48:57 p1x_MH03_clean_r0: clean K 142 (189s)
+14:48:59 xMH01_L2_imis_s04: imis K 127  est-truth sg_x +4.41e-03 sg_y -7.74e-04 sg_z +1.71e-03 mg_01 +2.33e-04 mg_02 +4.85e-03 mg_10 +1.44e-03 mg_12 +1.24e-03 mg_20 +2.72e-03 mg_21 -3.67e-04 sa_x -7.39e-04 sa_y -6.78e-03 sa_z -1.26e-03 ma_01 +1.69e-02 ma_02 +3.32e-03 ma_10 -1.93e-03 ma_12 +2.88e-03 ma_20 -4.29e-03 ma_21 +2.07e-02 (70s)
+14:49:02 xMH01_L2_imis_s00: imis K 127  est-truth sg_x +4.07e-03 sg_y -1.08e-03 sg_z +9.00e-04 mg_01 -1.08e-04 mg_02 +4.08e-03 mg_10 -1.39e-03 mg_12 -1.70e-03 mg_20 +2.33e-03 mg_21 +1.72e-03 sa_x -1.75e-03 sa_y -7.95e-03 sa_z +4.80e-04 ma_01 +1.96e-02 ma_02 +6.76e-03 ma_10 -3.16e-03 ma_12 +1.99e-03 ma_20 -1.89e-03 ma_21 +1.56e-02 (74s)
+14:49:08 xMH01_L0_clean_r02: clean K 129 (221s)
+14:49:37 xMH01_L2_isf_s02: isf K 127  est-truth sg_x +1.60e-03 sg_y -2.11e-03 sg_z +1.21e-03 sa_x +8.00e-03 sa_y -6.99e-03 sa_z -1.99e-03 (86s)
+14:49:38 xMH01_L2_isf_s06: isf K 127  est-truth sg_x +4.76e-03 sg_y +1.49e-04 sg_z -4.24e-04 sa_x +8.68e-03 sa_y -5.45e-03 sa_z +2.69e-03 (76s)
+14:49:40 xMH01_L1_toff_s07: toff K 121  est-truth td +6.27e-04 (74s)
+14:49:44 xMH01_L2_isfs_s00: isfs K 131  est-truth sg_x +7.19e-03 sg_y -5.55e-04 sg_z +3.34e-03 sa_x +8.55e-03 sa_y -1.22e-02 sa_z -1.25e-03 (81s)
+14:50:02 xMH01_L2_isfs_s04: isfs K 127  est-truth sg_x +7.68e-03 sg_y +2.20e-03 sg_z -5.22e-03 sa_x +6.83e-03 sa_y -1.69e-02 sa_z +1.16e-03 (83s)
+14:50:09 xMH01_L1_toff_s05: toff K 126  est-truth td +3.73e-04 (81s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:50:19 xMH01_L2_imis_s05: imis K 130  est-truth sg_x +4.30e-03 sg_y +3.34e-03 sg_z +3.63e-03 mg_01 -1.25e-03 mg_02 +3.04e-03 mg_10 +7.61e-05 mg_12 +1.04e-03 mg_20 +2.52e-03 mg_21 +9.92e-04 sa_x -8.31e-03 sa_y -9.71e-03 sa_z +2.80e-04 ma_01 +1.99e-02 ma_02 +9.01e-03 ma_10 -1.07e-02 ma_12 +7.09e-03 ma_20 -1.68e-04 ma_21 +1.77e-02 (80s)
+14:50:21 xMH01_L2_imis_s08: imis K 127  est-truth sg_x +4.60e-03 sg_y -4.24e-04 sg_z +5.15e-03 mg_01 +1.10e-03 mg_02 +2.84e-03 mg_10 -6.08e-04 mg_12 -1.09e-03 mg_20 +3.37e-03 mg_21 +6.40e-04 sa_x -6.42e-03 sa_y -1.09e-02 sa_z +1.03e-03 ma_01 +2.26e-02 ma_02 +5.89e-03 ma_10 -2.53e-03 ma_12 +3.24e-03 ma_20 -6.77e-03 ma_21 +3.18e-02 (135s)
+14:50:23 xMH01_L2_imis_s01: imis K 125  est-truth sg_x +3.82e-03 sg_y -3.59e-03 sg_z +2.46e-03 mg_01 +2.79e-04 mg_02 +3.03e-03 mg_10 +9.58e-04 mg_12 -4.15e-03 mg_20 +1.84e-03 mg_21 +1.41e-03 sa_x -1.44e-02 sa_y -1.06e-02 sa_z +6.31e-03 ma_01 +3.41e-02 ma_02 +1.38e-02 ma_10 -8.83e-03 ma_12 +4.30e-03 ma_20 -1.94e-02 ma_21 +2.52e-02 (81s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [36] for slices [0].
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:50:50 xMH01_L2_isf_s07: isf K 124  est-truth sg_x +2.14e-03 sg_y +3.89e-04 sg_z -1.98e-03 sa_x +3.66e-03 sa_y -9.05e-03 sa_z -1.25e-03 (72s)
+14:50:52 xMH01_L2_isf_s03: isf K 122  est-truth sg_x +4.00e-03 sg_y -6.19e-04 sg_z -2.17e-03 sa_x +2.42e-03 sa_y -1.41e-02 sa_z -2.40e-03 (74s)
+14:50:59 xMH01_L1_toff_s08: toff K 128  est-truth td -1.80e-03 (79s)
+14:51:08 xMH01_L2_isfs_s01: isfs K 129  est-truth sg_x -1.07e-03 sg_y +5.38e-04 sg_z +3.73e-03 sa_x +1.09e-02 sa_y -1.52e-02 sa_z -4.48e-03 (84s)
+14:51:33 xMH01_L2_imis_s09: imis K 124  est-truth sg_x +4.01e-03 sg_y -8.46e-05 sg_z +2.10e-03 mg_01 -1.96e-03 mg_02 +1.14e-03 mg_10 +1.45e-03 mg_12 +9.82e-04 mg_20 +2.99e-03 mg_21 +2.51e-03 sa_x +3.88e-03 sa_y -9.51e-03 sa_z -1.57e-03 ma_01 +1.68e-02 ma_02 +1.08e-03 ma_10 -9.23e-04 ma_12 +6.80e-04 ma_20 +9.25e-04 ma_21 +1.58e-02 (72s)
+14:51:39 xMH01_L2_isfs_s08: isfs K 127  est-truth sg_x -8.14e-04 sg_y +1.73e-03 sg_z -3.02e-03 sa_x +1.06e-02 sa_y -1.95e-02 sa_z -5.87e-03 (89s)
+14:51:39 xMH01_L2_imis_s06: imis K 124  est-truth sg_x +3.68e-03 sg_y +1.32e-03 sg_z +2.64e-03 mg_01 -1.60e-04 mg_02 +2.59e-03 mg_10 +1.14e-04 mg_12 +9.42e-04 mg_20 +3.12e-03 mg_21 -2.22e-05 sa_x +1.62e-03 sa_y -1.04e-02 sa_z -5.01e-03 ma_01 +3.00e-02 ma_02 +7.47e-03 ma_10 +5.69e-04 ma_12 +2.40e-03 ma_20 +3.29e-03 ma_21 +1.30e-02 (80s)
+14:51:40 xMH01_L2_imis_s02: imis K 125  est-truth sg_x +3.47e-03 sg_y -5.24e-04 sg_z +4.30e-03 mg_01 -1.71e-04 mg_02 +1.45e-03 mg_10 +2.81e-03 mg_12 -1.41e-04 mg_20 +3.33e-03 mg_21 +9.67e-04 sa_x +5.98e-03 sa_y -1.15e-02 sa_z -3.20e-03 ma_01 +2.60e-02 ma_02 -2.06e-03 ma_10 -1.76e-03 ma_12 +1.12e-05 ma_20 +6.81e-03 ma_21 +1.77e-02 (77s)
+14:51:58 xMH01_L2_isf_s04: isf K 127  est-truth sg_x +3.90e-03 sg_y +1.97e-03 sg_z -2.48e-03 sa_x +5.74e-03 sa_y -1.40e-02 sa_z +2.71e-03 (66s)
+14:52:10 xMH01_L2_rbc_s02: rbc K 129  est-truth rbc_x +2.87e-03 rbc_y -1.41e-03 rbc_z +7.08e-04 (90s)
+14:52:16 xMH01_L2_isf_s08: isf K 127  est-truth sg_x +1.47e-03 sg_y +2.55e-04 sg_z -1.05e-03 sa_x +5.81e-03 sa_y -6.54e-03 sa_z -3.06e-05 (86s)
+14:52:26 xMH01_L1_toff_s09: toff K 127  est-truth td +4.55e-04 (87s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:52:38 xMH01_L2_isfs_s02: isfs K 131  est-truth sg_x -7.58e-04 sg_y -3.33e-03 sg_z +2.91e-03 sa_x +6.35e-03 sa_y -7.80e-03 sa_z -4.20e-03 (90s)
+14:52:41 xMH01_L0_clean_r07: clean K 124 (244s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:52:44 xMH01_L0_clean_r03: clean K 121 (216s)
+14:52:45 xMH01_L2_isf_s00: isf K 123  est-truth sg_x +4.14e-03 sg_y +2.43e-03 sg_z -1.90e-03 sa_x +9.58e-03 sa_y -7.15e-03 sa_z +4.49e-04 (72s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:52:45 p1x_MH03_clean_r1: clean K 143 (228s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:52:52 xMH01_L2_imis_s07: imis K 121  est-truth sg_x +4.17e-03 sg_y +1.10e-03 sg_z +3.09e-03 mg_01 +1.47e-05 mg_02 +4.41e-03 mg_10 +8.24e-05 mg_12 +1.53e-05 mg_20 +3.93e-03 mg_21 +2.95e-03 sa_x -1.03e-02 sa_y -1.38e-02 sa_z -4.19e-03 ma_01 +2.05e-02 ma_02 +9.76e-03 ma_10 -6.74e-03 ma_12 +2.56e-03 ma_20 +4.71e-03 ma_21 +2.47e-02 (73s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:53:04 xMH01_L2_isfs_s09: isfs K 128  est-truth sg_x -1.48e-03 sg_y -1.10e-03 sg_z -3.08e-03 sa_x +7.35e-03 sa_y -1.53e-02 sa_z -5.91e-03 (85s)
+14:53:11 xMH01_L2_isf_s05: isf K 129  est-truth sg_x +1.10e-03 sg_y +1.08e-03 sg_z +9.02e-04 sa_x +9.04e-03 sa_y -5.05e-03 sa_z +2.43e-04 (73s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:53:17 xMH01_L2_imis_s03: imis K 128  est-truth sg_x +4.66e-03 sg_y -1.11e-03 sg_z +1.43e-03 mg_01 -2.19e-05 mg_02 +4.12e-03 mg_10 +2.13e-03 mg_12 -5.97e-04 mg_20 +2.38e-03 mg_21 +1.27e-03 sa_x +1.34e-04 sa_y -3.96e-03 sa_z -1.49e-03 ma_01 +1.25e-02 ma_02 +3.63e-03 ma_10 +6.86e-04 ma_12 -7.21e-04 ma_20 -2.24e-03 ma_21 +1.85e-02 (96s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:53:34 xMH01_L2_rbc_s03: rbc K 128  est-truth rbc_x +1.10e-03 rbc_y -5.11e-04 rbc_z -2.59e-03 (84s)
+14:53:36 xMH01_L2_isf_s09: isf K 124  est-truth sg_x +1.39e-03 sg_y -8.43e-04 sg_z -1.01e-03 sa_x +1.03e-02 sa_y -1.00e-02 sa_z -8.81e-04 (80s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:53:45 xMH01_L2_rbc_s06: rbc K 130  est-truth rbc_x +3.48e-03 rbc_y -3.11e-03 rbc_z +1.26e-03 (77s)
+14:53:52 xMH01_L2_rst_s08: rst K 104 (65s)
+14:54:08 xMH01_L2_tbc_s02: tbc K 124  est-truth tbc_x +2.65e-03 tbc_y +3.59e-03 tbc_z -9.60e-03 (75s)
+14:54:10 xMH01_L2_isfs_s03: isfs K 129  est-truth sg_x +6.60e-03 sg_y -2.67e-03 sg_z -5.10e-03 sa_x +6.58e-03 sa_y -1.79e-03 sa_z +1.21e-02 (92s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:54:12 xMH01_L2_isf_s01: isf K 125  est-truth sg_x +1.39e-03 sg_y +3.17e-05 sg_z -1.52e-04 sa_x +8.78e-03 sa_y -3.14e-03 sa_z -1.13e-03 (88s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:54:16 xMH01_L2_rst_s04: rst K 92 (91s)
+14:54:22 xMH01_L2_rbc_s00: rbc K 128  est-truth rbc_x +2.19e-03 rbc_y -1.21e-03 rbc_z -1.51e-03 (78s)
+14:54:24 xMH01_L2_rst_s00: rst K 165 (101s)
+14:54:45 xMH01_L2_rbc_s04: rbc K 121  est-truth rbc_x +1.45e-03 rbc_y -1.82e-03 rbc_z -1.03e-03 (71s)
+14:54:52 xMH01_L2_toff_s04: toff K 129  est-truth td -1.88e-03 (75s)
+14:54:54 xMH01_L2_tbc_s06: tbc K 125  est-truth tbc_x +9.40e-03 tbc_y -3.95e-03 tbc_z -4.54e-03 (101s)
+14:55:08 xMH01_L2_toff_s00: toff K 126  est-truth td -2.68e-03 (111s)
+14:55:11 xMH01_L2_rst_s09: rst K 98 (79s)
+14:55:17 xMH01_L2_rbc_s07: rbc K 128  est-truth rbc_x +4.29e-03 rbc_y -4.97e-04 rbc_z -3.45e-04 (92s)
+14:55:39 xMH01_L2_tbc_s03: tbc K 127  est-truth tbc_x +5.63e-03 tbc_y -5.38e-03 tbc_z -4.60e-03 (91s)
+14:55:41 xMH01_L2_toff_s08: toff K 127  est-truth td -2.83e-03 (89s)
+14:55:42 xMH01_L2_rst_s05: rst K 119 (86s)
+14:55:48 xMH01_L2_rst_s01: rst K 124 (85s)
+14:55:51 xMH01_L3_imis_s02: imis K 135  est-truth sg_x +6.88e-03 sg_y -1.85e-03 sg_z +3.04e-03 mg_01 -3.99e-03 mg_02 -2.99e-04 mg_10 +8.18e-03 mg_12 -4.06e-03 mg_20 +4.66e-04 mg_21 -2.82e-03 sa_x +2.91e-03 sa_y -1.61e-02 sa_z +1.25e-02 ma_01 +7.99e-02 ma_02 +2.58e-02 ma_10 +3.81e-03 ma_12 +9.49e-03 ma_20 -9.35e-03 ma_21 +4.10e-02 (97s)
+14:56:01 xMH01_L2_rbc_s01: rbc K 126  est-truth rbc_x +1.65e-03 rbc_y +1.70e-04 rbc_z -7.01e-04 (99s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:56:11 xMH01_L2_tbc_s07: tbc K 130  est-truth tbc_x +1.10e-02 tbc_y +3.40e-03 tbc_z -9.94e-03 (77s)
+14:56:12 xMH01_L2_toff_s05: toff K 127  est-truth td +2.22e-03 (79s)
+14:56:21 xMH01_L2_rbc_s05: rbc K 122  est-truth rbc_x +3.68e-03 rbc_y +1.05e-04 rbc_z -2.68e-03 (96s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:56:26 xMH01_L2_toff_s01: toff K 125  est-truth td +1.93e-03 (78s)
+14:56:46 xMH01_L2_tbc_s00: tbc K 122  est-truth tbc_x +2.05e-03 tbc_y +2.88e-03 tbc_z -3.28e-03 (95s)
+14:56:47 xMH01_L2_rst_s02: rst K 90 (59s)
+14:56:50 xMH01_L2_tbc_s04: tbc K 128  est-truth tbc_x +3.83e-03 tbc_y -6.11e-03 tbc_z -8.85e-03 (71s)
+14:56:54 xMH01_L2_rbc_s08: rbc K 125  est-truth rbc_x +1.14e-03 rbc_y -2.08e-03 rbc_z +2.42e-03 (98s)
+14:57:08 xMH01_L2_toff_s09: toff K 133  est-truth td +2.05e-03 (88s)
+14:57:21 xMH01_L2_toff_s06: toff K 125  est-truth td -1.97e-03 (69s)
+14:57:24 xMH01_L2_tbc_s08: tbc K 125  est-truth tbc_x +2.45e-03 tbc_y +2.25e-03 tbc_z -3.34e-03 (73s)
+14:57:34 xMH01_L3_imis_s03: imis K 132  est-truth sg_x +4.50e-03 sg_y -2.02e-04 sg_z +6.77e-05 mg_01 +4.11e-03 mg_02 +8.05e-03 mg_10 +5.37e-03 mg_12 -4.89e-03 mg_20 -1.10e-03 mg_21 -1.48e-03 sa_x +3.28e-03 sa_y -8.98e-03 sa_z -4.27e-03 ma_01 +3.26e-02 ma_02 +3.05e-03 ma_10 -6.75e-04 ma_12 +1.52e-03 ma_20 -1.72e-03 ma_21 +2.33e-02 (103s)
+14:57:44 xMH01_L3_isf_s00: isf K 128  est-truth sg_x +4.45e-03 sg_y +1.39e-03 sg_z +1.76e-03 sa_x +8.63e-03 sa_y -8.06e-03 sa_z +3.29e-03 (82s)
+14:57:48 xMH01_L3_imis_s06: imis K 126  est-truth sg_x +5.46e-03 sg_y +2.88e-03 sg_z +1.95e-04 mg_01 +3.10e-03 mg_02 +8.21e-03 mg_10 -1.39e-03 mg_12 -9.26e-04 mg_20 +4.16e-03 mg_21 -2.07e-03 sa_x -8.83e-04 sa_y -1.05e-02 sa_z +3.97e-03 ma_01 +2.76e-02 ma_02 +1.06e-02 ma_10 -1.62e-02 ma_12 +9.16e-03 ma_20 -1.50e-02 ma_21 +1.49e-02 (105s)
+14:57:54 xMH01_L2_tbc_s01: tbc K 125  est-truth tbc_x +3.80e-03 tbc_y +2.44e-03 tbc_z -4.78e-03 (68s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:58:05 xMH01_L2_toff_s02: toff K 128  est-truth td -1.82e-03 (98s)
+14:58:10 xMH01_L2_tbc_s05: tbc K 125  est-truth tbc_x +5.23e-03 tbc_y +4.86e-03 tbc_z -1.02e-02 (80s)
+14:58:11 xMH01_L2_rst_s06: rst K 226 (149s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:58:19 xMH01_L2_rst_s03: rst K 113 (92s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:58:30 xMH01_L2_rbc_s09: rbc K 124  est-truth rbc_x +3.79e-03 rbc_y -2.90e-04 rbc_z -2.32e-04 (96s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:58:43 xMH01_L2_toff_s07: toff K 131  est-truth td +2.24e-03 (83s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:58:55 xMH01_L3_imis_s00: imis K 127  est-truth sg_x +4.85e-03 sg_y +1.11e-03 sg_z +1.76e-03 mg_01 -3.57e-03 mg_02 +6.48e-03 mg_10 -3.04e-03 mg_12 +3.27e-04 mg_20 +4.16e-03 mg_21 +4.10e-03 sa_x +1.82e-03 sa_y -1.80e-02 sa_z +8.73e-03 ma_01 +3.92e-02 ma_02 +8.54e-03 ma_10 +5.49e-04 ma_12 +7.39e-04 ma_20 -2.41e-02 ma_21 +2.06e-02 (107s)
+14:58:58 xMH01_L2_tbc_s09: tbc K 124  est-truth tbc_x +6.34e-03 tbc_y +6.25e-03 tbc_z -1.65e-03 (94s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:59:04 xMH01_L3_imis_s04: imis K 143  est-truth sg_x +4.92e-03 sg_y -3.14e-03 sg_z -5.06e-04 mg_01 +3.74e-03 mg_02 +6.64e-03 mg_10 +7.35e-03 mg_12 +2.38e-03 mg_20 +5.43e-03 mg_21 -2.84e-03 sa_x -1.06e-02 sa_y -3.88e-03 sa_z -1.26e-03 ma_01 +1.94e-02 ma_02 +1.93e-02 ma_10 -3.44e-03 ma_12 +6.09e-03 ma_20 -1.32e-02 ma_21 +2.99e-02 (90s)
+14:59:10 xMH01_L3_isf_s01: isf K 124  est-truth sg_x +2.95e-04 sg_y +8.28e-04 sg_z +3.00e-03 sa_x +1.24e-02 sa_y -8.90e-03 sa_z -1.55e-03 (86s)
+14:59:13 xMH01_L2_rst_s07: rst K 96 (62s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:59:17 xMH01_L3_imis_s07: imis K 129  est-truth sg_x +5.34e-03 sg_y +2.68e-04 sg_z +1.37e-03 mg_01 -5.36e-03 mg_02 +8.71e-03 mg_10 -1.17e-03 mg_12 -3.37e-04 mg_20 +5.17e-03 mg_21 -1.22e-03 sa_x -9.13e-03 sa_y -1.60e-02 sa_z +4.74e-03 ma_01 +1.46e-02 ma_02 +1.00e-02 ma_10 -5.58e-03 ma_12 +9.68e-03 ma_20 -1.34e-02 ma_21 +2.27e-02 (89s)
+14:59:21 xMH01_L2_toff_s03: toff K 129  est-truth td +2.06e-03 (77s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:59:23 xMH01_L3_rst_s02: no export (0s)
+14:59:23 xMH01_L3_rst_s03: no export (0s)
+14:59:23 xMH01_L3_rst_s04: no export (0s)
+14:59:23 xMH01_L3_rst_s05: no export (0s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+14:59:24 xMH01_L3_rst_s06: no export (0s)
+14:59:28 xMH01_L3_isf_s04: isf K 131  est-truth sg_x +5.98e-03 sg_y +4.71e-03 sg_z -3.98e-03 sa_x +5.03e-03 sa_y -1.29e-02 sa_z -2.27e-03 (93s)
+14:59:38 xMH01_L3_isf_s08: isf K 126  est-truth sg_x +8.33e-04 sg_y +8.22e-05 sg_z -2.96e-03 sa_x +4.22e-03 sa_y -1.27e-02 sa_z +1.87e-03 (86s)
+15:00:01 xMH01_L3_rbc_s00: rbc K 124  est-truth rbc_x +3.48e-03 rbc_y -1.44e-03 rbc_z -1.17e-03 (77s)
+15:00:20 xMH01_L3_rbc_s04: rbc K 126  est-truth rbc_x -2.21e-03 rbc_y -3.10e-03 rbc_z -1.97e-03 (80s)
+15:00:35 xMH01_L3_isfs_s02: isfs K 167  est-truth sg_x -2.69e-02 sg_y -1.42e-02 sg_z +2.24e-02 sa_x +4.32e-03 sa_y +3.25e-02 sa_z +3.35e-02 (134s)
+15:00:35 xMH01_L3_isf_s02: isf K 129  est-truth sg_x +9.77e-04 sg_y -4.03e-03 sg_z +1.64e-03 sa_x +6.40e-03 sa_y +3.24e-04 sa_z -1.17e-03 (85s)
+15:00:41 xMH01_L3_imis_s01: imis K 147  est-truth sg_x +3.18e-03 sg_y +5.49e-04 sg_z +2.81e-03 mg_01 -4.31e-03 mg_02 +8.03e-03 mg_10 +9.39e-03 mg_12 -1.11e-02 mg_20 -4.99e-03 mg_21 +7.09e-04 sa_x -1.23e-02 sa_y +3.82e-03 sa_z -5.34e-04 ma_01 +3.36e-02 ma_02 +2.85e-02 ma_10 -3.28e-03 ma_12 +1.90e-03 ma_20 -1.70e-02 ma_21 +2.24e-02 (106s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:00:44 xMH01_L3_imis_s05: imis K 138  est-truth sg_x +3.96e-03 sg_y -4.05e-04 sg_z +4.19e-03 mg_01 -6.67e-03 mg_02 -2.98e-03 mg_10 -2.13e-03 mg_12 -1.59e-03 mg_20 +5.14e-04 mg_21 -5.61e-03 sa_x -4.33e-04 sa_y -2.84e-02 sa_z +9.65e-03 ma_01 +4.11e-02 ma_02 -5.17e-03 ma_10 +1.17e-02 ma_12 +2.51e-03 ma_20 -1.46e-02 ma_21 +1.36e-02 (100s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:00:49 xMH01_L3_isfs_s06: isfs K 152  est-truth sg_x +3.28e-02 sg_y +1.44e-02 sg_z +1.97e-02 sa_x +1.89e-02 sa_y +3.78e-03 sa_z +2.83e-02 (138s)
+15:00:55 xMH01_L3_rbc_s08: rbc K 133  est-truth rbc_x +5.78e-03 rbc_y -1.66e-03 rbc_z +4.44e-03 (101s)
+15:01:10 xMH01_L3_imis_s08: imis K 126  est-truth sg_x +4.16e-03 sg_y +2.46e-03 sg_z +6.14e-03 mg_01 +3.01e-03 mg_02 +1.13e-04 mg_10 -7.89e-05 mg_12 +2.23e-03 mg_20 +8.85e-04 mg_21 -1.52e-03 sa_x +3.37e-03 sa_y -1.55e-02 sa_z +2.32e-04 ma_01 +2.27e-02 ma_02 +5.96e-03 ma_10 -9.99e-04 ma_12 +5.69e-03 ma_20 -2.30e-03 ma_21 +1.74e-02 (113s)
+15:01:10 xMH01_L3_isf_s05: isf K 126  est-truth sg_x -9.09e-05 sg_y +1.69e-03 sg_z +2.42e-03 sa_x +1.41e-02 sa_y -9.11e-03 sa_z -4.05e-04 (102s)
+15:01:16 xMH01_L3_isf_s09: isf K 126  est-truth sg_x +6.81e-04 sg_y -3.72e-03 sg_z -2.56e-03 sa_x +1.19e-02 sa_y -1.61e-02 sa_z -4.71e-03 (99s)
+15:01:22 xMH01_L3_rst_s07: rst K 87 (118s)
+15:01:26 xMH01_L3_rbc_s01: rbc K 129  est-truth rbc_x -4.20e-04 rbc_y +7.47e-04 rbc_z -3.01e-04 (85s)
+15:01:54 xMH01_L3_isf_s03: isf K 125  est-truth sg_x +5.79e-03 sg_y -1.85e-03 sg_z -3.43e-03 sa_x +3.44e-03 sa_y -9.12e-03 sa_z +1.90e-03 (79s)
+15:01:54 xMH01_L3_rbc_s05: rbc K 126  est-truth rbc_x +7.77e-04 rbc_y +1.08e-03 rbc_z -2.68e-03 (94s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:02:07 xMH01_L3_tbc_s04: tbc K 126  est-truth tbc_x -1.21e-03 tbc_y -9.27e-04 tbc_z -2.55e-03 (82s)
+15:02:18 xMH01_L3_tbc_s00: tbc K 128  est-truth tbc_x +5.13e-03 tbc_y -8.83e-03 tbc_z -1.33e-02 (96s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:02:32 xMH01_L3_isf_s06: isf K 131  est-truth sg_x +6.20e-03 sg_y +2.19e-04 sg_z -5.69e-04 sa_x +3.32e-03 sa_y -8.03e-03 sa_z -6.93e-04 (81s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:02:33 xMH01_L3_rbc_s09: rbc K 129  est-truth rbc_x +5.25e-03 rbc_y +7.83e-04 rbc_z +9.47e-04 (98s)
+15:02:33 xMH01_L3_isfs_s03: isfs K 142  est-truth sg_x +1.89e-02 sg_y -6.17e-03 sg_z -1.42e-02 sa_x +4.47e-03 sa_y -2.52e-02 sa_z +2.14e-02 (119s)
+15:02:41 xMH01_L3_imis_s09: imis K 129  est-truth sg_x +6.52e-03 sg_y -1.45e-04 sg_z +2.78e-03 mg_01 -4.18e-03 mg_02 -5.62e-04 mg_10 +4.36e-03 mg_12 +6.68e-03 mg_20 +6.18e-03 mg_21 +4.12e-03 sa_x +5.31e-03 sa_y -1.28e-02 sa_z +1.58e-03 ma_01 +1.80e-02 ma_02 -5.30e-03 ma_10 +4.39e-03 ma_12 -5.31e-04 ma_20 -6.15e-03 ma_21 +2.61e-02 (90s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:03:03 xMH01_L3_isfs_s07: isfs K 183  est-truth sg_x -2.53e-02 sg_y +1.04e-02 sg_z -2.29e-02 sa_x +7.29e-03 sa_y +8.03e-03 sa_z +7.09e-03 (134s)
+15:03:07 xMH01_L3_rbc_s02: rbc K 128  est-truth rbc_x +5.06e-03 rbc_y -9.13e-04 rbc_z +2.22e-03 (101s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:03:17 xMH01_L3_tbc_s08: tbc K 124  est-truth tbc_x -2.17e-03 tbc_y +5.50e-03 tbc_z +3.08e-03 (82s)
+15:03:22 xMH01_L3_rbc_s06: rbc K 125  est-truth rbc_x +1.84e-03 rbc_y -4.92e-03 rbc_z +3.42e-03 (88s)
+15:03:23 xMH01_L3_isfs_s00: isfs K 166  est-truth sg_x +3.11e-02 sg_y -5.18e-03 sg_z +2.32e-02 sa_x +8.43e-03 sa_y -6.11e-03 sa_z -4.09e-03 (127s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:03:40 xMH01_L3_tbc_s01: tbc K 130  est-truth tbc_x +5.67e-05 tbc_y +8.69e-03 tbc_z +2.16e-03 (82s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:03:53 xMH01_L3_tbc_s05: tbc K 127  est-truth tbc_x +8.09e-03 tbc_y -3.46e-03 tbc_z -5.71e-03 (106s)
+15:03:58 xMH01_L3_isf_s07: isf K 130  est-truth sg_x +3.13e-04 sg_y +1.94e-03 sg_z -1.91e-03 sa_x +8.84e-03 sa_y -1.69e-02 sa_z +1.22e-03 (86s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:04:24 xMH01_L3_toff_s02: toff K 118  est-truth td -5.42e-03 (102s)
+15:04:29 xMH01_L3_tbc_s09: tbc K 122  est-truth tbc_x +1.37e-03 tbc_y -8.11e-04 tbc_z +1.16e-03 (72s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:04:40 xMH01_L3_isfs_s04: isfs K 145  est-truth sg_x +1.99e-02 sg_y +1.27e-02 sg_z -1.42e-02 sa_x +4.64e-03 sa_y -1.29e-02 sa_z +4.80e-03 (127s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:04:52 xMH01_L3_rbc_s03: rbc K 123  est-truth rbc_x -1.51e-03 rbc_y -3.23e-04 rbc_z -3.60e-03 (105s)
+15:04:53 xMH01_L3_rbc_s07: rbc K 128  est-truth rbc_x +3.92e-03 rbc_y -4.41e-04 rbc_z -9.02e-04 (91s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:05:10 xMH01_L3_rst_s00: rst K 241 (157s)
+15:05:14 xMH01_L3_tbc_s02: tbc K 126  est-truth tbc_x +9.71e-03 tbc_y +2.55e-04 tbc_z -4.24e-03 (93s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:05:22 xMH01_L3_isfs_s08: isfs K 171  est-truth sg_x -3.11e-02 sg_y +1.03e-02 sg_z -2.04e-02 sa_x +1.97e-02 sa_y -6.57e-03 sa_z +2.08e-03 (139s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:05:39 xMH01_L3_isfs_s01: isfs K 140  est-truth sg_x -2.84e-02 sg_y +4.18e-03 sg_z +1.86e-02 sa_x +3.75e-03 sa_y +7.74e-03 sa_z +7.64e-02 (136s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:05:44 xMH01_L3_toff_s06: toff K 136  est-truth td -4.61e-03 (105s)
+15:05:49 xMH01_L3_toff_s00: toff K 120  est-truth td -6.07e-03 (80s)
+15:05:52 xMH01_L3_tbc_s06: tbc K 129  est-truth tbc_x +1.03e-02 tbc_y +9.14e-04 tbc_z -4.46e-03 (119s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:06:07 xMH01_L3_rst_s01: rst K 108 (57s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:06:27 xMH01_L3_toff_s03: toff K 140  est-truth td +6.25e-03 (123s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:06:47 xMH01_L3_isfs_s05: isfs K 158  est-truth sg_x -1.99e-02 sg_y +8.40e-03 sg_z +1.84e-02 sa_x +2.22e-02 sa_y -3.19e-03 sa_z -6.91e-03 (126s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:07:03 xMH01_L3_tbc_s03: tbc K 132  est-truth tbc_x +5.68e-03 tbc_y -4.28e-03 tbc_z -7.24e-03 (110s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:07:21 xMH01_L3_tbc_s07: tbc K 121  est-truth tbc_x +8.35e-03 tbc_y +1.19e-02 tbc_z -1.74e-04 (89s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:07:27 xMH03_L1_imis_s02: imis K 142  est-truth sg_x +2.27e-03 sg_y +3.88e-03 sg_z +9.88e-05 mg_01 +1.20e-03 mg_02 -4.06e-04 mg_10 -1.81e-03 mg_12 -4.77e-03 mg_20 +2.05e-03 mg_21 +3.96e-03 sa_x -1.07e-03 sa_y -2.25e-02 sa_z +2.90e-02 ma_01 -2.17e-02 ma_02 +5.92e-03 ma_10 -1.53e-03 ma_12 -1.26e-02 ma_20 +2.05e-02 ma_21 +1.21e-02 (78s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:07:45 xMH01_L3_toff_s07: toff K 140  est-truth td +5.79e-03 (121s)
+15:07:48 xMH01_L3_toff_s04: toff K 121  est-truth td -4.17e-03 (80s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:08:34 xMH03_L1_imis_s06: imis K 147  est-truth sg_x +1.82e-03 sg_y +4.35e-03 sg_z -9.88e-04 mg_01 +1.49e-03 mg_02 -6.04e-04 mg_10 -2.27e-03 mg_12 -7.67e-03 mg_20 +2.35e-03 mg_21 +3.76e-03 sa_x +6.56e-03 sa_y -2.50e-02 sa_z +1.07e-02 ma_01 -3.07e-02 ma_02 +2.32e-03 ma_10 -6.69e-04 ma_12 -1.18e-02 ma_20 +2.98e-02 ma_21 +1.20e-02 (106s)
+15:08:39 xMH03_L1_isf_s00: isf K 142  est-truth sg_x +3.38e-03 sg_y +3.54e-03 sg_z -2.17e-03 sa_x -8.26e-03 sa_y -1.57e-02 sa_z +1.34e-02 (94s)
+15:08:39 xMH01_L3_toff_s01: toff K 138  est-truth td +5.33e-03 (170s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:08:50 xMH03_L1_imis_s03: imis K 134  est-truth sg_x +1.99e-03 sg_y +5.72e-03 sg_z +8.05e-04 mg_01 +1.35e-03 mg_02 -8.83e-04 mg_10 -2.69e-03 mg_12 -5.33e-03 mg_20 +2.19e-03 mg_21 +4.42e-03 sa_x +2.66e-03 sa_y -2.44e-02 sa_z +1.79e-02 ma_01 -3.32e-02 ma_02 -4.49e-06 ma_10 -3.75e-03 ma_12 -1.30e-02 ma_20 +2.80e-02 ma_21 +3.67e-03 (83s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:08:58 xMH03_L1_isf_s04: isf K 135  est-truth sg_x +3.47e-03 sg_y +5.52e-03 sg_z -2.95e-03 sa_x +1.28e-03 sa_y -1.80e-02 sa_z +8.28e-03 (96s)
+15:09:00 xMH03_L0_clean_r04: clean K 141 (245s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:09:09 xMH01_L3_isfs_s09: isfs K 161  est-truth sg_x -2.41e-02 sg_y -1.26e-02 sg_z -1.29e-02 sa_x +1.46e-02 sa_y -1.28e-02 sa_z -2.68e-02 (227s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:09:28 xMH01_L3_toff_s05: toff K 142  est-truth td +5.60e-03 (100s)
+15:09:29 xMH03_L0_clean_r00: clean K 139 (275s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:09:50 xMH03_L1_imis_s07: imis K 139  est-truth sg_x +3.05e-03 sg_y +4.21e-03 sg_z -1.81e-04 mg_01 +2.20e-03 mg_02 +1.61e-03 mg_10 -2.23e-03 mg_12 -5.73e-03 mg_20 +2.00e-03 mg_21 +4.71e-03 sa_x +3.70e-04 sa_y -2.57e-02 sa_z +2.44e-02 ma_01 -2.64e-02 ma_02 +6.03e-03 ma_10 -8.46e-04 ma_12 -1.30e-02 ma_20 +2.10e-02 ma_21 +1.32e-02 (76s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:10:04 xMH03_L1_isf_s01: isf K 143  est-truth sg_x +1.26e-03 sg_y +4.33e-03 sg_z -2.05e-03 sa_x -4.46e-03 sa_y -1.65e-02 sa_z +1.85e-02 (85s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:10:08 xMH03_L1_isf_s08: isf K 140  est-truth sg_x +1.63e-03 sg_y +5.41e-03 sg_z -1.45e-03 sa_x -5.08e-03 sa_y -1.71e-02 sa_z +2.16e-02 (87s)
+15:10:11 xMH03_L1_imis_s04: imis K 140  est-truth sg_x +2.92e-03 sg_y +5.75e-03 sg_z +7.68e-04 mg_01 +2.52e-03 mg_02 +1.00e-03 mg_10 -2.13e-03 mg_12 -4.80e-03 mg_20 +2.41e-03 mg_21 +3.55e-03 sa_x +8.81e-03 sa_y -1.97e-02 sa_z +2.47e-02 ma_01 -2.47e-02 ma_02 +8.77e-04 ma_10 -5.73e-03 ma_12 -8.80e-03 ma_20 +2.46e-02 ma_21 +5.44e-03 (82s)
+15:10:15 xMH01_L3_toff_s08: toff K 117  est-truth td -3.00e-02 (150s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:10:24 xMH03_L1_isf_s05: isf K 143  est-truth sg_x +1.59e-03 sg_y +4.26e-03 sg_z -2.31e-03 sa_x -8.32e-03 sa_y -1.83e-02 sa_z +2.59e-02 (85s)
+15:10:32 xMH03_L1_isfs_s02: isfs K 138  est-truth sg_x +7.55e-04 sg_y +4.87e-03 sg_z -1.11e-03 sa_x -4.36e-03 sa_y -1.61e-02 sa_z +1.82e-02 (82s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [750] for slices [0].
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:11:00 xMH03_L1_isfs_s06: isfs K 139  est-truth sg_x +3.97e-03 sg_y +5.48e-03 sg_z -1.58e-03 sa_x -4.99e-03 sa_y -1.62e-02 sa_z +1.50e-02 (90s)
+15:11:27 xMH03_L1_isf_s02: isf K 141  est-truth sg_x +1.65e-03 sg_y +3.95e-03 sg_z -1.31e-03 sa_x -2.04e-03 sa_y -1.42e-02 sa_z +2.18e-02 (83s)
+15:11:29 xMH03_L1_imis_s05: imis K 144  est-truth sg_x +3.15e-03 sg_y +4.17e-03 sg_z +3.23e-04 mg_01 +1.75e-03 mg_02 +1.04e-03 mg_10 -2.10e-03 mg_12 -4.87e-03 mg_20 +2.45e-03 mg_21 +3.50e-03 sa_x -1.14e-02 sa_y -2.20e-02 sa_z +2.06e-02 ma_01 -3.37e-02 ma_02 -9.40e-03 ma_10 +2.60e-03 ma_12 -1.47e-02 ma_20 +2.42e-02 ma_21 +7.74e-03 (77s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:11:31 xMH03_L1_imis_s08: imis K 138  est-truth sg_x +2.17e-03 sg_y +3.60e-03 sg_z -8.60e-04 mg_01 +1.97e-03 mg_02 -5.32e-04 mg_10 -2.60e-03 mg_12 -4.87e-03 mg_20 +1.71e-03 mg_21 +3.14e-03 sa_x -1.84e-03 sa_y -2.42e-02 sa_z +3.24e-02 ma_01 -3.15e-02 ma_02 +8.82e-03 ma_10 +3.32e-04 ma_12 -1.12e-02 ma_20 +2.44e-02 ma_21 +1.11e-02 (101s)
+15:11:36 xMH03_L1_isf_s09: isf K 139  est-truth sg_x +1.88e-03 sg_y +3.68e-03 sg_z -2.47e-03 sa_x -8.61e-03 sa_y -1.82e-02 sa_z +2.15e-02 (89s)
+15:11:56 xMH03_L1_isf_s06: isf K 141  est-truth sg_x +2.77e-03 sg_y +5.88e-03 sg_z -1.57e-03 sa_x -5.52e-03 sa_y -1.83e-02 sa_z +1.78e-02 (92s)
+15:12:02 xMH03_L1_rbc_s00: rbc K 140  est-truth rbc_x +5.06e-03 rbc_y -1.53e-03 rbc_z -2.09e-03 (73s)
+15:12:19 xMH01_L3_toff_s09: toff K 143  est-truth td +4.69e-03 (124s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:12:29 xMH03_L1_isfs_s03: isfs K 145  est-truth sg_x +3.87e-03 sg_y +2.38e-03 sg_z -4.16e-03 sa_x -6.81e-03 sa_y -2.31e-02 sa_z +1.45e-02 (117s)
+15:12:34 xMH03_L1_isfs_s07: isfs K 140  est-truth sg_x +6.66e-04 sg_y +3.55e-03 sg_z -3.32e-03 sa_x -1.05e-03 sa_y -1.55e-02 sa_z +1.26e-02 (95s)
+15:12:38 xMH03_L0_clean_r05: clean K 144 (219s)
+15:12:39 xMH03_L1_isf_s03: isf K 140  est-truth sg_x +3.28e-03 sg_y +6.40e-03 sg_z -3.00e-03 sa_x +4.50e-03 sa_y -1.59e-02 sa_z +7.40e-03 (72s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:12:41 xMH03_L1_rbc_s04: rbc K 139  est-truth rbc_x +5.20e-03 rbc_y -1.88e-03 rbc_z -2.01e-03 (71s)
+15:12:47 xMH03_L1_imis_s09: imis K 138  est-truth sg_x +2.85e-03 sg_y +4.05e-03 sg_z -1.13e-03 mg_01 +3.30e-03 mg_02 +1.60e-03 mg_10 -1.90e-03 mg_12 -3.88e-03 mg_20 +1.82e-03 mg_21 +2.94e-03 sa_x +5.78e-03 sa_y -2.47e-02 sa_z +1.85e-02 ma_01 -3.25e-02 ma_02 +9.47e-03 ma_10 -1.20e-04 ma_12 -1.41e-02 ma_20 +2.47e-02 ma_21 +6.23e-03 (76s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:13:14 xMH03_L1_isfs_s00: isfs K 141  est-truth sg_x +3.56e-03 sg_y +5.27e-03 sg_z -1.40e-03 sa_x +2.26e-03 sa_y -1.97e-02 sa_z +1.75e-02 (97s)
+15:13:25 xMH03_L1_isf_s07: isf K 139  est-truth sg_x +1.33e-03 sg_y +5.24e-03 sg_z -2.40e-03 sa_x -9.11e-03 sa_y -1.68e-02 sa_z +1.82e-02 (89s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:13:27 xMH03_L0_clean_r08: clean K 135 (466s)
+15:13:33 xMH03_L1_rbc_s08: rbc K 139  est-truth rbc_x +4.84e-03 rbc_y -1.48e-03 rbc_z -1.27e-03 (73s)
+15:13:40 xMH03_L0_clean_r01: clean K 141 (251s)
+15:13:46 xMH03_L1_isfs_s04: isfs K 142  est-truth sg_x +3.40e-03 sg_y +6.24e-03 sg_z -3.26e-03 sa_x -7.21e-03 sa_y -2.25e-02 sa_z +1.76e-02 (77s)
+15:13:50 xMH03_L1_rbc_s01: rbc K 142  est-truth rbc_x +4.52e-03 rbc_y -8.40e-04 rbc_z -1.65e-03 (108s)
+15:14:01 xMH03_L1_rbc_s05: rbc K 136  est-truth rbc_x +5.53e-03 rbc_y -9.84e-04 rbc_z -1.89e-03 (80s)
+15:14:09 xMH03_L1_rst_s02: rst K 136 (88s)
+15:14:10 xMH03_L1_isfs_s08: isfs K 139  est-truth sg_x +7.59e-04 sg_y +2.48e-03 sg_z -4.13e-03 sa_x -1.59e-02 sa_y -2.13e-02 sa_z +1.62e-02 (96s)
+15:14:24 xMH03_L1_rst_s06: rst K 149 (95s)
+15:14:49 xMH03_L1_isfs_s01: isfs K 143  est-truth sg_x +1.09e-03 sg_y +5.35e-03 sg_z -7.36e-04 sa_x -6.94e-04 sa_y -1.41e-02 sa_z +8.81e-03 (95s)
+15:14:50 xMH03_L1_rbc_s09: rbc K 139  est-truth rbc_x +5.07e-03 rbc_y -1.07e-03 rbc_z -1.49e-03 (77s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:14:56 xMH03_L1_tbc_s00: tbc K 139  est-truth tbc_x +3.71e-03 tbc_y +4.06e-03 tbc_z -1.60e-02 (91s)
+15:15:02 xMH03_L1_rbc_s02: rbc K 136  est-truth rbc_x +5.72e-03 rbc_y -1.31e-03 rbc_z -1.48e-03 (72s)
+15:15:15 xMH03_L1_isfs_s05: isfs K 139  est-truth sg_x +5.12e-04 sg_y +6.13e-03 sg_z -7.90e-04 sa_x +5.85e-04 sa_y -1.30e-02 sa_z +7.80e-03 (90s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:15:20 xMH03_L1_rbc_s06: rbc K 137  est-truth rbc_x +3.94e-03 rbc_y -2.13e-03 rbc_z -1.28e-03 (79s)
+15:15:32 xMH03_L1_isfs_s09: isfs K 145  est-truth sg_x +8.45e-04 sg_y +2.30e-03 sg_z -3.86e-03 sa_x -1.16e-03 sa_y -1.50e-02 sa_z +1.23e-02 (81s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:15:34 xMH03_L1_rst_s03: rst K 138 (86s)
+15:15:38 xMH03_L1_rst_s07: rst K 141 (74s)
+15:16:03 xMH03_L1_tbc_s04: tbc K 140  est-truth tbc_x +8.45e-03 tbc_y -1.04e-02 tbc_z -3.52e-02 (73s)
+15:16:08 xMH03_L1_tbc_s01: tbc K 138  est-truth tbc_x +2.85e-03 tbc_y -9.48e-03 tbc_z -2.53e-02 (72s)
+15:16:25 xMH03_L0_clean_r06: clean K 135 (227s)
+15:16:26 xMH03_L1_rst_s00: rst K 150 (96s)
+15:16:26 xMH03_L1_rbc_s03: rbc K 147  est-truth rbc_x +4.22e-03 rbc_y -1.22e-03 rbc_z -1.55e-03 (84s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:16:42 xMH03_L1_rbc_s07: rbc K 141  est-truth rbc_x +4.76e-03 rbc_y -1.31e-03 rbc_z -1.81e-03 (82s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:16:55 xMH03_L0_clean_r09: clean K 140 (208s)
+15:16:56 xMH03_L1_toff_s02: toff K 141  est-truth td -1.48e-03 (83s)
+15:17:02 xMH03_L1_tbc_s08: tbc K 138  est-truth tbc_x +5.13e-03 tbc_y -9.68e-03 tbc_z -2.68e-02 (105s)
+15:17:04 xMH03_L1_rst_s04: rst K 139 (90s)
+15:17:14 xMH03_L1_rst_s08: rst K 137 (96s)
+15:17:24 xMH03_L1_tbc_s02: tbc K 136  est-truth tbc_x +1.02e-02 tbc_y -6.97e-03 tbc_z -2.78e-02 (76s)
+15:17:38 xMH03_L1_toff_s06: toff K 139  est-truth td -1.49e-03 (71s)
+15:17:47 xMH03_L1_rst_s01: rst K 140 (81s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:17:58 xMH03_L0_clean_r02: clean K 138 (258s)
+15:18:07 xMH03_L1_tbc_s05: tbc K 142  est-truth tbc_x +9.87e-03 tbc_y -1.19e-02 tbc_z -2.84e-02 (124s)
+15:18:12 xMH03_L1_toff_s03: toff K 144  est-truth td +7.76e-04 (77s)
+15:18:14 xMH03_L1_tbc_s09: tbc K 140  est-truth tbc_x +5.03e-03 tbc_y -1.39e-02 tbc_z -2.62e-02 (72s)
+15:18:20 xMH03_L1_imis_s00: imis K 142  est-truth sg_x +2.11e-03 sg_y +3.42e-03 sg_z +3.71e-04 mg_01 +1.44e-03 mg_02 +2.78e-05 mg_10 -1.56e-03 mg_12 -3.63e-03 mg_20 +1.85e-03 mg_21 +2.85e-03 sa_x +2.94e-03 sa_y -2.24e-02 sa_z +2.53e-02 ma_01 -2.10e-02 ma_02 +2.27e-03 ma_10 -3.15e-03 ma_12 -1.18e-02 ma_20 +1.80e-02 ma_21 +4.15e-03 (86s)
+15:18:29 xMH03_L2_imis_s00: imis K 139  est-truth sg_x +2.03e-03 sg_y +5.08e-03 sg_z +4.77e-04 mg_01 +1.03e-03 mg_02 +1.15e-03 mg_10 -1.99e-03 mg_12 -4.13e-03 mg_20 +3.68e-03 mg_21 +3.97e-03 sa_x -7.34e-03 sa_y -2.05e-02 sa_z +2.43e-02 ma_01 -3.25e-02 ma_02 -6.07e-03 ma_10 +2.04e-03 ma_12 -1.20e-02 ma_20 +2.25e-02 ma_21 +1.29e-02 (106s)
+15:18:39 xMH03_L1_rst_s05: rst K 133 (94s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:18:46 xMH03_L1_tbc_s03: tbc K 142  est-truth tbc_x +5.75e-03 tbc_y -8.78e-03 tbc_z -2.35e-02 (82s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:18:49 xMH03_L1_rst_s09: rst K 128 (95s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:19:05 xMH03_L1_toff_s07: toff K 143  est-truth td +4.30e-04 (87s)
+15:19:16 xMH03_L1_tbc_s06: tbc K 136  est-truth tbc_x +8.73e-03 tbc_y -1.08e-02 tbc_z -2.56e-02 (69s)
+15:19:18 xMH03_L2_imis_s04: imis K 142  est-truth sg_x +2.42e-03 sg_y +4.26e-03 sg_z -5.28e-04 mg_01 +3.46e-03 mg_02 +1.52e-03 mg_10 -1.10e-03 mg_12 -4.94e-03 mg_20 +2.95e-03 mg_21 +1.69e-03 sa_x +7.45e-03 sa_y -2.43e-02 sa_z +2.33e-02 ma_01 -1.87e-02 ma_02 +6.44e-03 ma_10 -5.11e-03 ma_12 -1.37e-02 ma_20 +2.79e-02 ma_21 +9.16e-03 (90s)
+15:19:22 xMH03_L1_toff_s04: toff K 138  est-truth td -1.62e-03 (69s)
+15:19:24 xMH03_L1_toff_s00: toff K 138  est-truth td -1.46e-03 (70s)
+15:19:47 xMH03_L2_imis_s01: imis K 141  est-truth sg_x +2.44e-03 sg_y +5.05e-03 sg_z +3.01e-04 mg_01 +7.97e-04 mg_02 +1.20e-03 mg_10 -1.39e-03 mg_12 -4.84e-03 mg_20 +5.99e-04 mg_21 +2.74e-03 sa_x -2.22e-03 sa_y -2.04e-02 sa_z +1.83e-02 ma_01 -3.21e-02 ma_02 +1.52e-02 ma_10 -1.80e-03 ma_12 -1.51e-02 ma_20 +2.14e-02 ma_21 +2.60e-03 (79s)
+15:19:49 xMH03_L1_imis_s01: imis K 140  est-truth sg_x +1.94e-03 sg_y +4.08e-03 sg_z +3.15e-04 mg_01 +1.42e-03 mg_02 +6.11e-05 mg_10 -2.44e-03 mg_12 -4.76e-03 mg_20 +2.19e-03 mg_21 +3.81e-03 sa_x -4.19e-03 sa_y -2.37e-02 sa_z +2.93e-02 ma_01 -2.33e-02 ma_02 +2.22e-03 ma_10 -2.29e-03 ma_12 -1.61e-02 ma_20 +3.09e-02 ma_21 +9.45e-03 (88s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:20:04 xMH03_L2_isf_s02: isf K 138  est-truth sg_x +1.34e-03 sg_y +3.35e-03 sg_z -1.24e-03 sa_x -3.73e-03 sa_y -1.56e-02 sa_z +1.57e-02 (77s)
+15:20:05 xMH03_L2_imis_s08: imis K 143  est-truth sg_x +2.66e-03 sg_y +5.67e-03 sg_z -2.71e-04 mg_01 +2.38e-03 mg_02 -6.07e-04 mg_10 -2.51e-03 mg_12 -5.32e-03 mg_20 +8.12e-04 mg_21 +3.55e-03 sa_x +6.00e-03 sa_y -3.16e-02 sa_z +2.79e-02 ma_01 -2.26e-02 ma_02 +3.30e-03 ma_10 -1.17e-03 ma_12 -1.15e-02 ma_20 +2.95e-02 ma_21 +6.97e-03 (85s)
+15:20:15 xMH03_L2_isf_s06: isf K 138  est-truth sg_x +4.24e-03 sg_y +5.06e-03 sg_z -1.06e-03 sa_x -6.37e-03 sa_y -2.05e-02 sa_z +2.24e-02 (86s)
+15:20:24 xMH03_L1_tbc_s07: tbc K 140  est-truth tbc_x +3.99e-03 tbc_y -1.02e-02 tbc_z -2.36e-02 (68s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:20:29 xMH03_L0_clean_r07: clean K 144 (244s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:20:34 xMH03_L1_toff_s01: toff K 140  est-truth td +7.59e-04 (70s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:20:37 xMH03_L1_toff_s05: toff K 138  est-truth td +3.53e-04 (75s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:20:49 xMH03_L2_imis_s05: imis K 141  est-truth sg_x +2.75e-03 sg_y +3.57e-03 sg_z -7.78e-04 mg_01 +1.35e-03 mg_02 -3.69e-04 mg_10 -2.16e-03 mg_12 -4.70e-03 mg_20 +1.05e-03 mg_21 +2.88e-03 sa_x -3.73e-03 sa_y -3.01e-02 sa_z +1.96e-02 ma_01 -2.81e-02 ma_02 +6.75e-03 ma_10 -6.42e-05 ma_12 -8.95e-03 ma_20 +2.64e-02 ma_21 +3.57e-03 (92s)
+15:21:06 xMH03_L1_toff_s08: toff K 142  est-truth td -1.25e-03 (121s)
+15:21:12 xMH03_L2_isfs_s00: isfs K 142  est-truth sg_x +6.41e-03 sg_y +2.58e-03 sg_z +5.81e-04 sa_x -3.49e-03 sa_y -1.22e-02 sa_z +1.37e-02 (82s)
+15:21:19 xMH03_L2_isf_s03: isf K 141  est-truth sg_x +3.67e-03 sg_y +4.09e-03 sg_z -3.07e-03 sa_x -8.44e-03 sa_y -1.96e-02 sa_z +1.67e-02 (75s)
+15:21:20 xMH03_L2_imis_s02: imis K 140  est-truth sg_x +2.75e-03 sg_y +5.65e-03 sg_z +7.21e-04 mg_01 +1.79e-03 mg_02 +2.12e-04 mg_10 -1.46e-03 mg_12 -4.48e-03 mg_20 +1.16e-03 mg_21 +3.03e-03 sa_x +1.46e-03 sa_y -2.67e-02 sa_z +2.46e-02 ma_01 -2.22e-02 ma_02 +9.14e-03 ma_10 -5.18e-04 ma_12 -1.07e-02 ma_20 +1.74e-02 ma_21 +1.33e-02 (93s)
+15:21:30 xMH03_L2_isf_s07: isf K 141  est-truth sg_x +6.02e-04 sg_y +5.50e-03 sg_z -2.69e-03 sa_x -1.17e-02 sa_y -2.08e-02 sa_z +1.76e-02 (75s)
+15:21:45 xMH03_L2_isfs_s04: isfs K 144  est-truth sg_x +6.52e-03 sg_y +7.70e-03 sg_z -4.84e-03 sa_x -5.86e-04 sa_y -2.74e-02 sa_z +8.63e-03 (79s)
+15:21:50 xMH03_L2_imis_s09: imis K 140  est-truth sg_x +1.72e-03 sg_y +4.74e-03 sg_z +7.14e-04 mg_01 +3.04e-05 mg_02 -1.02e-03 mg_10 -1.00e-03 mg_12 -3.37e-03 mg_20 +2.66e-03 mg_21 +4.70e-03 sa_x +3.87e-03 sa_y -2.38e-02 sa_z +2.97e-02 ma_01 -1.70e-02 ma_02 +1.23e-02 ma_10 -3.30e-03 ma_12 -1.12e-02 ma_20 +2.35e-02 ma_21 +1.04e-02 (105s)
+15:21:56 xMH03_L2_rbc_s06: rbc K 136  est-truth rbc_x +5.55e-03 rbc_y -3.52e-03 rbc_z -8.16e-04 (78s)
+15:21:56 xMH03_L2_rbc_s02: rbc K 142  est-truth rbc_x +6.81e-03 rbc_y -8.05e-04 rbc_z -1.02e-03 (81s)
+15:22:06 xMH03_L2_isfs_s08: isfs K 148  est-truth sg_x -1.73e-03 sg_y +6.21e-03 sg_z -4.84e-03 sa_x +7.25e-04 sa_y -2.15e-02 sa_z +1.33e-02 (96s)
+15:22:08 xMH03_L0_clean_r03: clean K 139 (251s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:22:13 xMH03_L2_imis_s06: imis K 138  est-truth sg_x +1.92e-03 sg_y +4.27e-03 sg_z +1.82e-04 mg_01 +3.14e-03 mg_02 -5.11e-04 mg_10 -2.57e-03 mg_12 -5.42e-03 mg_20 +2.79e-03 mg_21 +2.53e-03 sa_x +6.05e-03 sa_y -2.07e-02 sa_z +2.75e-02 ma_01 -3.21e-02 ma_02 +4.75e-03 ma_10 -2.19e-03 ma_12 -5.02e-03 ma_20 +2.42e-02 ma_21 +9.49e-03 (83s)
+15:22:27 xMH03_L2_isf_s04: isf K 135  est-truth sg_x +3.75e-03 sg_y +5.43e-03 sg_z -3.21e-03 sa_x -6.72e-03 sa_y -1.64e-02 sa_z +2.12e-02 (68s)
+15:22:31 xMH03_L1_toff_s09: toff K 138  est-truth td +4.45e-04 (84s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:22:42 xMH03_L2_isfs_s01: isfs K 140  est-truth sg_x -1.59e-03 sg_y +7.78e-03 sg_z +3.21e-03 sa_x -3.74e-03 sa_y -1.32e-02 sa_z +1.09e-02 (90s)
+15:22:50 xMH03_L2_isf_s08: isf K 141  est-truth sg_x +6.43e-04 sg_y +4.81e-03 sg_z -3.16e-03 sa_x -1.59e-03 sa_y -2.16e-02 sa_z +1.99e-02 (79s)
+15:22:50 xMH03_L2_imis_s03: imis K 139  est-truth sg_x +2.02e-03 sg_y +3.04e-03 sg_z -1.33e-03 mg_01 +2.36e-03 mg_02 +1.49e-03 mg_10 -1.81e-03 mg_12 -6.23e-03 mg_20 +2.49e-04 mg_21 +3.01e-03 sa_x -6.60e-03 sa_y -2.29e-02 sa_z +2.32e-02 ma_01 -2.10e-02 ma_02 +9.93e-03 ma_10 +7.37e-04 ma_12 -1.19e-02 ma_20 +2.61e-02 ma_21 +7.30e-03 (90s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:23:10 xMH03_L2_isfs_s05: isfs K 142  est-truth sg_x -1.99e-03 sg_y +7.00e-03 sg_z +2.51e-03 sa_x +3.64e-03 sa_y -9.98e-03 sa_z +1.61e-02 (85s)
+15:23:14 xMH03_L2_rbc_s03: rbc K 137  est-truth rbc_x +5.38e-03 rbc_y -1.90e-03 rbc_z -2.41e-03 (77s)
+15:23:18 xMH03_L2_isf_s00: isf K 139  est-truth sg_x +3.64e-03 sg_y +2.09e-03 sg_z -1.71e-03 sa_x -4.55e-03 sa_y -2.24e-02 sa_z +1.81e-02 (87s)
+15:23:21 xMH03_L2_rbc_s07: rbc K 140  est-truth rbc_x +5.37e-03 rbc_y -1.65e-03 rbc_z -1.43e-03 (85s)
+15:23:33 xMH03_L2_imis_s07: imis K 141  est-truth sg_x +1.51e-03 sg_y +2.68e-03 sg_z -1.49e-03 mg_01 +5.96e-04 mg_02 -4.86e-04 mg_10 -2.37e-03 mg_12 -5.11e-03 mg_20 +2.48e-03 mg_21 +2.47e-03 sa_x -5.45e-03 sa_y -2.24e-02 sa_z +2.69e-02 ma_01 -2.31e-02 ma_02 -6.36e-04 ma_10 -1.44e-03 ma_12 -9.22e-03 ma_20 +1.98e-02 ma_21 +9.15e-03 (80s)
+15:23:33 xMH03_L2_isfs_s09: isfs K 140  est-truth sg_x -1.88e-03 sg_y +2.98e-03 sg_z -5.31e-03 sa_x -4.20e-03 sa_y -2.29e-02 sa_z +7.26e-03 (86s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:23:37 xMH03_L2_rst_s04: rst K 115 (65s)
+15:23:56 xMH03_L2_isf_s05: isf K 135  est-truth sg_x +6.51e-04 sg_y +4.44e-03 sg_z -1.64e-03 sa_x -3.33e-03 sa_y -1.79e-02 sa_z +2.37e-02 (90s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:24:04 xMH03_L2_isf_s09: isf K 141  est-truth sg_x +8.15e-04 sg_y +3.26e-03 sg_z -3.71e-03 sa_x -4.58e-03 sa_y -1.87e-02 sa_z +1.92e-02 (75s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:24:08 xMH03_L2_isfs_s02: isfs K 144  est-truth sg_x -1.30e-03 sg_y +3.59e-03 sg_z +1.91e-03 sa_x -1.16e-02 sa_y -1.39e-02 sa_z +2.61e-02 (86s)
+15:24:30 xMH03_L2_isfs_s06: isfs K 141  est-truth sg_x +7.51e-03 sg_y +9.03e-03 sg_z +1.95e-03 sa_x +3.83e-04 sa_y -1.83e-02 sa_z +2.67e-03 (80s)
+15:24:33 xMH03_L2_rbc_s04: rbc K 139  est-truth rbc_x +4.06e-03 rbc_y -2.90e-03 rbc_z -1.63e-03 (79s)
+15:24:34 xMH03_L2_isf_s01: isf K 140  est-truth sg_x +9.08e-04 sg_y +3.65e-03 sg_z -1.14e-03 sa_x -1.49e-02 sa_y -1.78e-02 sa_z +2.31e-02 (76s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:24:38 xMH03_L2_rbc_s08: rbc K 140  est-truth rbc_x +5.50e-03 rbc_y -1.52e-03 rbc_z -6.85e-04 (77s)
+15:24:45 xMH03_L2_tbc_s02: tbc K 139  est-truth tbc_x +9.83e-03 tbc_y -6.55e-03 tbc_z -2.99e-02 (71s)
+15:24:55 xMH03_L2_rbc_s00: rbc K 139  est-truth rbc_x +5.79e-03 rbc_y -9.29e-04 rbc_z -1.97e-03 (82s)
+15:24:56 xMH03_L2_rst_s08: rst K 159 (124s)
+15:25:00 xMH03_L2_rst_s05: rst K 129 (83s)
+15:25:14 xMH03_L2_tbc_s06: tbc K 140  est-truth tbc_x +6.65e-03 tbc_y -1.93e-02 tbc_z -2.80e-02 (76s)
+15:25:30 xMH03_L2_isfs_s03: isfs K 146  est-truth sg_x +6.24e-03 sg_y +3.24e-03 sg_z -5.78e-03 sa_x -6.26e-03 sa_y -2.48e-02 sa_z +1.04e-02 (83s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:25:48 xMH03_L2_toff_s00: toff K 140  est-truth td -4.13e-03 (103s)
+15:25:56 xMH03_L2_rbc_s09: rbc K 137  est-truth rbc_x +6.02e-03 rbc_y -1.14e-03 rbc_z -1.56e-03 (79s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:26:03 xMH03_L2_rbc_s05: rbc K 141  est-truth rbc_x +5.42e-03 rbc_y -8.12e-04 rbc_z -1.92e-03 (90s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:26:06 xMH03_L2_tbc_s03: tbc K 141  est-truth tbc_x +7.92e-03 tbc_y -1.73e-02 tbc_z -3.57e-02 (81s)
+15:26:22 xMH03_L2_toff_s04: toff K 146  est-truth td -3.73e-03 (107s)
+15:26:25 xMH03_L2_tbc_s07: tbc K 140  est-truth tbc_x +1.23e-02 tbc_y +1.53e-03 tbc_z -2.71e-02 (71s)
+15:26:26 xMH03_L2_rbc_s01: rbc K 140  est-truth rbc_x +4.30e-03 rbc_y -3.00e-04 rbc_z -1.78e-03 (91s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:26:48 xMH03_L2_isfs_s07: isfs K 149  est-truth sg_x -2.03e-03 sg_y +7.13e-03 sg_z -4.49e-03 sa_x -6.13e-03 sa_y -2.16e-02 sa_z +1.79e-02 (137s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:27:14 xMH03_L2_toff_s08: toff K 140  est-truth td -3.92e-03 (103s)
+15:27:18 xMH03_L2_tbc_s04: tbc K 141  est-truth tbc_x +4.31e-03 tbc_y -5.87e-03 tbc_z -2.62e-02 (72s)
+15:27:18 xMH03_L2_rst_s09: rst K 128 (143s)
+15:27:19 xMH03_L2_toff_s01: toff K 146  est-truth td +2.26e-03 (91s)
+15:27:38 xMH03_L2_tbc_s08: tbc K 139  est-truth tbc_x +3.67e-03 tbc_y -7.35e-03 tbc_z -2.39e-02 (73s)
+15:27:48 xMH03_L3_imis_s06: imis K 151  est-truth sg_x +2.73e-03 sg_y +7.15e-03 sg_z -2.36e-03 mg_01 +5.54e-03 mg_02 +4.90e-03 mg_10 -3.14e-03 mg_12 -5.83e-03 mg_20 +5.40e-03 mg_21 -1.79e-03 sa_x -1.53e-02 sa_y -3.53e-02 sa_z +1.61e-02 ma_01 -4.20e-02 ma_02 -2.26e-02 ma_10 -1.80e-03 ma_12 -1.18e-02 ma_20 +3.13e-02 ma_21 -2.23e-03 (104s)
+15:27:52 xMH03_L3_imis_s02: imis K 157  est-truth sg_x +3.66e-03 sg_y +7.16e-03 sg_z +1.78e-03 mg_01 -6.46e-04 mg_02 -3.59e-03 mg_10 +2.52e-03 mg_12 -4.79e-03 mg_20 -2.69e-03 mg_21 -2.80e-03 sa_x +5.49e-03 sa_y -3.15e-02 sa_z +1.47e-02 ma_01 -4.18e-02 ma_02 +4.97e-03 ma_10 -3.70e-03 ma_12 -7.73e-03 ma_20 +2.32e-02 ma_21 +6.32e-03 (114s)
+15:28:06 xMH03_L3_isf_s00: isf K 141  est-truth sg_x +5.38e-03 sg_y +4.55e-03 sg_z -1.12e-03 sa_x -1.48e-03 sa_y -2.19e-02 sa_z +2.25e-02 (98s)
+15:28:10 xMH03_L2_toff_s05: toff K 150  est-truth td +2.51e-03 (108s)
+15:28:27 xMH03_L3_isf_s04: isf K 137  est-truth sg_x +5.40e-03 sg_y +5.43e-03 sg_z -4.90e-03 sa_x -6.93e-03 sa_y -2.74e-02 sa_z +8.93e-03 (98s)
+15:28:34 xMH03_L2_tbc_s00: tbc K 142  est-truth tbc_x +2.93e-03 tbc_y -8.67e-03 tbc_z -2.83e-02 (75s)
+15:28:35 xMH03_L2_toff_s09: toff K 143  est-truth td +2.59e-03 (81s)
+15:28:41 xMH03_L2_tbc_s05: tbc K 141  est-truth tbc_x +1.16e-02 tbc_y -1.44e-02 tbc_z -2.42e-02 (83s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:29:01 xMH03_L2_toff_s02: toff K 140  est-truth td -4.16e-03 (102s)
+15:29:07 xMH03_L2_tbc_s09: tbc K 138  est-truth tbc_x +3.70e-03 tbc_y -7.05e-03 tbc_z -3.21e-02 (89s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:29:22 xMH03_L3_imis_s07: imis K 152  est-truth sg_x +2.72e-03 sg_y +6.03e-03 sg_z -2.33e-03 mg_01 -3.14e-03 mg_02 +2.89e-03 mg_10 -4.29e-03 mg_12 -7.02e-03 mg_20 +5.10e-03 mg_21 +2.94e-03 sa_x -6.29e-04 sa_y -1.96e-02 sa_z +1.54e-02 ma_01 -2.58e-02 ma_02 -6.08e-03 ma_10 -3.84e-03 ma_12 -7.11e-03 ma_20 +2.44e-02 ma_21 +9.28e-03 (93s)
+15:29:27 xMH03_L3_isf_s01: isf K 143  est-truth sg_x -8.69e-04 sg_y +6.61e-03 sg_z +7.49e-04 sa_x -3.80e-03 sa_y -1.01e-02 sa_z +2.06e-02 (81s)
+15:29:46 xMH03_L3_isf_s05: isf K 136  est-truth sg_x -3.21e-04 sg_y +7.55e-03 sg_z +3.37e-04 sa_x +3.05e-03 sa_y -1.40e-02 sa_z +7.96e-03 (79s)
+15:29:47 xMH03_L2_tbc_s01: tbc K 142  est-truth tbc_x +4.88e-03 tbc_y -6.76e-03 tbc_z -2.23e-02 (73s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:29:48 xMH03_L3_imis_s03: imis K 154  est-truth sg_x +2.62e-03 sg_y +1.61e-03 sg_z -2.13e-03 mg_01 +6.43e-03 mg_02 +4.63e-03 mg_10 +1.94e-03 mg_12 -7.18e-03 mg_20 -3.58e-03 mg_21 -2.28e-03 sa_x +1.65e-02 sa_y -2.14e-02 sa_z +1.57e-02 ma_01 -2.23e-02 ma_02 +2.89e-03 ma_10 +4.64e-04 ma_12 -4.13e-04 ma_20 +2.40e-02 ma_21 +3.26e-03 (117s)
+15:29:54 xMH03_L2_toff_s06: toff K 143  est-truth td -3.80e-03 (104s)
+15:30:03 xMH03_L3_isf_s08: isf K 140  est-truth sg_x -5.35e-04 sg_y +4.99e-03 sg_z -4.14e-03 sa_x -7.80e-03 sa_y -2.00e-02 sa_z +1.58e-02 (81s)
+15:30:24 xMH03_L3_imis_s00: imis K 152  est-truth sg_x +2.39e-03 sg_y +6.25e-03 sg_z -1.56e-03 mg_01 -4.45e-03 mg_02 +3.43e-03 mg_10 -2.92e-03 mg_12 -6.30e-03 mg_20 +5.37e-03 mg_21 +8.85e-03 sa_x -7.94e-03 sa_y -2.89e-02 sa_z +2.14e-02 ma_01 -3.54e-02 ma_02 -1.19e-02 ma_10 -1.87e-03 ma_12 -1.71e-02 ma_20 +1.98e-02 ma_21 -2.70e-03 (109s)
+15:30:41 xMH03_L2_toff_s03: toff K 140  est-truth td +2.24e-03 (100s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:30:53 xMH03_L3_isf_s02: isf K 144  est-truth sg_x -6.41e-04 sg_y +4.54e-03 sg_z +3.48e-05 sa_x +1.51e-03 sa_y -1.62e-02 sa_z +1.23e-02 (85s)
+15:31:09 xMH03_L3_imis_s08: imis K 154  est-truth sg_x +2.81e-03 sg_y +4.49e-03 sg_z -3.39e-04 mg_01 +7.86e-03 mg_02 -3.45e-03 mg_10 -3.42e-03 mg_12 -5.05e-03 mg_20 -3.19e-03 mg_21 -4.05e-03 sa_x -4.28e-03 sa_y -3.99e-02 sa_z +2.56e-02 ma_01 -3.57e-02 ma_02 -1.42e-03 ma_10 +1.58e-03 ma_12 -7.73e-03 ma_20 +3.04e-02 ma_21 +9.76e-03 (107s)
+15:31:27 xMH03_L3_isf_s06: isf K 147  est-truth sg_x +5.41e-03 sg_y +6.05e-03 sg_z -9.09e-04 sa_x -5.14e-03 sa_y -2.15e-02 sa_z +1.97e-02 (101s)
+15:31:29 xMH03_L3_isf_s09: isf K 141  est-truth sg_x -4.85e-04 sg_y +2.22e-03 sg_z -4.89e-03 sa_x -4.05e-04 sa_y -1.63e-02 sa_z +2.46e-02 (86s)
+15:31:41 xMH03_L3_imis_s04: imis K 145  est-truth sg_x +1.52e-03 sg_y +6.70e-03 sg_z -3.40e-03 mg_01 +5.94e-03 mg_02 +3.01e-03 mg_10 +4.18e-04 mg_12 -2.09e-03 mg_20 +4.63e-03 mg_21 -4.53e-03 sa_x +1.83e-03 sa_y -2.02e-02 sa_z +3.12e-02 ma_01 -3.40e-02 ma_02 +1.42e-02 ma_10 -3.73e-03 ma_12 +2.84e-03 ma_20 +1.76e-02 ma_21 +1.04e-03 (112s)
+15:31:41 xMH03_L2_toff_s07: toff K 147  est-truth td +2.56e-03 (107s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:32:25 xMH03_L3_imis_s01: imis K 159  est-truth sg_x +3.20e-03 sg_y +4.77e-03 sg_z +1.91e-04 mg_01 -3.93e-03 mg_02 +5.90e-03 mg_10 +1.61e-03 mg_12 -7.52e-03 mg_20 -4.26e-03 mg_21 +1.75e-03 sa_x +2.35e-02 sa_y -1.25e-02 sa_z +1.32e-02 ma_01 -3.42e-02 ma_02 +1.75e-02 ma_10 -3.26e-03 ma_12 -8.39e-03 ma_20 +2.09e-02 ma_21 -8.21e-03 (120s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:32:34 xMH03_L3_rbc_s00: rbc K 144  est-truth rbc_x +6.87e-03 rbc_y -1.36e-03 rbc_z -3.36e-03 (111s)
+15:32:34 xMH03_L3_isf_s03: isf K 142  est-truth sg_x +5.06e-03 sg_y +2.82e-03 sg_z -5.21e-03 sa_x -9.96e-03 sa_y -2.34e-02 sa_z +1.41e-02 (102s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:32:36 xMH03_L3_rst_s02: no export (0s)
+15:32:36 xMH03_L3_rst_s03: no export (0s)
+15:32:36 xMH03_L3_rst_s04: no export (0s)
+15:32:36 xMH03_L3_rst_s05: no export (0s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:32:37 xMH03_L3_rst_s06: no export (0s)
+15:32:37 xMH03_L3_rst_s07: no export (0s)
+15:32:52 xMH03_L3_imis_s09: imis K 151  est-truth sg_x +2.61e-03 sg_y +5.04e-03 sg_z +1.74e-03 mg_01 -4.59e-03 mg_02 -5.07e-03 mg_10 +2.06e-03 mg_12 -2.62e-03 mg_20 +8.49e-03 mg_21 +7.39e-03 sa_x -3.94e-03 sa_y -2.67e-02 sa_z +2.61e-02 ma_01 -3.04e-02 ma_02 +9.51e-03 ma_10 -1.79e-03 ma_12 -1.35e-02 ma_20 +2.80e-02 ma_21 +5.15e-03 (103s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:32:57 xMH03_L3_isf_s07: isf K 143  est-truth sg_x -8.96e-04 sg_y +5.18e-03 sg_z -4.41e-03 sa_x -5.98e-03 sa_y -2.03e-02 sa_z +1.56e-02 (91s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:33:14 xMH03_L3_rbc_s04: rbc K 140  est-truth rbc_x +2.84e-03 rbc_y -4.38e-03 rbc_z -2.66e-03 (91s)
+15:33:26 xMH03_L3_imis_s05: imis K 150  est-truth sg_x +3.14e-03 sg_y +6.15e-03 sg_z -2.06e-04 mg_01 -2.34e-03 mg_02 -4.15e-03 mg_10 -3.17e-03 mg_12 -4.85e-03 mg_20 -3.47e-03 mg_21 -6.13e-04 sa_x -6.78e-04 sa_y -3.57e-02 sa_z +2.82e-02 ma_01 -2.56e-02 ma_02 +6.12e-03 ma_10 -1.73e-03 ma_12 -6.78e-03 ma_20 +2.27e-02 ma_21 +5.84e-03 (106s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:33:31 xMH03_L3_isfs_s02: isfs K 281  est-truth sg_x -3.23e-02 sg_y -1.99e-02 sg_z +2.38e-02 sa_x +1.34e-02 sa_y +1.13e-03 sa_z +1.35e-02 (263s)
+15:33:51 xMH03_L3_isfs_s06: isfs K 274  est-truth sg_x +3.81e-02 sg_y +2.28e-02 sg_z +2.65e-02 sa_x +2.03e-02 sa_y -5.07e-02 sa_z +8.77e-03 (243s)
+15:34:02 xMH03_L3_rbc_s08: rbc K 143  est-truth rbc_x +4.47e-03 rbc_y -2.18e-03 rbc_z +1.87e-03 (96s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:34:09 xMH03_L3_rbc_s01: rbc K 137  est-truth rbc_x +3.04e-03 rbc_y +7.11e-04 rbc_z -1.34e-03 (95s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:34:14 xMH03_L3_tbc_s00: tbc K 141  est-truth tbc_x +4.52e-03 tbc_y -1.02e-02 tbc_z -2.96e-02 (80s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:34:19 xMH03_L3_tbc_s04: tbc K 136  est-truth tbc_x -1.80e-03 tbc_y -9.93e-03 tbc_z -2.42e-02 (80s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:34:39 xMH03_L2_rst_s00: rst K 319 (750s)
+15:34:43 xMH03_L3_tbc_s08: tbc K 140  est-truth tbc_x +4.58e-03 tbc_y -4.47e-03 tbc_z -2.63e-02 (75s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:34:53 xMH03_L3_rbc_s05: rbc K 137  est-truth rbc_x +6.01e-03 rbc_y -1.13e-03 rbc_z -3.18e-03 (99s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:35:00 xMH03_L3_isfs_s00: isfs K 296  est-truth sg_x +3.70e-02 sg_y -6.38e-03 sg_z +2.20e-02 sa_x +2.46e-02 sa_y -8.77e-02 sa_z -4.33e-03 (211s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:35:11 xMH03_L3_rst_s08: rst K 230 (154s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:35:31 xMH03_L3_tbc_s01: tbc K 136  est-truth tbc_x +3.12e-03 tbc_y -1.62e-02 tbc_z -2.46e-02 (78s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:35:35 xMH03_L3_tbc_s05: tbc K 139  est-truth tbc_x +1.37e-02 tbc_y -1.08e-02 tbc_z -2.79e-02 (76s)
+15:35:38 xMH03_L3_rbc_s09: rbc K 142  est-truth rbc_x +7.39e-03 rbc_y +4.12e-04 rbc_z -2.30e-04 (96s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:35:47 xMH03_L3_rbc_s02: rbc K 141  est-truth rbc_x +8.00e-03 rbc_y -1.38e-03 rbc_z +2.09e-04 (97s)
+15:35:49 xMH03_L2_rst_s01: rst K 123 (69s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:35:56 xMH03_L3_tbc_s09: tbc K 141  est-truth tbc_x +5.51e-03 tbc_y -1.40e-02 tbc_z -3.05e-02 (73s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:36:23 xMH03_L3_rbc_s06: rbc K 136  est-truth rbc_x +5.76e-03 rbc_y -4.85e-03 rbc_z +3.54e-04 (90s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:36:54 xMH03_L3_tbc_s06: tbc K 139  est-truth tbc_x +7.02e-03 tbc_y -3.24e-03 tbc_z -3.03e-02 (79s)
+15:36:54 xMH03_L3_tbc_s02: tbc K 138  est-truth tbc_x +1.02e-02 tbc_y -4.37e-03 tbc_z -2.99e-02 (83s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:37:02 xMH03_L2_rst_s06: rst K 360 (723s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:37:25 xMH03_L3_rbc_s03: rbc K 145  est-truth rbc_x +6.24e-03 rbc_y -1.84e-03 rbc_z -3.97e-03 (98s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:38:00 xMH03_L3_rst_s00: rst K 238 (142s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:38:03 xMH03_L3_rst_s09: rst K 164 (173s)
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [3239] for slices [0].
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:38:19 xMH03_L3_tbc_s03: tbc K 141  est-truth tbc_x +6.35e-03 tbc_y -1.74e-02 tbc_z -2.94e-02 (85s)
+15:38:19 xMH03_L3_tbc_s07: tbc K 141  est-truth tbc_x +3.51e-03 tbc_y -1.19e-02 tbc_z -3.04e-02 (85s)
+15:38:19 xMH03_L2_rst_s07: rst K 119 (77s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:38:27 xMH03_L3_rbc_s07: rbc K 141  est-truth rbc_x +7.00e-03 rbc_y -6.22e-04 rbc_z -2.23e-03 (124s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:39:19 xMH03_L3_rst_s01: rst K 116 (80s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:39:22 xMH03_L3_toff_s02: toff K 174  est-truth td -9.42e-03 (115s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:39:28 xMH03_L3_toff_s00: toff K 182  est-truth td -1.00e-02 (211s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:39:38 xMH03_L3_isfs_s07: isfs K 315  est-truth sg_x -3.74e-02 sg_y +1.53e-02 sg_z -3.58e-02 sa_x +9.84e-03 sa_y -2.73e-02 sa_z +6.50e-02 (347s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:40:06 xMH03_L3_isfs_s01: isfs K 292  est-truth sg_x -3.53e-02 sg_y +1.34e-02 sg_z +1.25e-02 sa_x +4.65e-03 sa_y +1.11e-02 sa_z +4.30e-02 (305s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [3010] for slices [0].
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:40:16 xMH03_L3_toff_s06: toff K 178  est-truth td -8.81e-03 (131s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:41:14 xtv2_cal_s1: clean K 89 (165s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:41:21 xtv1_cal_s2: clean K 91 (181s)
+15:41:23 xtv2_nos_s2: tumvi_nos K 120  est-truth sg_x -1.22e-02 sg_y +2.53e-02 sg_z +7.68e-03 mg_01 +4.52e-03 mg_02 +3.15e-04 mg_10 -2.31e-04 mg_12 +4.43e-04 mg_20 +5.24e-03 mg_21 +5.49e-03 sa_x +6.01e-04 sa_y +1.51e-02 sa_z -7.00e-02 ma_01 +2.12e-02 ma_02 -1.88e-03 ma_10 -2.13e-02 ma_12 -1.28e-02 ma_20 -1.35e-02 ma_21 -7.98e-03 (123s)
+15:41:24 xMH03_L3_toff_s03: toff K 178  est-truth td +6.91e-03 (122s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:42:11 xMH03_L3_toff_s07: toff K 184  est-truth td +7.02e-03 (115s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [415] for slices [0].
+15:42:35 xMH04_L0_clean_r00: clean K 166 (269s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:42:38 xMH03_L3_toff_s01: toff K 182  est-truth td +6.81e-03 (190s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:43:08 xMH03_L3_toff_s04: toff K 176  est-truth td -1.01e-02 (104s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:43:11 xMH05_L0_clean_r01: clean K 158 (291s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:43:30 xMH03_L3_isfs_s08: isfs K 300  est-truth sg_x -3.80e-02 sg_y +1.25e-02 sg_z -3.73e-02 sa_x +8.82e-03 sa_y -7.93e-03 sa_z +7.71e-02 (232s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:43:35 xtv3_cal_s0: clean K 106 (208s)
+15:43:39 xtv2_cal_s2: clean K 87 (145s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:45:36 xMH03_L3_toff_s05: toff K 184  est-truth td +6.95e-03 (148s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:46:35 xMH03_L3_toff_s08: toff K 190  est-truth td -9.18e-03 (265s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:46:51 xMH03_L2_rst_s02: rst K 255 (662s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [2979] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:48:01 xMH03_L3_isfs_s09: isfs K 275  est-truth sg_x -3.41e-02 sg_y -1.34e-02 sg_z -3.21e-02 sa_x +1.23e-02 sa_y -2.21e-02 sa_z -1.98e-02 (272s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:48:22 xMH03_L2_rst_s03: rst K 131 (92s)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+15:48:26 xMH04_L0_clean_r01: clean K 168 (352s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:48:45 xMH03_L3_toff_s09: toff K 180  est-truth td +6.71e-03 (130s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:48:59 xMH05_L0_clean_r02: clean K 155 (348s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:49:25 xtv3_cal_s1: clean K 107 (350s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:51:24 xtv6_cal_s1: clean K 87 (180s)
+15:51:25 xtv5_cal_s2: clean K 92 (216s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:51:45 xtv2_nos_s0: tumvi_nos K 287  est-truth sg_x -1.79e-02 sg_y +3.28e-02 sg_z +1.15e-02 mg_01 +6.07e-03 mg_02 -4.25e-03 mg_10 -5.08e-04 mg_12 -6.72e-03 mg_20 +1.34e-02 mg_21 -2.76e-02 sa_x -3.17e-03 sa_y +1.17e-02 sa_z -7.17e-02 ma_01 +4.05e-02 ma_02 +2.84e-02 ma_10 +5.46e-03 ma_12 +2.56e-02 ma_20 -1.07e-02 ma_21 -7.22e-04 (486s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:52:03 xtv1_cal_s0: clean K 92 (184s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [3415] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:52:42 xtv3_cal_s2: clean K 105 (197s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [776] for slices [0].
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [941] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:54:54 xMH04_L0_clean_r02: clean K 172 (387s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [1886] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:55:26 xtv6_cal_s2: clean K 88 (242s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [1900] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:55:57 xtv1_cal_s1: clean K 94 (234s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:56:31 xV101_L0_clean_r00: clean K 107 (250s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:57:06 xV201_L0_clean_r02: clean K 93 (156s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [1181] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+15:59:02 xV103_L0_clean_r01: clean K 132 (302s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [8830] for slices [0].
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+16:00:20 xMH05_L0_clean_r00: clean K 157 (326s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+16:00:45 xV101_L0_clean_r01: clean K 106 (255s)
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+  return scipy.linalg.solve(Sd, rhs, assume_a="sym")
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [1871] for slices [0].
+16:02:12 xV103_L0_clean_r02: clean K 125 (190s)
+16:02:53 xV101_L0_clean_r02: clean K 103 (128s)
+16:03:51 xtv2_nos_s1: tumvi_nos K 466  est-truth sg_x -4.01e-02 sg_y +4.86e-02 sg_z +1.87e-02 mg_01 +2.94e-03 mg_02 -2.66e-03 mg_10 -1.28e-03 mg_12 -3.27e-03 mg_20 -1.51e-03 mg_21 +1.11e-03 sa_x -3.61e-03 sa_y -1.01e-02 sa_z -5.40e-02 ma_01 +3.95e-02 ma_02 -9.30e-03 ma_10 -1.72e-02 ma_12 +1.93e-02 ma_20 -2.27e-02 ma_21 -5.80e-03 (726s)
+16:04:01 xV201_L0_clean_r00: clean K 94 (109s)
+Traceback (most recent call last):
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 187, in <module>
+    main()
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 177, in main
+    rec = run_one(r, a.modes, a.force, a.oracle_key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tkocher/repos/oasis-experiments/calib_reestimate.py", line 144, in run_one
+    I, idx = ba.marginal_information()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/p1export/pkg/dsg_jit/calib/solver.py", line 331, in marginal_information
+    X = scipy.linalg.cho_solve(scipy.linalg.cho_factor(Scc.toarray(), lower=True), Sct)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 212, in cho_factor
+    c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    _check_format_errors_warnings("potrf", err_lst)
+  File "/data/tkocher/venv-p1/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    raise LinAlgError(msg)
+numpy.linalg.LinAlgError: Internal potrf return info = [3805] for slices [0].
+16:06:16 xV201_L0_clean_r01: clean K 91 (135s)
+16:06:40 xV103_L0_clean_r00: clean K 130 (226s)
+16:09:46 xV203_L0_clean_r00: clean K 238 (761s)
+16:22:31 xV203_L0_clean_r01: clean K 248 (764s)
+16:31:08 xV203_L0_clean_r02: clean K 250 (518s)
