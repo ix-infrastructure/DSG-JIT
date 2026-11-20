@@ -207,10 +207,10 @@ def build_joint_denoiser(
     *,
     gn_iters: int = 10,
     gn_damping: float = 5e-3,
-    aw_trans: float = 10.0,
-    aw_rot: float = 10.0,
-    rw_trans: float = 0.1,
-    rw_rot: float = 0.1,
+    aw_trans: float = 5.0,
+    aw_rot: float = 5.0,
+    rw_trans: float = 1.0,
+    rw_rot: float = 1.0,
     sw_trans: float = 0.0,
     sw_rot: float = 0.0,
     weight_reg: float = 0.001,
@@ -238,12 +238,16 @@ def build_joint_denoiser(
         Inner Gauss-Newton iterations.
     aw_trans, aw_rot : float
         Anchor loss weight for translation / rotation components.
+        Geometric loss — NOT info-weighted (following exp24 pattern).
     rw_trans, rw_rot : float
         Measurement correction regularisation for translation / rotation.
+        Statistical prior — info-weighted by 1/sigma^2 so corrections are
+        penalised relative to the noise level.  Should dominate anchor
+        weight to prevent overfitting to anchor positions.
     sw_trans, sw_rot : float
         Temporal smoothness weight for translation / rotation.
-        Default 0 — the inner GN already smooths implicitly; explicit
-        smoothness on measurements destroys RPE.
+        Geometric loss — NOT info-weighted.  Default 0 — the inner GN
+        already smooths implicitly; explicit smoothness destroys RPE.
     weight_reg : float
         Regularisation pulling log-weights toward zero (uniform).
 
@@ -261,19 +265,19 @@ def build_joint_denoiser(
     inner_idx = jnp.array(inner_anchor_positions, dtype=jnp.int32)
     outer_idx = jnp.array(outer_anchor_positions, dtype=jnp.int32)
 
-    # Per-component outer loss weights: user multiplier * information weight.
-    # base_odom_w = 1/sigma^2 provides the natural scale; user weights are
-    # dimensionless multipliers on top of that (so aw_trans=10 means "10x
-    # the information-weighted baseline").
-    user_aw = jnp.array(
+    # Outer loss weight design (following exp24's proven pattern):
+    #   - Anchor & smoothness are GEOMETRIC losses → plain user multiplier,
+    #     no info weighting.  This keeps them at a natural scale.
+    #   - Regularisation is a STATISTICAL prior ("corrections should be small
+    #     relative to the noise level") → info-weighted (1/sigma^2).
+    # This ensures reg dominates anchors, keeping corrections small and
+    # preventing overfitting to anchor positions.
+    anchor_w_vec = jnp.array(
         [aw_trans] * 3 + [aw_rot] * 3, dtype=jnp.float32)
-    user_rw = jnp.array(
-        [rw_trans] * 3 + [rw_rot] * 3, dtype=jnp.float32)
-    user_sw = jnp.array(
+    reg_w_vec = jnp.array(
+        [rw_trans] * 3 + [rw_rot] * 3, dtype=jnp.float32) * base_odom_w
+    smooth_w_vec = jnp.array(
         [sw_trans] * 3 + [sw_rot] * 3, dtype=jnp.float32)
-    anchor_w_vec = user_aw * base_odom_w
-    reg_w_vec = user_rw * base_odom_w
-    smooth_w_vec = user_sw * base_odom_w
 
     # Vectorised residual with per-edge learned weights.
     def _odom_res_single(pose_a, pose_b, meas, log_w):
@@ -467,14 +471,14 @@ def main():
                         help="Outer Adam iterations per window (default: 200)")
     parser.add_argument("--gn-iters", type=int, default=10,
                         help="Inner GN iterations (default: 10)")
-    parser.add_argument("--aw-trans", type=float, default=10.0,
-                        help="Anchor weight, translation (default: 10.0)")
-    parser.add_argument("--aw-rot", type=float, default=10.0,
-                        help="Anchor weight, rotation (default: 10.0)")
-    parser.add_argument("--rw-trans", type=float, default=0.1,
-                        help="Measurement reg weight, translation (default: 0.1)")
-    parser.add_argument("--rw-rot", type=float, default=0.1,
-                        help="Measurement reg weight, rotation (default: 0.1)")
+    parser.add_argument("--aw-trans", type=float, default=5.0,
+                        help="Anchor weight, translation (default: 5.0)")
+    parser.add_argument("--aw-rot", type=float, default=5.0,
+                        help="Anchor weight, rotation (default: 5.0)")
+    parser.add_argument("--rw-trans", type=float, default=1.0,
+                        help="Measurement reg weight, translation (default: 1.0)")
+    parser.add_argument("--rw-rot", type=float, default=1.0,
+                        help="Measurement reg weight, rotation (default: 1.0)")
     parser.add_argument("--sw-trans", type=float, default=0.0,
                         help="Smoothness weight, translation (default: 0.0)")
     parser.add_argument("--sw-rot", type=float, default=0.0,
