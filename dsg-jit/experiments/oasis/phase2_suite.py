@@ -39,7 +39,7 @@ def run_job(job, a):
         return f"{rid}: already done"
     t0, load0 = time.time(), os.getloadavg()[0]
     if arm == "clean":
-        data, cfg = a.src, os.path.basename(a.base_yaml)
+        data, cfg = a.src, a.clean_config or os.path.basename(a.base_yaml)
     else:
         data = os.path.join(a.scratch, rid)
         rc = sh([sys.executable, os.path.join(HERE, a.gen_script), "--src", a.src, "--dst", data,
@@ -59,7 +59,7 @@ def run_job(job, a):
                 shutil.copy2(os.path.join(data, f), out_dir)
         shutil.rmtree(data, ignore_errors=True)
     r = subprocess.run([sys.executable, os.path.join(HERE, "phase2_eval_run.py"), out_dir, "--gt", a.gt,
-                        "--n-frames", str(a.n_frames)],
+                        "--n-frames", str(a.n_frames)] + (["--frame-dt", str(a.frame_dt)] if a.frame_dt else []),
                        capture_output=True, text=True)
     rec = json.loads(r.stdout) if r.returncode == 0 and r.stdout.strip() else {"run_id": rid, "valid": False,
                                                                               "eval_error": r.stderr[-300:]}
@@ -99,6 +99,10 @@ def main():
                     help="real_correct_sequence.py for real (not synthetically darkened) sequences")
     ap.add_argument("--gen-args", default="", help="extra arguments for --gen-script, e.g. '--m-ref 90'")
     ap.add_argument("--n-frames", type=int, default=3682, help="stereo frames in the sequence (MH01: 3682)")
+    ap.add_argument("--frame-dt", type=float, default=None, help="frame period for the evaluator (4Seasons: 0.0333333)")
+    ap.add_argument("--clean-config", default=None,
+                    help="config for clean runs; default is the image's file named like --base-yaml (EuRoC). "
+                         "Give an absolute path under /data for sequences whose config is not in the image (4Seasons)")
     a = ap.parse_args()
     a.jsonl = os.path.join(a.results, f"{a.tag}_results.jsonl")
 

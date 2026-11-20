@@ -34,12 +34,21 @@ esac
 RESULTS_ROOT="${RESULTS_DIR:-/data/tkocher/oasis_results}"
 OUTDIR="${RESULTS_ROOT}/${RUN_ID}"
 mkdir -p "$OUTDIR"
+# Phase 1: OASIS_EXPORT=1 selects the export build (fork branch phase1-export) and writes the estimation
+# problem (keyframes, map points, observations, IMU preintegration) to $OUTDIR/export. Unset = Phase 0 image.
+IMAGE="${OASIS_IMAGE:-oasis-orbslam3:24.04}"
+EXPORT_ARGS=()
+if [ -n "${OASIS_EXPORT:-}" ]; then
+  IMAGE="${OASIS_IMAGE:-oasis-orbslam3:24.04-p1export}"
+  EXPORT_ARGS=(-e OASIS_EXPORT=/results/export)
+fi
 docker run --rm \
   --user "$(id -u):$(id -g)" \
   -v /data:/data:ro \
   -v "$OUTDIR":/results \
   -w /results \
-  oasis-orbslam3:24.04 \
+  "${EXPORT_ARGS[@]}" \
+  "$IMAGE" \
   /opt/ORB_SLAM3/Examples/Stereo-Inertial/stereo_inertial_euroc \
       /opt/ORB_SLAM3/Vocabulary/ORBvoc.txt \
       "$CFG_PATH" \

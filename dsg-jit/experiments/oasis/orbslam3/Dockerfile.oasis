@@ -1,0 +1,55 @@
+# OASIS / ORB_SLAM3 (no_gui) reproducible test environment.
+#
+# Base is ubuntu:24.04 deliberately: it ships OpenCV 4.6.0, which is what
+# brd-lambda's host already has. The lab's original Dockerfile used jammy
+# (OpenCV 4.5.4). Since ORB-SLAM3 is already nondeterministic run-to-run,
+# having one arm of the experiment on 4.5.4 and the other on 4.6.0 would add
+# a systematic difference on top of that noise. Both arms must match.
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# CMakeLists tries to apt-install libssl-dev / libboost-all-dev itself at
+# configure time via execute_process. Installing them up front makes that a
+# no-op instead of a network call during build.
+# CMakeLists probes six packages with `dpkg -s <name>` and shells out to
+# apt-get for any that are missing. Every one must be present under its exact
+# name -- dpkg -s fails on a virtual package even when a provider is installed.
+# The full list (CMakeLists lines 40/235/286/324/362/409):
+#     tar  libopencv-dev  libeigen3-dev  libgl-dev  libssl-dev  libboost-all-dev
+# With all six satisfied, no apt call happens at configure time, so deleting
+# the package lists below is safe.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential cmake git pkg-config ca-certificates tar \
+        libopencv-dev libeigen3-dev libgl-dev libssl-dev \
+        libboost-all-dev libboost-serialization-dev \
+        python3 python3-numpy \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/ORB_SLAM3
+COPY . /opt/ORB_SLAM3
+
+# Vocabulary ships compressed; the binary needs it extracted.
+RUN tar -xzf Vocabulary/ORBvoc.txt.tar.gz -C Vocabulary/ \
+    && rm -f Vocabulary/ORBvoc.txt.tar.gz
+
+# CMakeLists IGNORES -DDOWNLOAD_DATASET=OFF -- it overwrites the option based
+# purely on whether Datasets/EuRoc exists:
+#     if(EXISTS ${DATASET_DIR}) set(DOWNLOAD_DATASET OFF) else() set(... ON)
+# Without this sentinel directory the configure step downloads machine_hall +
+# both vicon rooms (tens of GB) into the image layer. Creating the dir is the
+# supported way to suppress it without patching their CMakeLists.
+# Note wget is deliberately NOT installed, as a second backstop.
+RUN mkdir -p Datasets/EuRoc
+
+# GUI defaults to OFF in CMakeLists, so Pangolin is not needed. Stated
+# explicitly so an upstream default flip can't silently pull it in.
+RUN cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DGUI=OFF \
+    && cmake --build build -j"$(nproc)" \
+    && rm -rf build/CMakeFiles
+
+# Datasets are NOT baked in -- mount at runtime. The lab's original Dockerfile
+# did `COPY Datasets /root/Datasets`, which puts 2.6 GB per sequence inside the
+# image and forces a rebuild to change data.
+VOLUME ["/data", "/results"]
+CMD ["/bin/bash"]

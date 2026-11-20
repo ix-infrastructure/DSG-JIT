@@ -32,13 +32,13 @@ Drafted 2026-10-19. Companion to `Degradation correction framework.md` (design a
 | 0.1 | Committed |
 | 0.2 | Calibrated 60/60 good (12.1 mm); scale/misalignment uncorrected 0/60; fully raw 0/60 |
 | 0.3 | Sourced tiers 1/3/9% gyro: MH01 ×1.0/×2.1/×8.8, MH03 ×1.8/×4.0/×27 ATE; 60/60 runs still valid, i.e. silent |
-| 0.4 | "Bad imu" resets = ORB-SLAM3's "not enough motion" check on rebuilt maps (`LocalMapping.cc:138`), not an IMU fault. Visual-only: C0 0/10, gain 5/10 good (p = 0.03); 12/20 visual-only runs crashed |
-| 0.5 | Synthetic night (black floor + scale + quantization, quantile-calibrated) **does not** reproduce the real night: C0 0/15 (real 12/30), gain 15/15 at 7.4 m (real 20/30 at 27 m). Motion-blur variant (21 ms exposure) running as 0.5b |
-| 0.6 | `maximilianeum_2` night (new route): C0 0/15 → gain 15/15 (p = 1e-8). `old_town_3` night: C0 2/15, gain 0/15 (one deterministic break at frame ≈ 9,300); diagnosis running |
+| 0.4 | "Bad imu" resets = ORB-SLAM3's "not enough motion" check on rebuilt maps (`LocalMapping.cc:138`), not an IMU fault. Visual-only: C0 0/10, gain 5/10 good (p = 0.03); 13/20 visual-only runs crashed (C0 8, gain 5) |
+| 0.5 | Synthetic night (black floor + scale + quantization, quantile-calibrated) **does not** reproduce the real night: C0 0/15 (real 12/30), gain 15/15 at 7.4 m (real 20/30 at 27 m). Adding exposure-matched motion blur (0.5b) changes nothing (0/15, 15/15 at 7.2 m); missing streetlight hot-spots are the likelier gap |
+| 0.6 | `maximilianeum_2` night (new route): C0 0/15 → gain 15/15 (p = 1e-8). `old_town_3` night: C0 2/15, gain 0/15 (one deterministic break at frame ≈ 9,300): the gain jumps 2–3× within a second as streetlights enter/leave the view, so temporal gain smoothing is the candidate fix |
 
 **Consequences for later phases.**
 - Phase 1/2: IMU-scale errors can be silent (EuRoC) or catastrophic (TUM-VI) at the same magnitude, so the monitor must not rely on tracking health, and the estimator must handle large errors (≥ 9%) as well as small ones.
-- Phase 3: gain is confirmed on a held-out route. The synthetic model is not yet good enough to search for corrections beyond gain; fix it first (0.5b) or work on real night data only.
+- Phase 3: gain is confirmed on a held-out route. The synthetic model is not yet good enough to search for corrections beyond gain; it needs streetlight hot-spots first, or work on real night data only. Figures and LaTeX tables for all of Phase 0: `Phase0_images/`.
 
 ## Phase 1: Calibration re-estimation in DSG-JIT (core contribution, ≈ 4–6 weeks)
 

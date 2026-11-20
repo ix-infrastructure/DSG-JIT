@@ -1,0 +1,254 @@
+diff --git a/Examples/Stereo-Inertial/stereo_inertial_euroc.cc b/Examples/Stereo-Inertial/stereo_inertial_euroc.cc
+index 8760b05..6e44ae9 100644
+--- a/Examples/Stereo-Inertial/stereo_inertial_euroc.cc
++++ b/Examples/Stereo-Inertial/stereo_inertial_euroc.cc
+@@ -17,6 +17,7 @@
+ */
+ 
+ #include<iostream>
++#include<cstdlib>
+ #include<algorithm>
+ #include<fstream>
+ #include<iomanip>
+@@ -230,6 +231,10 @@ int main(int argc, char **argv)
+         SLAM.SaveKeyFrameTrajectoryEuRoC("KeyFrameTrajectory.txt");
+     }
+ 
++    // OASIS Phase 1: optional export of the estimation problem, into the directory named by OASIS_EXPORT.
++    if(const char *exportDir = getenv("OASIS_EXPORT"))
++        SLAM.SaveEstimationProblem(exportDir);
++
+     return 0;
+ }
+ 
+diff --git a/include/ImuTypes.h b/include/ImuTypes.h
+index ac78d36..a65ed80 100644
+--- a/include/ImuTypes.h
++++ b/include/ImuTypes.h
+@@ -198,6 +198,13 @@ public:
+ 
+     Bias GetOriginalBias();
+     Bias GetUpdatedBias();
++    // OASIS Phase 1: copy of the raw samples integrated so far (acceleration, angular velocity, dt).
++    void GetMeasurements(std::vector<Eigen::Vector3f> &va, std::vector<Eigen::Vector3f> &vw, std::vector<float> &vt)
++    {
++        std::unique_lock<std::mutex> lock(mMutex);
++        va.clear(); vw.clear(); vt.clear();
++        for(const integrable &m : mvMeasurements) { va.push_back(m.a); vw.push_back(m.w); vt.push_back(m.t); }
++    }
+ 
+     void printMeasurements() const {
+         std::cout << "pint meas:\n";
+diff --git a/include/System.h b/include/System.h
+index 8156753..8a6b1cd 100644
+--- a/include/System.h
++++ b/include/System.h
+@@ -189,6 +189,9 @@ public:
+     void SaveTrajectoryEuRoC(const string &filename, Map* pMap);
+     void SaveKeyFrameTrajectoryEuRoC(const string &filename, Map* pMap);
+ 
++    // OASIS Phase 1: export keyframes, map points, observations and IMU preintegration (see System.cc).
++    void SaveEstimationProblem(const string &dir);
++
+     // Save data used for initialization debug
+     void SaveDebugData(const int &iniIdx);
+ 
+diff --git a/src/System.cc b/src/System.cc
+index 5cf0611..d84fd9c 100644
+--- a/src/System.cc
++++ b/src/System.cc
+@@ -26,6 +26,7 @@
+ #endif
+ #include "SlimSLAM.hpp"
+ #include <iomanip>
++#include <sys/stat.h>
+ #include <openssl/md5.h>
+ #include <boost/serialization/base_object.hpp>
+ #include <boost/serialization/string.hpp>
+@@ -1705,5 +1706,186 @@ string System::CalculateCheckSum(string filename, int type)
+     return checksum;
+ }
+ 
++
++// OASIS Phase 1: export the estimation problem of every map in the atlas so it can be re-solved
++// offline (calibration re-estimation in DSG-JIT). Call after Shutdown(). Writes into dir:
++//   meta.txt          sensor, maps, (rectified) intrinsics, Tbc, IMU noise, pyramid
++//   keyframes.csv     pose (Tcw and Twb), velocity, bias, previous keyframe
++//   mappoints.csv     world position, reference keyframe
++//   observations.csv  keyframe -> map point, keypoint (u, v, u_right), octave
++//   imu_preint.csv    preintegration from the previous keyframe (deltas, Jacobians, 15x15 covariance)
++//   imu_meas.csv      the raw IMU samples behind each preintegration, for re-integration
++// Stereo pinhole input is rectified before tracking, so u, v, u_right and the intrinsics are those of
++// the rectified left camera, and Tbc includes the rectification rotation.
++void System::SaveEstimationProblem(const string &dir)
++{
++    cout << endl << "Saving estimation problem to " << dir << " ..." << endl;
++    mkdir(dir.c_str(), 0755);
++
++    vector<Map*> vpMaps = mpAtlas->GetAllMaps();
++    Map* pBiggerMap = nullptr;
++    size_t numMaxKFs = 0;
++    for(Map* pMap : vpMaps)
++    {
++        if(pMap->GetAllKeyFrames().size() > numMaxKFs)
++        {
++            numMaxKFs = pMap->GetAllKeyFrames().size();
++            pBiggerMap = pMap;
++        }
++    }
++
++    auto writeSE3 = [](ofstream &f, const Sophus::SE3f &T)
++    {
++        const Eigen::Vector3f t = T.translation();
++        const Eigen::Quaternionf q = T.unit_quaternion();
++        f << "," << t(0) << "," << t(1) << "," << t(2) << "," << q.x() << "," << q.y() << "," << q.z() << "," << q.w();
++    };
++    auto writeMat = [](ofstream &f, const float *p, int n) { for(int i = 0; i < n; i++) f << "," << p[i]; };
++
++    // meta.txt
++    ofstream fm((dir + "/meta.txt").c_str());
++    fm << fixed << setprecision(9);
++    fm << "sensor " << mSensor << "\n";
++    fm << "largest_map " << (pBiggerMap ? (long)pBiggerMap->GetId() : -1L) << "\n";
++    for(Map* pMap : vpMaps)
++        fm << "map " << pMap->GetId() << " kfs " << pMap->GetAllKeyFrames().size() << " mps " << pMap->GetAllMapPoints().size()
++           << " imu_init " << pMap->isImuInitialized() << " inertial_ba2 " << pMap->GetIniertialBA2() << "\n";
++    if(settings_)
++    {
++        fm << "need_to_rectify " << settings_->needToRectify() << "\n";
++        fm << "image_size " << settings_->newImSize().width << " " << settings_->newImSize().height << "\n";
++        const Eigen::Matrix4f Tlr = settings_->Tlr().matrix();
++        fm << "Tlr_unrectified"; for(int r = 0; r < 4; r++) for(int c = 0; c < 4; c++) fm << " " << Tlr(r, c); fm << "\n";
++    }
++    for(Map* pMap : vpMaps)
++    {
++        bool done = false;
++        for(KeyFrame* pKF : pMap->GetAllKeyFrames())
++        {
++            if(!pKF || pKF->isBad()) continue;
++            fm << "fx " << pKF->fx << "\nfy " << pKF->fy << "\ncx " << pKF->cx << "\ncy " << pKF->cy << "\n";
++            fm << "bf " << pKF->mbf << "\nb " << pKF->mb << "\nth_depth " << pKF->mThDepth << "\n";
++            fm << "n_left " << pKF->NLeft << "\n";
++            fm << "cam_type " << pKF->mpCamera->GetType() << "\n";
++            fm << "cam1_params"; for(size_t i = 0; i < pKF->mpCamera->size(); i++) fm << " " << pKF->mpCamera->getParameter(i); fm << "\n";
++            if(pKF->mpCamera2)
++            {
++                fm << "cam2_params"; for(size_t i = 0; i < pKF->mpCamera2->size(); i++) fm << " " << pKF->mpCamera2->getParameter(i); fm << "\n";
++            }
++            fm << "scale_factors"; for(float s : pKF->mvScaleFactors) fm << " " << s; fm << "\n";
++            fm << "level_sigma2"; for(float s : pKF->mvLevelSigma2) fm << " " << s; fm << "\n";
++            const Eigen::Matrix4f Tbc = pKF->mImuCalib.mTbc.matrix();
++            fm << "Tbc"; for(int r = 0; r < 4; r++) for(int c = 0; c < 4; c++) fm << " " << Tbc(r, c); fm << "\n";
++            fm << "imu_cov";      for(int i = 0; i < 6; i++) fm << " " << pKF->mImuCalib.Cov.diagonal()(i);     fm << "\n";
++            fm << "imu_cov_walk"; for(int i = 0; i < 6; i++) fm << " " << pKF->mImuCalib.CovWalk.diagonal()(i); fm << "\n";
++            done = true;
++            break;
++        }
++        if(done) break;
++    }
++    fm.close();
++
++    ofstream fk((dir + "/keyframes.csv").c_str());
++    ofstream fp((dir + "/mappoints.csv").c_str());
++    ofstream fo((dir + "/observations.csv").c_str());
++    ofstream fi((dir + "/imu_preint.csv").c_str());
++    ofstream fr((dir + "/imu_meas.csv").c_str());
++    for(ofstream *f : {&fk, &fp, &fo, &fi, &fr}) *f << fixed << setprecision(9);
++
++    fk << "map_id,kf_id,t,tcw_x,tcw_y,tcw_z,qcw_x,qcw_y,qcw_z,qcw_w,twb_x,twb_y,twb_z,qwb_x,qwb_y,qwb_z,qwb_w,"
++          "v_x,v_y,v_z,bg_x,bg_y,bg_z,ba_x,ba_y,ba_z,prev_kf_id,has_imu\n";
++    fp << "map_id,mp_id,x,y,z,ref_kf_id,n_obs\n";
++    fo << "map_id,kf_id,mp_id,idx,cam,u,v,u_right,octave\n";
++    fi << "map_id,kf_id,prev_kf_id,dt,bg_x,bg_y,bg_z,ba_x,ba_y,ba_z";
++    for(const char *m : {"dR", "dV", "dP", "JRg", "JVg", "JVa", "JPg", "JPa"})
++    {
++        const int n = (m[0] == 'd' && m[1] != 'R') ? 3 : 9;
++        for(int i = 0; i < n; i++) fi << "," << m << i;
++    }
++    for(int i = 0; i < 225; i++) fi << ",C" << i;
++    fi << "\n";
++    fr << "map_id,kf_id,k,a_x,a_y,a_z,w_x,w_y,w_z,dt\n";
++
++    for(Map* pMap : vpMaps)
++    {
++        const long unsigned int mapId = pMap->GetId();
++        vector<KeyFrame*> vpKFs = pMap->GetAllKeyFrames();
++        sort(vpKFs.begin(), vpKFs.end(), KeyFrame::lId);
++        for(KeyFrame* pKF : vpKFs)
++        {
++            if(!pKF || pKF->isBad()) continue;
++
++            // Eigen matrices are column-major; store row-major so a reshape(3,3) in numpy is the matrix.
++            Eigen::Matrix<float, 3, 3, Eigen::RowMajor> M;
++            const IMU::Bias kb = pKF->GetImuBias();
++            KeyFrame* pPrev = pKF->mPrevKF;
++            const bool hasImu = pKF->bImu && pPrev && !pPrev->isBad() && pKF->mpImuPreintegrated;
++            fk << mapId << "," << pKF->mnId << "," << setprecision(9) << pKF->mTimeStamp;
++            writeSE3(fk, pKF->GetPose());
++            writeSE3(fk, pKF->GetImuPose());
++            const Eigen::Vector3f v = pKF->GetVelocity();
++            fk << "," << v(0) << "," << v(1) << "," << v(2);
++            fk << "," << kb.bwx << "," << kb.bwy << "," << kb.bwz << "," << kb.bax << "," << kb.bay << "," << kb.baz;
++            fk << "," << (pPrev ? (long)pPrev->mnId : -1L) << "," << hasImu << "\n";
++
++            const vector<MapPoint*> vpMPs = pKF->GetMapPointMatches();
++            for(size_t i = 0; i < vpMPs.size(); i++)
++            {
++                MapPoint* pMP = vpMPs[i];
++                if(!pMP || pMP->isBad()) continue;
++                int cam = 0;
++                cv::KeyPoint kp;
++                float uR = -1.f;
++                if(pKF->NLeft == -1)
++                {
++                    kp = pKF->mvKeysUn[i];
++                    uR = pKF->mvuRight[i];
++                }
++                else if((int)i < pKF->NLeft)
++                    kp = pKF->mvKeys[i];
++                else
++                {
++                    kp = pKF->mvKeysRight[i - pKF->NLeft];
++                    cam = 1;
++                }
++                fo << mapId << "," << pKF->mnId << "," << pMP->mnId << "," << i << "," << cam << ","
++                   << kp.pt.x << "," << kp.pt.y << "," << uR << "," << kp.octave << "\n";
++            }
++
++            if(hasImu)
++            {
++                IMU::Preintegrated* pI = pKF->mpImuPreintegrated;
++                const IMU::Bias b = pI->GetOriginalBias();
++                fi << mapId << "," << pKF->mnId << "," << pPrev->mnId << "," << pI->dT;
++                fi << "," << b.bwx << "," << b.bwy << "," << b.bwz << "," << b.bax << "," << b.bay << "," << b.baz;
++                M = pI->dR; writeMat(fi, M.data(), 9);
++                writeMat(fi, pI->dV.data(), 3);
++                writeMat(fi, pI->dP.data(), 3);
++                for(const Eigen::Matrix3f *J : {&pI->JRg, &pI->JVg, &pI->JVa, &pI->JPg, &pI->JPa}) { M = *J; writeMat(fi, M.data(), 9); }
++                Eigen::Matrix<float, 15, 15, Eigen::RowMajor> C = pI->C;
++                writeMat(fi, C.data(), 225);
++                fi << "\n";
++
++                vector<Eigen::Vector3f> va, vw;
++                vector<float> vt;
++                pI->GetMeasurements(va, vw, vt);
++                for(size_t k = 0; k < vt.size(); k++)
++                    fr << mapId << "," << pKF->mnId << "," << k << "," << va[k](0) << "," << va[k](1) << "," << va[k](2)
++                       << "," << vw[k](0) << "," << vw[k](1) << "," << vw[k](2) << "," << vt[k] << "\n";
++            }
++        }
++
++        for(MapPoint* pMP : pMap->GetAllMapPoints())
++        {
++            if(!pMP || pMP->isBad()) continue;
++            const Eigen::Vector3f X = pMP->GetWorldPos();
++            KeyFrame* pRef = pMP->GetReferenceKeyFrame();
++            fp << mapId << "," << pMP->mnId << "," << X(0) << "," << X(1) << "," << X(2) << ","
++               << (pRef ? (long)pRef->mnId : -1L) << "," << pMP->GetObservations().size() << "\n";
++        }
++    }
++    cout << "estimation problem saved!" << endl;
++}
++
+ } //namespace ORB_SLAM
+ 

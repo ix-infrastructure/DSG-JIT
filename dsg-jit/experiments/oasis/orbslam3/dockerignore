@@ -1,0 +1,5 @@
+.git
+build/
+Datasets/
+*.log
+Vocabulary/ORBvoc.txt
